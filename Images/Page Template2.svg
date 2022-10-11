@@ -34,7 +34,7 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2">
+     inkscape:current-layer="layer1">
     <inkscape:grid
        type="xygrid"
        id="grid365"
@@ -357,7 +357,7 @@
      inkscape:label="Background"
      inkscape:groupmode="layer"
      id="layer1"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <rect
        style="fill:url(#linearGradient5402);fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5184"
@@ -372,6 +372,21 @@
        height="279.39999"
        x="0"
        y="0" />
+    <rect
+       style="opacity:0.436916;fill:url(#linearGradient56251);fill-opacity:1;stroke:none;stroke-width:0.529;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect56243"
+       width="190.5"
+       height="12.7"
+       x="12.7"
+       y="12.7" />
+    <rect
+       style="opacity:0.436916;fill:url(#linearGradient56375);fill-opacity:1;stroke:none;stroke-width:0.529;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect56243-8"
+       width="190.5"
+       height="12.7"
+       x="12.7"
+       y="-266.70001"
+       transform="scale(1,-1)" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -391,21 +406,6 @@
        height="228.59999"
        x="114.3"
        y="25.4" />
-    <rect
-       style="fill:url(#linearGradient56251);fill-opacity:1;stroke:none;stroke-width:0.529;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:0.43691582"
-       id="rect56243"
-       width="190.5"
-       height="12.7"
-       x="12.7"
-       y="12.7" />
-    <rect
-       style="fill:url(#linearGradient56375);fill-opacity:1;stroke:none;stroke-width:0.529;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:0.43691582"
-       id="rect56243-8"
-       width="190.5"
-       height="12.7"
-       x="12.7"
-       y="-266.70001"
-       transform="scale(1,-1)" />
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -413,8 +413,8 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;white-space:pre;shape-inside:url(#rect64490);opacity:0.436916;fill:#000401;fill-opacity:0;stroke:none;stroke-width:1.99937;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="48"
          y="120.86649"
-         id="tspan82048"><tspan
+         id="tspan1151926"><tspan
            style="fill:#02fe61;fill-opacity:1"
-           id="tspan82046">Basic Rules:</tspan></tspan></text>
+           id="tspan1151924">Basic Rules:</tspan></tspan></text>
   </g>
 </svg>
