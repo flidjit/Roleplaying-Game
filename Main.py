@@ -3,11 +3,10 @@ from direct.showbase.ShowBaseGlobal import globalClock
 from direct.task.TaskManagerGlobal import taskMgr
 from panda3d.core import OrthographicLens, WindowProperties
 import simplepbr
-from math import pi, sin, cos
-from direct.task import Task
+import tkinter as tk
 
 
-cam_dirs = {
+movement_data = {
     "Shift Index": ["NW", "NE", "SW", "SE"],
     "NE": [-5, -5, -45],
     "NE Move": [0.05, -0.05, 0.05, -0.05],
@@ -22,7 +21,9 @@ cam_dirs = {
 class MapChunk:
     def __init__(self):
         self.name = ''
+        self.terrain_model_list = []
         self.terrain_models = {}
+        self.character_list = []
         self.characters = {}
         self.grid = [[]]
 
@@ -62,7 +63,8 @@ class MyApp(ShowBase):
         self.win.requestProperties(self.props)
 
         self.lens = OrthographicLens()
-        self.lens.setFilmSize(8, 4)
+        self.zoom_multiplier = 5
+        self.set_zoom()
         self.cam.node().setLens(self.lens)
         self.camera_target = [0, 0, 0]
         self.target_offset = [0, 0, 0]
@@ -109,8 +111,8 @@ class MyApp(ShowBase):
         t = [self.camera_target[0]+self.target_offset[0],
              self.camera_target[1]+self.target_offset[1],
              self.camera_target[2]+self.target_offset[2]]
-        d = cam_dirs[cam_dirs["Shift Index"][self.camera_direction_index]]
-        print(cam_dirs["Shift Index"][self.camera_direction_index])
+        d = movement_data[movement_data["Shift Index"][self.camera_direction_index]]
+        print(movement_data["Shift Index"][self.camera_direction_index])
         self.cam.setPosHpr(t[0]+d[0], t[1]+d[1], t[2]+7.5, d[2], -45, 0)
 
     def shift_camera_rotation_index(self, direction='Right'):
@@ -125,9 +127,13 @@ class MyApp(ShowBase):
             else:
                 self.camera_direction_index = 0
 
+    def set_zoom(self):
+        zm = self.zoom_multiplier
+        self.lens.setFilmSize(2*zm, 1*zm)
+
     def update(self, task):
         dt = globalClock.getDt()
-        f = cam_dirs[cam_dirs["Shift Index"][self.camera_direction_index]+" Move"]
+        f = movement_data[movement_data["Shift Index"][self.camera_direction_index] + " Move"]
         if self.camera_direction_index == 0 or self.camera_direction_index == 2:
             if self.keyMap["up"]:
                 self.target_offset[1] += f[0]
