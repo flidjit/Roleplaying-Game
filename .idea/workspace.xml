@@ -32,14 +32,18 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/vulpecula/DriveSync/Roleplay/Roleplaying Game"
+    "last_opened_file_path": "/home/vulpecula/DriveSync/Roleplay/Roleplaying Game/catalog/Decorations"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog/Decorations" />
+      <recent name="$PROJECT_DIR$/catalog/Characters/person" />
+      <recent name="$PROJECT_DIR$/catalog/Characters/monster" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Campaigns/The Philosopher's Stone" />
       <recent name="$PROJECT_DIR$/Scraps" />
     </key>
   </component>
