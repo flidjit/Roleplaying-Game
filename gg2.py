@@ -2,7 +2,8 @@ import tkinter as tk
 from direct.showbase.ShowBase import ShowBase
 from direct.showbase.ShowBaseGlobal import globalClock
 from direct.task.TaskManagerGlobal import taskMgr
-from panda3d.core import WindowProperties, OrthographicLens, NodePath
+from panda3d.core import WindowProperties, OrthographicLens
+
 
 movement_data = {
     "Shift Index": ["NW", "NE", "SW", "SE"],
@@ -50,7 +51,7 @@ class Character(Thing3D):
         self.skills = {}
 
 
-class GameWindow(ShowBase):
+class Tkinter_window(ShowBase):
     def __init__(self):
         ShowBase.__init__(self, windowType='none')
         self.startTk()
@@ -82,7 +83,6 @@ class GameWindow(ShowBase):
 
         self.current_map = MapChunk()
         self.terrain_models = {}
-        self.mod_lib = NodePath('model-library')
         self.instantiate_map()
 
         self.keyMap = {
@@ -94,43 +94,36 @@ class GameWindow(ShowBase):
             "control": False,
             "e": False,
             "q": False }
-        self.accept("arrow_up", self.update_key_map, ["up", True])
-        self.accept("arrow_up-up", self.update_key_map, ["up", False])
-        self.accept("arrow_down", self.update_key_map, ["down", True])
-        self.accept("arrow_down-up", self.update_key_map, ["down", False])
-        self.accept("arrow_left", self.update_key_map, ["left", True])
-        self.accept("arrow_left-up", self.update_key_map, ["left", False])
-        self.accept("arrow_right", self.update_key_map, ["right", True])
-        self.accept("arrow_right-up", self.update_key_map, ["right", False])
-        self.accept("space", self.update_key_map, ["space", True])
-        self.accept("space-up", self.update_key_map, ["space", False])
-        self.accept("control", self.update_key_map, ["control", True])
-        self.accept("control-up", self.update_key_map, ["control", False])
-        self.accept("e", self.update_key_map, ["e", True])
-        self.accept("e-up", self.update_key_map, ["e", False])
-        self.accept("q", self.update_key_map, ["q", True])
-        self.accept("q-up", self.update_key_map, ["q", False])
+        self.accept("arrow_up", self.updateKeyMap, ["up", True])
+        self.accept("arrow_up-up", self.updateKeyMap, ["up", False])
+        self.accept("arrow_down", self.updateKeyMap, ["down", True])
+        self.accept("arrow_down-up", self.updateKeyMap, ["down", False])
+        self.accept("arrow_left", self.updateKeyMap, ["left", True])
+        self.accept("arrow_left-up", self.updateKeyMap, ["left", False])
+        self.accept("arrow_right", self.updateKeyMap, ["right", True])
+        self.accept("arrow_right-up", self.updateKeyMap, ["right", False])
+        self.accept("space", self.updateKeyMap, ["space", True])
+        self.accept("space-up", self.updateKeyMap, ["space", False])
+        self.accept("control", self.updateKeyMap, ["Control", True])
+        self.accept("control-up", self.updateKeyMap, ["Control", False])
+        self.accept("e", self.updateKeyMap, ["e", True])
+        self.accept("e-up", self.updateKeyMap, ["e", False])
+        self.accept("q", self.updateKeyMap, ["q", True])
+        self.accept("q-up", self.updateKeyMap, ["q", False])
         self.updateTask = taskMgr.add(self.update, "update")
 
-    def update_key_map(self, controlName, controlState):
+    def updateKeyMap(self, controlName, controlState):
         self.keyMap[controlName] = controlState
-
-    def configure_keys(self):
-        for i in keylist:
-            self.accept(keylist[i], self.update_key_map, [keylist[i]])
 
     def instantiate_map(self):
         self.character = self.loader.loadModel("Images/models1.gltf")
         self.character.reparentTo(render)
-        for y in range(20):
-            for x in range(20):
+        for x in range(20):
+            for y in range(20):
                 m_name = self.current_map.grid[x][y].model_name
                 if m_name not in self.terrain_models:
                     self.terrain_models[m_name] = self.loader.loadModel(m_name)
-                    self.terrain_models[m_name].reparentTo(self.mod_lib)
-                self.current_map.grid[x][y].this_instance = render.attachNewNode('grid-square')
-                self.current_map.grid[x][y].this_instance.setPos(x, y, 0)
-                self.terrain_models[m_name].instanceTo(self.current_map.grid[x][y].this_instance)
+                    self.terrain_models[m_name].reparentTo(render)
 
     def set_camera_position(self):
         t = [self.camera_target[0]+self.target_offset[0],
@@ -205,5 +198,5 @@ class GameWindow(ShowBase):
         return task.cont
 
 
-tkinter_window = GameWindow()
+tkinter_window = Tkinter_window()
 tkinter_window.run()
