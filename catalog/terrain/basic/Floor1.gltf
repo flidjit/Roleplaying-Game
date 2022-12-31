@@ -23,12 +23,9 @@
             "doubleSided" : true,
             "name" : "Material.001",
             "pbrMetallicRoughness" : {
-                "baseColorFactor" : [
-                    0.26818612217903137,
-                    0.8000000715255737,
-                    0.25172582268714905,
-                    1
-                ],
+                "baseColorTexture" : {
+                    "index" : 0
+                },
                 "metallicFactor" : 0,
                 "roughnessFactor" : 0.5
             }
@@ -48,6 +45,19 @@
                     "material" : 0
                 }
             ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "basic_textures_kit",
+            "uri" : "textures/basic_textures_kit.png"
         }
     ],
     "accessors" : [
@@ -110,6 +120,12 @@
             "byteLength" : 12,
             "byteOffset" : 128,
             "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
         }
     ],
     "buffers" : [

@@ -1,21 +1,29 @@
 import tkinter as tk
+from tkinter import ttk
 import proto as pt
+import uiwin as uw
 from direct.showbase.ShowBase import ShowBase
-from direct.showbase.ShowBaseGlobal import globalClock
 from direct.task.TaskManagerGlobal import taskMgr
-from panda3d.core import WindowProperties, OrthographicLens, NodePath
+from panda3d.core import WindowProperties, OrthographicLens, NodePath, AmbientLight, DirectionalLight, VBase4
+import simplepbr
 
 
 class GameWindow(ShowBase):
     def __init__(self):
         ShowBase.__init__(self, windowType='none')
         self.startTk()
-
         self.root = self.tkRoot
+
+        self.root['bg'] = 'black'
+
         self.image_frame = tk.Frame(self.root, width=800, height=400)
-        self.image_frame.grid()
-        self.text = tk.Text(self.root, height=5, bg='black', fg='white')
-        self.text.grid(sticky='we')
+        self.image_frame.grid(column=0, row=0)
+        self.chat_output = uw.ChatSection(self.root)
+        self.chat_output.grid(column=0, row=1, sticky='we')
+        self.text_input = uw.InputSection(self.root)
+        self.text_input.grid(column=0, row=2, sticky='we')
+        self.tab_frame = uw.TabSection(self.root)
+        self.tab_frame.grid(column=1, row=0, rowspan=3, sticky='ns')
         self.root.update()
 
         props = WindowProperties()
@@ -26,7 +34,7 @@ class GameWindow(ShowBase):
         base.openDefaultWindow(props=props)
 
         self.lens = OrthographicLens()
-        self.zoom_multiplier = 5
+        self.zoom_multiplier = 2
         self.cam.node().setLens(self.lens)
         self.camera_target = [0, 0, 0]
         self.target_offset = [0, 0, 0]
@@ -40,12 +48,18 @@ class GameWindow(ShowBase):
         self.mod_lib = NodePath('model-library')
         self.instantiate_map()
 
+        simplepbr.init()
+        self.ambient_light = AmbientLight('ambient light')
+        self.ambient_light.setColor((0.7, 0.7, 0.7, 1))
+        self.ambient_light_node = render.attachNewNode(self.ambient_light)
+        render.setLight(self.ambient_light_node)
+
         self.keyMap = {}
         self.configure_keys()
         self.updateTask = taskMgr.add(self.update, "update")
 
-    def update_key_map(self, controlName, controlState):
-        self.keyMap[controlName] = controlState
+    def update_key_map(self, control_name, control_state):
+        self.keyMap[control_name] = control_state
 
     def configure_keys(self):
         k = pt.keyboard_list
