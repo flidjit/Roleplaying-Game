@@ -4,7 +4,8 @@ import proto as pt
 import uiwin as uw
 from direct.showbase.ShowBase import ShowBase
 from direct.task.TaskManagerGlobal import taskMgr
-from panda3d.core import WindowProperties, OrthographicLens, NodePath, AmbientLight, DirectionalLight, VBase4
+from panda3d.core import WindowProperties, OrthographicLens, NodePath, AmbientLight
+from pandac.PandaModules import TransparencyAttrib
 import simplepbr
 
 
@@ -13,9 +14,9 @@ class GameWindow(ShowBase):
         ShowBase.__init__(self, windowType='none')
         self.startTk()
         self.root = self.tkRoot
-
         self.root['bg'] = 'black'
-
+        self.gm_mode = True
+        # ____________________________________________________________
         self.image_frame = tk.Frame(self.root, width=800, height=400)
         self.image_frame.grid(column=0, row=0)
         self.chat_output = uw.ChatSection(self.root)
@@ -25,35 +26,35 @@ class GameWindow(ShowBase):
         self.tab_frame = uw.TabSection(self.root)
         self.tab_frame.grid(column=1, row=0, rowspan=3, sticky='ns')
         self.root.update()
-
+        # ____________________________________________________________
         props = WindowProperties()
         props.setParentWindow(self.image_frame.winfo_id())
         props.setOrigin(0, 0)
         props.setSize(800, 400)
         self.win = base.makeDefaultPipe()
         base.openDefaultWindow(props=props)
-
+        # ____________________________________________________________
         self.lens = OrthographicLens()
-        self.zoom_multiplier = 2
         self.cam.node().setLens(self.lens)
+        self.selector_location = [0, 0, 0]
         self.camera_target = [0, 0, 0]
         self.target_offset = [0, 0, 0]
-        self.camera_direction_index = 1
+        self.camera_direction_index = 2
         self.cooldown = {"camera rotation": 0}
         self.set_camera_position()
-        self.set_zoom()
-
-        self.current_map = pt.MapChunk()
-        self.terrain_models = {}
-        self.mod_lib = NodePath('model-library')
+        self.set_zoom(4)
+        # ____________________________________________________________
+        self.current_map = pt.LocationMap()
+        self.model_lib = {}
+        self.node_lib = {'Model Buffer': NodePath('model-buffer')}
         self.instantiate_map()
-
+        # ____________________________________________________________
         simplepbr.init()
         self.ambient_light = AmbientLight('ambient light')
         self.ambient_light.setColor((0.7, 0.7, 0.7, 1))
         self.ambient_light_node = render.attachNewNode(self.ambient_light)
         render.setLight(self.ambient_light_node)
-
+        # ____________________________________________________________
         self.keyMap = {}
         self.configure_keys()
         self.updateTask = taskMgr.add(self.update, "update")
@@ -69,17 +70,20 @@ class GameWindow(ShowBase):
             self.accept(k[i][0]+'-up', self.update_key_map, [k[i][1], False])
 
     def instantiate_map(self):
-        self.character = self.loader.loadModel("Images/models1.gltf")
+        # fix the janky node structure.
+        self.character = self.loader.loadModel("catalog/terrain/basic/pointer.gltf")
+        self.character.setTransparency(TransparencyAttrib.MAlpha)
         self.character.reparentTo(render)
-        for y in range(20):
-            for x in range(20):
-                m_name = self.current_map.grid[x][y].model_name
-                if m_name not in self.terrain_models:
-                    self.terrain_models[m_name] = self.loader.loadModel(m_name)
-                    self.terrain_models[m_name].reparentTo(self.mod_lib)
-                self.current_map.grid[x][y].this_instance = render.attachNewNode('grid-square')
-                self.current_map.grid[x][y].this_instance.setPos(x, y, 0)
-                self.terrain_models[m_name].instanceTo(self.current_map.grid[x][y].this_instance)
+        for c in self.current_map.chunks:
+            for s in self.current_map.chunks[c].tiles:
+                m_name = self.current_map.chunks[c].tiles[s].model_name
+                if m_name not in self.model_lib:
+                    self.model_lib[m_name] = self.loader.loadModel(m_name)
+                    self.model_lib[m_name].reparentTo(self.node_lib['Model Buffer'])
+                self.current_map.chunks[c].tiles[s].instance = render.attachNewNode('grid-square')
+                dl = self.current_map.chunks[c].tiles[s].draw_at
+                self.current_map.chunks[c].tiles[s].instance.setPos(dl[0], dl[1], dl[2])
+                self.model_lib[m_name].instanceTo(self.current_map.chunks[c].tiles[s].instance)
 
     def set_camera_position(self):
         t = [self.camera_target[0]+self.target_offset[0],
@@ -101,9 +105,8 @@ class GameWindow(ShowBase):
             else:
                 self.camera_direction_index = 0
 
-    def set_zoom(self):
-        zm = self.zoom_multiplier
-        self.lens.setFilmSize(2*zm, 1*zm)
+    def set_zoom(self, multiplier=4):
+        self.lens.setFilmSize(2*multiplier, 1*multiplier)
 
     def update(self, task):
         self.root.update()

@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 
+from proto import LocationMap
+
 
 class ChatSection(tk.Frame):
     def __init__(self, master=None):
@@ -50,15 +52,43 @@ class CharacterTab(tk.Frame):
 class MiniMap(tk.Canvas):
     def __init__(self, master=None):
         super().__init__(master=master, bg='black', height=300, width=300)
-        print('a minimap')
+        self.map_squares = {}
+        self.view_offset = [145, 145]
+
+    def add_square(self, x=0, y=0, square_id='0,0', color='green'):
+        vo = self.view_offset
+        self.map_squares[square_id] = self.create_rectangle(
+            x*10+vo[0], -y*10+vo[1], x*10+10+vo[0], -y*10+10+vo[1], fill=color)
 
 
 class MapTab(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master=master, bg='black')
+        self.location_label = tk.Label(self, bg='black', fg='pink')
+        self.location_label.place(x=25, y=5)
         self.minimap = MiniMap(self)
         self.minimap.place(x=25, y=25)
-        print('The character tab')
+        self.xy_label = tk.Label(self, bg='black', fg='pink')
+        self.xy_label.place(x=25, y=327)
+        self.set_location_text()
+        self.initialize_minimap()
+
+    def set_location_text(self, x=0, y=0, location_name='Here'):
+        txt = 'Location: '+location_name
+        self.location_label['text'] = txt
+        txt = '( x:'+str(x)+' , y:'+str(y)+' )'
+        self.xy_label['text'] = txt
+
+    def initialize_minimap(self, loc=LocationMap()):
+        for i in loc.chunks:
+            for j in loc.chunks[i].tiles:
+                tile = loc.chunks[i].tiles[j]
+                x = tile.draw_at[0]
+                y = tile.draw_at[1]
+                t_id = str(x)+','+str(y)
+                c = tile.minimap_color
+                self.minimap.add_square(x, y, t_id, c)
+        self.set_location_text(location_name=loc.name)
 
 
 class VerbTab(tk.Frame):
