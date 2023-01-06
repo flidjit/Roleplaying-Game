@@ -23,12 +23,13 @@ class GameWindow(ShowBase):
     def __init__(self):
         ShowBase.__init__(self, windowType='none')
         # ____________________________________________________________
-        # variable placeholders.
+        # default variables.
         self.gm_mode = True
         self.entity = {}
+        self.control_entity = 'GM'
+        self.control_chunk = 'Chunk 1'
         self.cursor = None
-        self.zoom_level = 8
-        self.current_chunk = 'Chunk1'
+        self.zoom_level = 4
         self.cooldown = {"camera rotation": 0, "cursor movement": 0}
         # ____________________________________________________________
         # tkinter stuff.
@@ -55,12 +56,9 @@ class GameWindow(ShowBase):
         self.lens = OrthographicLens()
         self.cam.node().setLens(self.lens)
         self.move_to_location = [0, 0, 0]
-        self.selector_location = [0, 0, 0]
         self.camera_target = [0, 0, 0]
-        self.target_offset = [0, 0, 0]
+        self.camera_target_offset = [0, 0, 0]
         self.camera_direction_index = 2
-        self.set_camera_position()
-        self.set_zoom(1)
         self.current_map = pt.LocationMap()
         self.model_lib = {}
         self.node_lib = {'Model Buffer': NodePath('model-buffer')}
@@ -72,6 +70,8 @@ class GameWindow(ShowBase):
         render.setLight(self.ambient_light_node)
         self.keyMap = {}
         self.configure_keys()
+        self.set_camera_position()
+        self.set_zoom(1)
         self.updateTask = taskMgr.add(self.update, "update")
         # ____________________________________________________________
         # user system information.
@@ -91,15 +91,29 @@ class GameWindow(ShowBase):
             self.accept(k[i][0], self.update_key_map, [k[i][1], True])
             self.accept(k[i][0]+'-up', self.update_key_map, [k[i][1], False])
 
-    def add_tile(self, x=0, y=0, z=0, chunk='Chunk1'):
+    def add_tile(self, x=1, y=0, z=0, chunk='Chunk 1'):
         # create a new tile at the given location which belongs to the given group.
         id_xy = str(x)+','+str(y)
-        if id_xy not in self.current_map.chunk_locations:
-            self.current_map.chunks[chunk].tiles[id_xy] = GridTile(x, y, z)
-            self.current_map.chunk_locations[id_xy] = chunk
+        # !!Need to load animated models so I can use the GM pointer to reference the tile to change.
+        if id_xy not in self.current_map.tiles_at:
+            self.current_map.chunks[chunk].tiles[id_xy] = pt.GridTile(x, y, z)
+            self.current_map.tiles_at[id_xy] = chunk
             self.add_static_model(self.current_map.chunks[chunk].tiles[id_xy], chunk)
 
-    def add_static_model(self, thing_3d=pt.Thing3D(), render_group='Chunk1'):
+    def gm_add_tile(self):
+        move = pt.movement_data
+        gm = self.entity['GM']
+        x = gm.draw_at[0] + move[gm.facing][1]
+        y = gm.draw_at[1] + move[gm.facing][0]
+        z = gm.draw_at[2]
+        tid = str(x)+','+str(y)
+        if tid not in self.current_map.tiles_at:
+            col = self.current_map.chunks[self.control_chunk].minimap_color
+            self.tab_frame.map_tab.minimap.add_square(x=x, y=y, square_id=tid, color=col)
+            self.add_tile(x=x, y=y, z=z, chunk=self.control_chunk)
+            print('created new tile at: ('+tid+') in chunk: '+self.control_chunk)
+
+    def add_static_model(self, thing_3d=pt.Thing3D(), render_group='Chunk 1'):
         # add the model to the library if it isn't there already, and draw an instance.
         # of it at the proper location.
         if thing_3d.model_name not in self.model_lib:
@@ -111,25 +125,25 @@ class GameWindow(ShowBase):
         thing_3d.instance.setH(render, pt.movement_data[thing_3d.facing][2])
         self.model_lib[thing_3d.model_name].instanceTo(thing_3d.instance)
 
-    def add_entity_model(self, thing_3d=pt.Thing3D()):
-
+    def add_gm_pointer(self):
+        self.entity['GM'] = pt.GmPointer()
+        self.add_static_model(self.entity['GM'], "Chunk 1")
+        self.entity['GM'].instance.setTransparency(TransparencyAttrib.MAlpha)
+        self.entity['GM'].instance.setH(render, pt.movement_data[self.entity['GM'].facing][2])
 
     def instantiate_map(self):
         # Draw the current map for the first time.
         if self.gm_mode:
-            self.cursor = pt.Thing3D(model_name='catalog/terrain/basic/pointer.gltf')
-            self.add_static_model(self.cursor, "Chunk1")
-            self.cursor.instance.setTransparency(TransparencyAttrib.MAlpha)
-            self.cursor.instance.setH(render, pt.movement_data[self.cursor.facing][2])
+            self.add_gm_pointer()
         for c in self.current_map.chunks:
             for s in self.current_map.chunks[c].tiles:
                 group = self.current_map.chunks[c].chunk_id
                 self.add_static_model(self.current_map.chunks[c].tiles[s], group)
 
     def set_camera_position(self):
-        t = [self.camera_target[0]+self.target_offset[0],
-             self.camera_target[1]+self.target_offset[1],
-             self.camera_target[2]+self.target_offset[2]]
+        t = [self.camera_target[0] + self.camera_target_offset[0],
+             self.camera_target[1] + self.camera_target_offset[1],
+             self.camera_target[2] + self.camera_target_offset[2]]
         d = pt.movement_data[pt.movement_data["Shift Index"][self.camera_direction_index]]
         self.cam.setPosHpr(t[0]+d[0], t[1]+d[1], t[2]+7.5, d[2], -45, 0)
 
@@ -152,65 +166,91 @@ class GameWindow(ShowBase):
         z = self.zoom_level
         self.lens.setFilmSize(2*z, 1*z)
 
+    def face_this_towards(self, facing='North'):
+        # I'm going to have to give this the same treatment as the camera
+        # rotation IE: indexing based on camera direction.
+        self.entity[self.control_entity].facing = facing
+        instance = self.entity[self.control_entity].instance
+        if instance:
+            instance.setH(render, pt.movement_data[facing][2])
+            self.cooldown["cursor movement"] = 10
+
+    def move_this_towards(self, moving='North'):
+        ta = self.current_map.tiles_at
+        e = self.entity[self.control_entity]
+        move = pt.movement_data
+        x = e.draw_at[0] + move[moving][1]
+        y = e.draw_at[1] + move[moving][0]
+        z = e.draw_at[2]
+        tid = str(x)+','+str(y)
+        instance = self.entity[self.control_entity].instance
+        if tid in ta:
+            if instance:
+                self.camera_target = [x, y, z]
+                self.camera_target_offset = [0, 0, 0]
+                self.set_camera_position()
+                instance.setPos(x, y, z)
+                e.draw_at = [x, y, z]
+
+
     def update(self, task):
         self.root.update()
         f = pt.movement_data[pt.movement_data["Shift Index"][self.camera_direction_index] + " Move"]
         if self.camera_direction_index == 0 or self.camera_direction_index == 2:
+            # figure out a different way to do this.
             if self.keyMap["up"]:
-                self.target_offset[1] += f[0]
+                self.camera_target_offset[1] += f[0]
                 self.set_camera_position()
             if self.keyMap["down"]:
-                self.target_offset[1] += f[1]
+                self.camera_target_offset[1] += f[1]
                 self.set_camera_position()
             if self.keyMap["left"]:
-                self.target_offset[0] += f[2]
+                self.camera_target_offset[0] += f[2]
                 self.set_camera_position()
             if self.keyMap["right"]:
-                self.target_offset[0] += f[3]
+                self.camera_target_offset[0] += f[3]
                 self.set_camera_position()
         else:
             if self.keyMap["up"]:
-                self.target_offset[0] += f[0]
+                self.camera_target_offset[0] += f[0]
                 self.set_camera_position()
             if self.keyMap["down"]:
-                self.target_offset[0] += f[1]
+                self.camera_target_offset[0] += f[1]
                 self.set_camera_position()
             if self.keyMap["left"]:
-                self.target_offset[1] += f[2]
+                self.camera_target_offset[1] += f[2]
                 self.set_camera_position()
             if self.keyMap["right"]:
-                self.target_offset[1] += f[3]
+                self.camera_target_offset[1] += f[3]
                 self.set_camera_position()
         if self.keyMap["space"]:
-            self.target_offset[0] = 0
-            self.target_offset[1] = 0
+            self.camera_target_offset[0] = 0
+            self.camera_target_offset[1] = 0
             self.set_camera_position()
-        if self.keyMap["e"]:
-            if self.cooldown["camera rotation"] == 0:
+        if self.cooldown["camera rotation"] == 0:
+            if self.keyMap["e"]:
                 self.shift_camera_rotation_index('Right')
                 self.set_camera_position()
                 self.cooldown["camera rotation"] = 100
-        if self.keyMap["q"]:
-            if self.cooldown["camera rotation"] == 0:
+            if self.keyMap["q"]:
                 self.shift_camera_rotation_index('Left')
                 self.set_camera_position()
                 self.cooldown["camera rotation"] = 100
-        if self.keyMap['w']:
-            if self.cooldown["cursor movement"] == 0:
-                self.cursor.instance.setH(render, pt.movement_data["North"][2])
-                self.cooldown["cursor movement"] = 10
-        if self.keyMap['s']:
-            if self.cooldown["cursor movement"] == 0:
-                self.cursor.instance.setH(render, pt.movement_data["South"][2])
-                self.cooldown["cursor movement"] = 10
-        if self.keyMap['d']:
-            if self.cooldown["cursor movement"] == 0:
-                self.cursor.instance.setH(render, pt.movement_data["East"][2])
-                self.cooldown["cursor movement"] = 10
-        if self.keyMap['a']:
-            if self.cooldown["cursor movement"] == 0:
-                self.cursor.instance.setH(render, pt.movement_data["West"][2])
-                self.cooldown["cursor movement"] = 10
+        if self.cooldown["cursor movement"] == 0:
+            if self.keyMap['w']:
+                self.face_this_towards('North')
+                self.move_this_towards('North')
+            if self.keyMap['s']:
+                self.face_this_towards('South')
+                self.move_this_towards('South')
+            if self.keyMap['d']:
+                self.face_this_towards('East')
+                self.move_this_towards('East')
+            if self.keyMap['a']:
+                self.face_this_towards('West')
+                self.move_this_towards('West')
+        if self.keyMap['n']:
+            self.gm_add_tile()
         for i in self.cooldown:
             if self.cooldown[i] >= 1:
                 self.cooldown[i] -= 1

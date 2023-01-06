@@ -54,7 +54,7 @@ class MiniMap(tk.Canvas):
         self.map_squares = {}
         self.view_offset = [145, 145]
 
-    def add_square(self, x=0, y=0, square_id='0,0', color=('green', 'red')):
+    def add_square(self, x=0, y=0, square_id='0,0', color=('green', 'blue')):
         vo = self.view_offset
         self.map_squares[square_id] = self.create_rectangle(
             x*10+vo[0], -y*10+vo[1], x*10+10+vo[0], -y*10+10+vo[1], fill=color[0], outline=color[1])
@@ -69,13 +69,13 @@ class MapTab(tk.Frame):
         self.minimap.place(x=25, y=25)
         self.xy_label = tk.Label(self, bg='black', fg='pink')
         self.xy_label.place(x=25, y=327)
-        self.set_location_text()
         self.initialize_minimap()
+        self.set_location_text()
 
-    def set_location_text(self, x=0, y=0, location_name='Here', chunk_name=''):
+    def set_location_text(self, x=0, y=0, location_name='Here', current_chunk_name='Chunk 1'):
         txt = 'Location: '+location_name
         self.location_label['text'] = txt
-        txt = '( x:'+str(x)+' , y:'+str(y)+' )   Chunk id : '+chunk_name
+        txt = '( x:'+str(x)+' , y:'+str(y)+' )   Chunk id : '+current_chunk_name
         self.xy_label['text'] = txt
 
     def initialize_minimap(self, loc=LocationMap()):
@@ -87,10 +87,7 @@ class MapTab(tk.Frame):
                 t_id = str(x)+','+str(y)
                 c = loc.chunks[i].minimap_color
                 self.minimap.add_square(x, y, t_id, c)
-        self.set_location_text(location_name=loc.name, chunk_name=self.get_chunk_name())
 
-    def get_chunk_name(self, loc=LocationMap(), cursor_location='0,0'):
-        return loc.chunk_locations[cursor_location]
 
 class EquipmentTab(tk.Frame):
     def __init__(self, master=None):
