@@ -5,6 +5,7 @@ keyboard_list = [
     ["arrow_up", "up"], ["arrow_down", "down"],
     ["arrow_left", "left"], ["arrow_right", "right"],
     ["space", "space"],
+    ["page_up", "page up"], ["page_down", "page down"],
     ["e", "e"], ["q", "q"],
     ["a", "a"], ["s", "s"], ["w", "w"], ["d", "d"],
     ["n", "n"]]
@@ -26,6 +27,14 @@ movement_data = {
     "West": [0, -1, 180]}
 
 
+basic_terrain = {
+    'Purple': 'catalog/terrain/basic/purp.gltf',
+    'Stone': 'catalog/terrain/basic/stone.gltf',
+    'Brick': 'catalog/terrain/basic/brick1.gltf',
+    'Floor': 'catalog/terrain/basic/Floor1.gltf',
+    'Pointer': 'catalog/terrain/basic/pointer.gltf'}
+
+
 class Thing3D:
     def __init__(self, x=0, y=0, z=0, thing_name='Thing',
                  model_file_location=None, facing='North', tags=None):
@@ -33,7 +42,7 @@ class Thing3D:
         if model_file_location:
             self.model_name = model_file_location
         else:
-            self.model_name = 'catalog/terrain/basic/Floor1.gltf'
+            self.model_name = 'catalog/terrain/basic/stone.gltf'
         self.facing = facing
         self.draw_at = [x, y, z]
         if tags:
@@ -76,7 +85,10 @@ class MapChunk:
 class LocationMap:
     def __init__(self, name='Menu', terrain_model_list=None, tiles_at=None, chunks=None):
         self.name = name
-        self.terrain_model_list = terrain_model_list
+        if terrain_model_list:
+            self.terrain_model_list = terrain_model_list
+        else:
+            self.terrain_model_list = basic_terrain
         if tiles_at:
             self.tiles_at = tiles_at
         else:
@@ -109,8 +121,11 @@ class Character(Thing3D):
             self.scores = scores
         else:
             self.scores = {
-                'Strength': 10,
-                'Dexterity': 10}
+                'HP': [30, 30],
+                'EP': [10, 10],
+                'AP': [10, 10],
+                'Defense': 10,
+                'Attack': None}
         if self.skills:
             self.skills = skills
         else:

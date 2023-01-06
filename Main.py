@@ -12,11 +12,26 @@ from pandac.PandaModules import TransparencyAttrib
 import simplepbr
 
 
-# ToDo: * On Windows OS the models are rotated 90 degrees on one axis.
+# ToDo: * BUG: On Windows OS the models are rotated 90 degrees on one axis.
+#       * New Chunk.
+#       * Campaign structure.
+#       * Modes: Single Player, Multiplayer [Player, GM]
+#       * Save maps.
+#       * Load character models.
+#       * Add characters to the map.
+#       * Turn on/off visibility to chunks/characters.
+#       * Triggers for single player, and turning on/off characters and chunks automatically.
+#       * Edit tile.
+#       * tile types: Door, Ramp/Stairs, Floor, Mud/Water, Difficult Terrain
+#       * Delete tile.
+#       * Smooth movement.
+#       * Background parented to the camera.
 #       * Add compass art.
-#       * Cursor functionality.
+#       * Combat System.
+#       * Scroll to zoom.
+#       * World map: user provided image with a measurement tool for travel, and movable markers.
 #       * Try to put groups of tile models into one gltf file.
-#       * Scroll to zoom
+#       * World map generator.
 
 
 class GameWindow(ShowBase):
@@ -29,21 +44,23 @@ class GameWindow(ShowBase):
         self.control_entity = 'GM'
         self.control_chunk = 'Chunk 1'
         self.cursor = None
-        self.zoom_level = 4
+        self.zoom_level = 6.7
         self.cooldown = {"camera rotation": 0, "cursor movement": 0}
         # ____________________________________________________________
         # tkinter stuff.
         self.startTk()
         self.root = self.tkRoot
         self.root['bg'] = 'black'
+        self.root.geometry("1200x620")
+        self.root.resizable(False, False)
         self.image_frame = tk.Frame(self.root, width=800, height=400)
-        self.image_frame.grid(column=0, row=0)
+        self.image_frame.place(x=20, y=20)
         self.chat_output = uw.ChatSection(self.root)
-        self.chat_output.grid(column=0, row=1, sticky='we')
+        self.chat_output.place(x=20, y=420)
         self.text_input = uw.InputSection(self.root)
-        self.text_input.grid(column=0, row=2, sticky='we')
+        self.text_input.place(x=20, y=560)
         self.tab_frame = uw.TabSection(self.root)
-        self.tab_frame.grid(column=1, row=0, rowspan=3, sticky='ns')
+        self.tab_frame.place(x=820, y=20)
         self.root.update()
         # ____________________________________________________________
         # panda3D stuff.
@@ -116,23 +133,18 @@ class GameWindow(ShowBase):
     def add_static_model(self, thing_3d=pt.Thing3D(), render_group='Chunk 1'):
         # add the model to the library if it isn't there already, and draw an instance.
         # of it at the proper location.
-        if thing_3d.model_name not in self.model_lib:
-            self.model_lib[thing_3d.model_name] = self.loader.loadModel(thing_3d.model_name)
-            self.model_lib[thing_3d.model_name].reparentTo(self.node_lib['Model Buffer'])
         thing_3d.instance = render.attachNewNode(render_group)
         loc = thing_3d.draw_at
         thing_3d.instance.setPos(loc[0], loc[1], loc[2])
         thing_3d.instance.setH(render, pt.movement_data[thing_3d.facing][2])
         self.model_lib[thing_3d.model_name].instanceTo(thing_3d.instance)
 
-    def add_gm_pointer(self):
-        self.entity['GM'] = pt.GmPointer()
-        self.add_static_model(self.entity['GM'], "Chunk 1")
-        self.entity['GM'].instance.setTransparency(TransparencyAttrib.MAlpha)
-        self.entity['GM'].instance.setH(render, pt.movement_data[self.entity['GM'].facing][2])
-
     def instantiate_map(self):
         # Draw the current map for the first time.
+        for i in self.current_map.terrain_model_list:
+            m = self.current_map.terrain_model_list[i]
+            self.model_lib[m] = self.loader.loadModel(m)
+            self.model_lib[m].reparentTo(self.node_lib['Model Buffer'])
         if self.gm_mode:
             self.add_gm_pointer()
         for c in self.current_map.chunks:
@@ -140,12 +152,18 @@ class GameWindow(ShowBase):
                 group = self.current_map.chunks[c].chunk_id
                 self.add_static_model(self.current_map.chunks[c].tiles[s], group)
 
+    def add_gm_pointer(self):
+        self.entity['GM'] = pt.GmPointer()
+        self.add_static_model(self.entity['GM'], "Chunk 1")
+        self.entity['GM'].instance.setTransparency(TransparencyAttrib.MAlpha)
+        self.entity['GM'].instance.setH(render, pt.movement_data[self.entity['GM'].facing][2])
+
     def set_camera_position(self):
         t = [self.camera_target[0] + self.camera_target_offset[0],
              self.camera_target[1] + self.camera_target_offset[1],
              self.camera_target[2] + self.camera_target_offset[2]]
         d = pt.movement_data[pt.movement_data["Shift Index"][self.camera_direction_index]]
-        self.cam.setPosHpr(t[0]+d[0], t[1]+d[1], t[2]+7.5, d[2], -45, 0)
+        self.cam.setPosHpr(t[0]+d[0], t[1]+d[1], t[2]+5.5, d[2], -35, 0)
 
     def shift_camera_rotation_index(self, direction='Right'):
         # Shift through the camera rotation indexes.
@@ -160,7 +178,7 @@ class GameWindow(ShowBase):
             else:
                 self.camera_direction_index = 0
 
-    def set_zoom(self, change=1):
+    def set_zoom(self, change=1.0):
         # Change how close the camera is.
         self.zoom_level += change
         z = self.zoom_level
@@ -251,6 +269,12 @@ class GameWindow(ShowBase):
                 self.move_this_towards('West')
         if self.keyMap['n']:
             self.gm_add_tile()
+        if self.keyMap['page up']:
+            if self.zoom_level < 10:
+                self.set_zoom(.2)
+        if self.keyMap['page down']:
+            if self.zoom_level > 3 :
+                self.set_zoom(-.2)
         for i in self.cooldown:
             if self.cooldown[i] >= 1:
                 self.cooldown[i] -= 1

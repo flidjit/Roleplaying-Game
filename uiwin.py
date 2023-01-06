@@ -3,17 +3,20 @@ from tkinter import ttk
 from proto import LocationMap, helpfile
 
 
+# ToDo: * Add Entity markers on the minimap.
+#       * Switch between viewing local and regional on the minimap.
+
+
 class ChatSection(tk.Frame):
     def __init__(self, master=None):
-        super().__init__(master=master, bg='black')
-        self.chat = tk.Text(self, bg='black', fg='white', height=8, width=90, wrap='word')
+        super().__init__(master=master, bg='blue', highlightthickness=0)
+        self.chat = tk.Canvas(self, bg='black', height=140, width=780,
+                              highlightthickness=0, borderwidth=0)
         self.scroll_bar = tk.Scrollbar(self)
         self.chat.config(yscrollcommand=self.scroll_bar.set)
         self.scroll_bar.config(command=self.chat.yview)
         self.chat.grid(column=0, row=0)
         self.scroll_bar.grid(column=1, row=0, sticky='ns')
-        self.say_in_chat()
-        self.say_in_chat()
 
     def say_in_chat(self, user_name='Bob', says='hello!'):
         self.chat.insert('end', ' '+user_name+' says : '+says+'\n')
@@ -21,7 +24,7 @@ class ChatSection(tk.Frame):
 
 class InputSection(tk.Entry):
     def __init__(self, master=None):
-        super().__init__(master=master, bg='black', fg='green')
+        super().__init__(master=master, bg='black', fg='green', width=97)
         print('input your text here.')
 
 
@@ -31,18 +34,24 @@ class TabSection(ttk.Notebook):
         self.map_tab = MapTab(self)
         self.map_tab.grid()
         self.add(self.map_tab, text='Map')
-        self.character_tab = CharacterTab(self)
-        self.character_tab.grid()
-        self.add(self.character_tab, text='Stats')
-        self.equipment_tab = EquipmentTab(self)
-        self.equipment_tab.grid()
-        self.add(self.equipment_tab, text='Gear')
-        self.help_tab = HelpTab(self)
-        self.help_tab.grid()
-        self.add(self.help_tab, text='Help')
+        self.sheet_tab = SheetTab(self)
+        self.sheet_tab.grid()
+        self.add(self.sheet_tab, text='Sheet')
+        self.prop_tab = PropTab(self)
+        self.prop_tab.grid()
+        self.add(self.prop_tab, text='Props')
+        self.party_tab = PartyTab(self)
+        self.party_tab.grid()
+        self.add(self.party_tab, text='Party')
+        self.action_tab = ActionTab(self)
+        self.action_tab.grid()
+        self.add(self.action_tab, text='Action')
+        self.world_tab = WorldTab(self)
+        self.world_tab.grid()
+        self.add(self.world_tab, text='World')
 
 
-class CharacterTab(tk.Frame):
+class SheetTab(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master=master, bg='black')
         print('The character tab')
@@ -89,16 +98,25 @@ class MapTab(tk.Frame):
                 self.minimap.add_square(x, y, t_id, c)
 
 
-class EquipmentTab(tk.Frame):
+class PropTab(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master=master, bg='black')
-        print('The character tab')
+        print('The prop tab')
 
 
-class HelpTab(tk.Text):
+class PartyTab(tk.Frame):
     def __init__(self, master=None):
-        super().__init__(master=master, bg='black', fg='white')
-        for i in helpfile:
-            self.insert('end', i)
-        print('The character tab')
+        super().__init__(master=master, bg='black')
+        print('The party tab')
 
+
+class ActionTab(tk.Frame):
+    def __init__(self, master=None):
+        super().__init__(master=master, bg='black')
+        print('The acton tab')
+
+
+class WorldTab(tk.Frame):
+    def __init__(self, master=None):
+        super().__init__(master=master, bg='black')
+        print('The campaign tab')
