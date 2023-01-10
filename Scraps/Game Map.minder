@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<minder version="1.13.1">
+  <theme name="solarized_dark" label="Solarized Dark" index="2"/>
+  <styles>
+    <style level="0" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="10" nodepadding="10" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="1" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="2" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="3" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="4" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="5" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="6" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="7" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="8" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="9" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="10" isset="true" branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+  </styles>
+  <drawarea x="594.52083333333348" y="217.18229166666907" scale="1.5"/>
+  <images/>
+  <nodes>
+    <node id="0" posx="179.37500000000003" posy="186.4609374999977" width="78" height="46" side="right" fold="false" treesize="192.00000000000003" layout="To right" group="false">
+      <style branchmargin="20" branchradius="25" linktype="squared" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="true" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+      <nodename posx="193.37500000000003" posy="200.4609374999977" maxwidth="200">
+        <text data="Intro"/>
+      </nodename>
+      <nodenote>When the game starts up for the first time, the player is first told how to move around the map. They then have to walk around to figure out what to do next. You start off on a small map with a few rooms, which allow you to select your mode, and such.</nodenote>
+      <nodes>
+        <node id="11" posx="277.375" posy="161.4609374999977" width="93" height="48" side="right" fold="false" treesize="144" color="#6c71c4" colorroot="true" layout="To right" group="false">
+          <style branchmargin="20" branchradius="25" linktype="squared" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="true" nodemargin="7" nodepadding="8" nodefont="Monospace 11" nodemarkup="true"/>
+          <nodename posx="292.375" posy="176.4609374999977" maxwidth="200">
+            <text data="RP Mode"/>
+          </nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="12" posx="390.375" posy="113.4609374999977" width="84" height="48" side="right" fold="false" treesize="48" color="#859900" colorroot="true" layout="To right" group="false">
+              <style branchmargin="20" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="true" nodemargin="7" nodepadding="8" nodefont="Monospace 11" nodemarkup="true"/>
+              <nodename posx="405.375" posy="128.4609374999977" maxwidth="200">
+                <text data="Player"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="17" posx="494.375" posy="113.4609374999977" width="111" height="48" side="right" fold="false" treesize="48" color="#859900" colorroot="false" layout="To right" group="false">
+                  <style branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="true" nodemargin="7" nodepadding="8" nodefont="Monospace 11" nodemarkup="true"/>
+                  <nodename posx="509.375" posy="128.4609374999977" maxwidth="200">
+                    <text data="Join Game"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="13" posx="390.375" posy="185.4609374999977" width="48" height="48" side="right" fold="false" treesize="96" color="#2aa198" colorroot="true" layout="To right" group="false">
+              <style branchmargin="20" branchradius="25" linktype="squared" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="true" nodemargin="7" nodepadding="8" nodefont="Monospace 11" nodemarkup="true"/>
+              <nodename posx="405.375" posy="200.4609374999977" maxwidth="200">
+                <text data="GM"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="15" posx="458.375" posy="161.4609374999977" width="147" height="48" side="right" fold="false" treesize="48" color="#2aa198" colorroot="false" layout="To right" group="false">
+                  <style branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="true" nodemargin="7" nodepadding="8" nodefont="Monospace 11" nodemarkup="true"/>
+                  <nodename posx="473.375" posy="176.4609374999977" maxwidth="200">
+                    <text data="Edit Campaign"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="16" posx="458.375" posy="209.4609374999977" width="102" height="48" side="right" fold="false" treesize="48" color="#2aa198" colorroot="false" layout="To right" group="false">
+                  <style branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="true" nodemargin="7" nodepadding="8" nodefont="Monospace 11" nodemarkup="true"/>
+                  <nodename posx="473.375" posy="224.4609374999977" maxwidth="200">
+                    <text data="Run Game"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node id="14" posx="277.375" posy="257.46093749999773" width="147" height="48" side="right" fold="false" treesize="48" color="#cb4b16" colorroot="false" layout="To right" group="false">
+          <style branchmargin="20" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="2" nodefill="true" nodemargin="7" nodepadding="8" nodefont="Monospace 11" nodemarkup="true"/>
+          <nodename posx="292.375" posy="272.46093749999773" maxwidth="200">
+            <text data="Single Player"/>
+          </nodename>
+          <nodenote></nodenote>
+        </node>
+      </nodes>
+    </node>
+    <node id="20" posx="172.875" posy="398.86458333333121" width="65" height="46" side="left" fold="false" treesize="46" layout="To right" group="false">
+      <style branchmargin="20" branchradius="25" linktype="squared" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+      <nodename posx="186.875" posy="412.86458333333121" maxwidth="200">
+        <text data="Code"/>
+      </nodename>
+      <nodenote></nodenote>
+      <nodes>
+        <node id="21" posx="257.875" posy="398.86458333333121" width="55" height="46" side="right" fold="false" treesize="46" color="#b58900" colorroot="false" layout="To right" group="false">
+          <style branchmargin="100" branchradius="25" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+          <nodename posx="271.875" posy="412.86458333333121" maxwidth="200">
+            <text data="ddd"/>
+          </nodename>
+          <nodenote></nodenote>
+        </node>
+      </nodes>
+    </node>
+  </nodes>
+  <groups/>
+  <stickers/>
+</minder>

@@ -1,54 +1,63 @@
 import tkinter as tk
 from tkinter import ttk
-from proto import LocationMap, helpfile
+from proto import LocationMap, help_file
 
 
 # ToDo: * Add Entity markers on the minimap.
 #       * Switch between viewing local and regional on the minimap.
 
 
-class ChatSection(tk.Frame):
+class ChatSection(tk.Text):
     def __init__(self, master=None):
-        super().__init__(master=master, bg='blue', highlightthickness=0)
-        self.chat = tk.Canvas(self, bg='black', height=140, width=780,
-                              highlightthickness=0, borderwidth=0)
+        super().__init__(master=master, bg='black', fg='#25a9f0',
+                         highlightthickness=0, borderwidth=0)
         self.scroll_bar = tk.Scrollbar(self)
-        self.chat.config(yscrollcommand=self.scroll_bar.set)
-        self.scroll_bar.config(command=self.chat.yview)
-        self.chat.grid(column=0, row=0)
-        self.scroll_bar.grid(column=1, row=0, sticky='ns')
+        self.config(yscrollcommand=self.scroll_bar.set)
+        self.scroll_bar.config(command=self.yview)
+        self.scroll_bar.place(x=790, y=0, width=8, height=130)
+        self.say_in_chat()
 
     def say_in_chat(self, user_name='Bob', says='hello!'):
-        self.chat.insert('end', ' '+user_name+' says : '+says+'\n')
+        self.insert('end', ' '+user_name+' says : '+says+'\n')
 
 
 class InputSection(tk.Entry):
     def __init__(self, master=None):
-        super().__init__(master=master, bg='black', fg='green', width=97)
+        super().__init__(master=master, bg='black', fg='green', highlightthickness=0)
         print('input your text here.')
 
 
 class TabSection(ttk.Notebook):
     def __init__(self, master=None):
-        super().__init__(master=master, width=350, height=550)
+        super().__init__(master=master, width=350, height=546)
+        self.map_tab_icon = tk.PhotoImage(file='Images/maptabicon.png')
         self.map_tab = MapTab(self)
         self.map_tab.grid()
-        self.add(self.map_tab, text='Map')
+        self.add(self.map_tab, image=self.map_tab_icon)
+        self.sheet_tab_icon = tk.PhotoImage(file='Images/stattabicon.png')
         self.sheet_tab = SheetTab(self)
         self.sheet_tab.grid()
-        self.add(self.sheet_tab, text='Sheet')
+        self.add(self.sheet_tab, image=self.sheet_tab_icon)
+        self.prop_tab_icon = tk.PhotoImage(file='Images/proptabicon.png')
         self.prop_tab = PropTab(self)
         self.prop_tab.grid()
-        self.add(self.prop_tab, text='Props')
+        self.add(self.prop_tab, image=self.prop_tab_icon)
+        self.party_tab_icon = tk.PhotoImage(file='Images/grouptabicon.png')
         self.party_tab = PartyTab(self)
         self.party_tab.grid()
-        self.add(self.party_tab, text='Party')
+        self.add(self.party_tab, image=self.party_tab_icon)
+        self.action_tab_icon = tk.PhotoImage(file='Images/actiontabicon.png')
         self.action_tab = ActionTab(self)
         self.action_tab.grid()
-        self.add(self.action_tab, text='Action')
+        self.add(self.action_tab, image=self.action_tab_icon)
+        self.world_tab_icon = tk.PhotoImage(file='Images/worldtabicon.png')
         self.world_tab = WorldTab(self)
         self.world_tab.grid()
-        self.add(self.world_tab, text='World')
+        self.add(self.world_tab, image=self.world_tab_icon)
+        self.help_tab_icon = tk.PhotoImage(file='Images/helptabicon.png')
+        self.help_tab = HelpTab(self)
+        self.help_tab.grid()
+        self.add(self.help_tab, image=self.help_tab_icon)
 
 
 class SheetTab(tk.Frame):
@@ -59,24 +68,26 @@ class SheetTab(tk.Frame):
 
 class MiniMap(tk.Canvas):
     def __init__(self, master=None):
-        super().__init__(master=master, bg='black', height=300, width=300)
+        super().__init__(master=master, bg='#0c090d', height=300, width=300,
+                         highlightthickness=0)
         self.map_squares = {}
         self.view_offset = [145, 145]
 
     def add_square(self, x=0, y=0, square_id='0,0', color=('green', 'blue')):
         vo = self.view_offset
         self.map_squares[square_id] = self.create_rectangle(
-            x*10+vo[0], -y*10+vo[1], x*10+10+vo[0], -y*10+10+vo[1], fill=color[0], outline=color[1])
+            x*10+vo[0], -y*10+vo[1], x*10+10+vo[0], -y*10+10+vo[1],
+            fill=color[0], outline=color[1])
 
 
 class MapTab(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master=master, bg='black')
-        self.location_label = tk.Label(self, bg='black', fg='pink')
+        self.location_label = tk.Label(self, bg='black', fg='#c96c9a')
         self.location_label.place(x=25, y=5)
         self.minimap = MiniMap(self)
         self.minimap.place(x=25, y=25)
-        self.xy_label = tk.Label(self, bg='black', fg='pink')
+        self.xy_label = tk.Label(self, bg='black', fg='#c96c9a')
         self.xy_label.place(x=25, y=327)
         self.initialize_minimap()
         self.set_location_text()
@@ -119,4 +130,10 @@ class ActionTab(tk.Frame):
 class WorldTab(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master=master, bg='black')
-        print('The campaign tab')
+        print('The world tab')
+
+
+class HelpTab(tk.Frame):
+    def __init__(self, master=None):
+        super().__init__(master=master, bg='black')
+        print('The help tab')

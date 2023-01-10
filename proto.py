@@ -8,7 +8,7 @@ keyboard_list = [
     ["page_up", "page up"], ["page_down", "page down"],
     ["e", "e"], ["q", "q"],
     ["a", "a"], ["s", "s"], ["w", "w"], ["d", "d"],
-    ["n", "n"]]
+    ["f", "f"]]
 
 
 movement_data = {
@@ -31,8 +31,15 @@ basic_terrain = {
     'Purple': 'catalog/terrain/basic/purp.gltf',
     'Stone': 'catalog/terrain/basic/stone.gltf',
     'Brick': 'catalog/terrain/basic/brick1.gltf',
-    'Floor': 'catalog/terrain/basic/Floor1.gltf',
+    'Floor': 'catalog/terrain/basic/standardTile.gltf',
     'Pointer': 'catalog/terrain/basic/pointer.gltf'}
+
+
+basic_tile_textures = {
+    'Meat': 'catalog/terrain/basic/textures/meat.png',
+    'Purple': 'catalog/terrain/basic/textures/purp.png',
+    'Stone': 'catalog/terrain/basic/textures/stone1.png',
+    'Brick': 'catalog/terrain/basic/textures/brick.png'}
 
 
 class Thing3D:
@@ -60,9 +67,13 @@ class GridTile(Thing3D):
 
 
 class MapChunk:
-    def __init__(self, chunk_id='Chunk 1', tiles=None, characters=None,
-                 items=None, active=True, minimap_color=None):
+    def __init__(self, chunk_id='Chunk 01', display_name='Starting Area',
+                 description='The place to start your game',
+                 tiles=None, characters=None, items=None,
+                 active=True, minimap_color=None):
         self.chunk_id = chunk_id
+        self.display_name = display_name
+        self.description = description
         if tiles:
             self.tiles = tiles
         else:
@@ -83,12 +94,17 @@ class MapChunk:
 
 
 class LocationMap:
-    def __init__(self, name='Menu', terrain_model_list=None, tiles_at=None, chunks=None):
+    def __init__(self, name='Menu', terrain_model_list=None,
+                 terrain_texture_list=None, tiles_at=None, chunks=None):
         self.name = name
         if terrain_model_list:
             self.terrain_model_list = terrain_model_list
         else:
             self.terrain_model_list = basic_terrain
+        if terrain_texture_list:
+            self.terrain_texture_list = terrain_texture_list
+        else:
+            self.terrain_texture_list = basic_tile_textures
         if tiles_at:
             self.tiles_at = tiles_at
         else:
@@ -107,10 +123,12 @@ class GmPointer(Thing3D):
 
 
 class Character(Thing3D):
-    def __init__(self, player='GM', stats=None, scores=None,
-                 skills=None, campaign_data=None):
-        Thing3D.__init__(self)
-        self.player = player
+    def __init__(self, player_name='GM', character_name='character',
+                 stats=None, scores=None, props=None,
+                 skills=None, traits=None, techniques=None,
+                 campaign_data=None):
+        Thing3D.__init__(self, thing_name=character_name)
+        self.player_name = player_name
         if stats:
             self.stats = stats
         else:
@@ -122,14 +140,28 @@ class Character(Thing3D):
         else:
             self.scores = {
                 'HP': [30, 30],
-                'EP': [10, 10],
-                'AP': [10, 10],
+                'Energy': {'EP': [10, 10]},
+                'AP': [6, 6],
                 'Defense': 10,
-                'Attack': None}
+                'Attack': None,
+                'UPs': 0,
+                'Power Level': 0}
+        if self.techniques:
+            self.techniques = techniques
+        else:
+            self.techniques = {}
         if self.skills:
             self.skills = skills
         else:
             self.skills = {}
+        if self.traits:
+            self.traits = traits
+        else:
+            self.traits = {}
+        if props:
+            self.props = props
+        else:
+            self.props = {}
         if self.campaign_data:
             self.campaign_data = campaign_data
         else:
@@ -149,12 +181,11 @@ class Player:
         self.single_player_PCs = [Character()]
 
 
-helpfile = [
+help_file = [
     'Arrow Keys : Move camera\n',
     'Q and E Keys : Rotate camera\n',
     'Spacebar : Reset camera to cursor\n',
     'ASWD Keys : Move cursor\n',
     'Shift+ASWD Keys : Rotate cursor\n',
     'Ctrl+N : New tile at pointer\n',
-    'Ctrl+X : Delete tile at pointer\n'
-]
+    'Ctrl+X : Delete tile at pointer\n']
