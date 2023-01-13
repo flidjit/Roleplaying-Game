@@ -1,5 +1,49 @@
-from proto import Character
 
+
+class Character:
+    def __init__(self, player_name='GM', character_name='character',
+                 stats=None, scores=None, props=None,
+                 skills=None, traits=None, techniques=None,
+                 campaign_data=None):
+        self.player_name = player_name
+        if stats:
+            self.stats = stats
+        else:
+            self.stats = {
+                'Monsters Slain': 0,
+                'Creation Date': 1}
+        if self.scores:
+            self.scores = scores
+        else:
+            self.scores = {
+                'HP': [30, 30],
+                'Energy': {'EP': [10, 10]},
+                'AP': [6, 6],
+                'Defense': 10,
+                'Attack': None,
+                'UPs': 0,
+                'Power Level': 0}
+        if self.techniques:
+            self.techniques = techniques
+        else:
+            self.techniques = {}
+        if self.skills:
+            self.skills = skills
+        else:
+            self.skills = {}
+        if self.traits:
+            self.traits = traits
+        else:
+            self.traits = {}
+        if props:
+            self.props = props
+        else:
+            self.props = {}
+        if self.campaign_data:
+            self.campaign_data = campaign_data
+        else:
+            self.campaign_data = {
+                'GM': 'Bob'}
 
 class Prop:
     def __init__(self):

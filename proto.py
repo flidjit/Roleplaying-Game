@@ -1,4 +1,22 @@
 
+default_ui_colors = {
+            'Root BG': '#240e28',
+            'TNotebook - BG': "#240e28",
+            'TNotebook.Tab - BG': "#240e28",
+            'TNotebook.Tab - FG': "white",
+            'TNotebook.Tab - Selected BG': "#d8247c",
+            'TNotebook.Tab - Selected FG': "black",
+            'ChatSection - BG': "black",
+            'ChatSection - FG': "#25a9f0",
+            'InputSection - BG': "black",
+            'InputSection - FG': "green",
+            'SheetTab - BG': "black",
+            'SheetTab - Text': "white",
+            'MiniMap - BG': "#0c090d",
+            'MapTab - BG': "black",
+            'MapTab - Text': "white",
+            'PropTab - BG': "black"}
+
 
 keyboard_list = [
     ["control", "control"], ['shift', 'shift'],
@@ -35,21 +53,14 @@ basic_terrain = {
     'Pointer': 'catalog/terrain/basic/pointer.gltf'}
 
 
-basic_tile_textures = {
-    'Meat': 'catalog/terrain/basic/textures/meat.png',
-    'Purple': 'catalog/terrain/basic/textures/purp.png',
-    'Stone': 'catalog/terrain/basic/textures/stone1.png',
-    'Brick': 'catalog/terrain/basic/textures/brick.png'}
-
-
 class Thing3D:
-    def __init__(self, x=0, y=0, z=0, thing_name='Thing',
+    def __init__(self, x=0, y=0, z=0, thing_name='Floor',
                  model_file_location=None, facing='North', tags=None):
         self.name = thing_name
         if model_file_location:
-            self.model_name = model_file_location
+            self.model_file_location = model_file_location
         else:
-            self.model_name = 'catalog/terrain/basic/stone.gltf'
+            self.model_file_location = 'catalog/terrain/basic/stone.gltf'
         self.facing = facing
         self.draw_at = [x, y, z]
         if tags:
@@ -61,7 +72,8 @@ class Thing3D:
 
 class GridTile(Thing3D):
     def __init__(self, x=0, y=0, z=0, floor=False, occupied_by=None):
-        Thing3D.__init__(self, x=x, y=y, z=z)
+        Thing3D.__init__(self, x=x, y=y, z=z,
+                         model_file_location='catalog/terrain/basic/stone.gltf')
         self.floor = floor
         self.occupied_by = occupied_by
 
@@ -101,10 +113,6 @@ class LocationMap:
             self.terrain_model_list = terrain_model_list
         else:
             self.terrain_model_list = basic_terrain
-        if terrain_texture_list:
-            self.terrain_texture_list = terrain_texture_list
-        else:
-            self.terrain_texture_list = basic_tile_textures
         if tiles_at:
             self.tiles_at = tiles_at
         else:
@@ -172,20 +180,19 @@ class Character(Thing3D):
 class Player:
     def __init__(self):
         self.name = 'Player'
-        self.handle = 'Plizzy'
+        self.handle = None
         self.email = 'ThisGuy@righthere.com'
         self.gm_mode = False
-        self.new_player = True
-        self.token = None
-        self.multiplayer_PCs = []
-        self.single_player_PCs = [Character()]
+        self.my_campaigns = []
+        self.my_characters = []
+        self.selected = {
+            'Character to Use:': None,
+            'Chunk to Edit': None,
+            'Tile to Place': None}
+        self.ui_colors = default_ui_colors
+        self.key_config = keyboard_list
+        self.key_map = {}
+        self.control_mode = 'GM Standard'
+        self.cursor = None
 
 
-help_file = [
-    'Arrow Keys : Move camera\n',
-    'Q and E Keys : Rotate camera\n',
-    'Spacebar : Reset camera to cursor\n',
-    'ASWD Keys : Move cursor\n',
-    'Shift+ASWD Keys : Rotate cursor\n',
-    'Ctrl+N : New tile at pointer\n',
-    'Ctrl+X : Delete tile at pointer\n']

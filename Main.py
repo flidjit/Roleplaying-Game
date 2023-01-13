@@ -88,10 +88,6 @@ class GameWindow(ShowBase):
         self.camera_direction_index = 2
         self.current_map = pt.LocationMap()
         self.model_lib = {}
-        self.texture_lib = {}
-        self.tex_stage = TextureStage('Textures')  # !@%
-        self.tex_stage.setMode(TextureStage.MReplace)
-        self.prepare_tile_textures()  # !@%
         self.node_lib = {'Model Buffer': NodePath('model-buffer')}
         self.instantiate_map()
         simplepbr.init()
@@ -109,38 +105,14 @@ class GameWindow(ShowBase):
         print(os.name+' - '+platform.machine())
         print(base.win.gsg.driver_renderer)
         print(platform.system()+' ('+platform.release()+')')
-        self.swap_tile_texture(
-            self.current_map.chunks['Chunk 1'].tiles['0,0'].instance)  # !@%
 
-    def prepare_tile_textures(self):  # !@%
-        t = pt.basic_tile_textures
-        for i in t:
-            self.texture_lib[i] = loader.loadTexture(t[i])
 
-    def swap_tile_texture(self, tile=None, texture_name='Purple'):  # !@%
-        if tile:
-            tile.setTexGen(self.tex_stage, 1)
-            tile.clearTexture(self.tex_stage)
-            tile.setTexture(self.tex_stage, self.texture_lib[texture_name])
-
-    def update_key_map(self, control_name, control_state):
-        # add a key to the key map
-        self.keyMap[control_name] = control_state
-
-    def configure_keys(self):
-        # add all the keys from the key map list
-        k = pt.keyboard_list
-        for i in range(len(k)):
-            self.keyMap[k[i][1]] = False
-            self.accept(k[i][0], self.update_key_map, [k[i][1], True])
-            self.accept(k[i][0]+'-up', self.update_key_map, [k[i][1], False])
-
-    def add_tile(self, x=1, y=0, z=0, chunk='Chunk 1'):  # !@%
+    def add_tile(self, x=1, y=0, z=0, chunk='Chunk 1', model=pt.basic_terrain['Purple']):  # !@%
         # create a new tile at the given location which belongs to the given group.
         id_xy = str(x)+','+str(y)
-        # !!Need to load animated models so I can use the GM pointer to reference the tile to change.
         if id_xy not in self.current_map.tiles_at:
-            self.current_map.chunks[chunk].tiles[id_xy] = pt.GridTile(x, y, z)
+            model = model
+            self.current_map.chunks[chunk].tiles[id_xy] = pt.GridTile(x, y, z, model)
             self.current_map.tiles_at[id_xy] = chunk
             self.add_static_instance(self.current_map.chunks[chunk].tiles[id_xy], chunk)
 
@@ -164,7 +136,7 @@ class GameWindow(ShowBase):
         loc = thing_3d.draw_at
         thing_3d.instance.setPos(loc[0], loc[1], loc[2])
         thing_3d.instance.setH(render, pt.movement_data[thing_3d.facing][2])
-        self.model_lib[thing_3d.model_name].instanceTo(thing_3d.instance)
+        self.model_lib[thing_3d.model_file_location].instanceTo(thing_3d.instance)
 
     def add_gm_pointer(self):
         self.entity['GM'] = pt.GmPointer()
@@ -200,7 +172,6 @@ class GameWindow(ShowBase):
 
     def instantiate_map(self):
         # Draw the current map for the first time.
-        self.prepare_tile_textures()
         for i in self.current_map.terrain_model_list:
             m = self.current_map.terrain_model_list[i]
             self.model_lib[m] = self.loader.loadModel(m)
@@ -238,6 +209,18 @@ class GameWindow(ShowBase):
         self.zoom_level += change
         z = self.zoom_level
         self.lens.setFilmSize(2*z, 1*z)
+
+    def update_key_map(self, control_name, control_state):
+        # add a key to the key map
+        self.keyMap[control_name] = control_state
+
+    def configure_keys(self):
+        # add all the keys from the key map list
+        k = pt.keyboard_list
+        for i in range(len(k)):
+            self.keyMap[k[i][1]] = False
+            self.accept(k[i][0], self.update_key_map, [k[i][1], True])
+            self.accept(k[i][0]+'-up', self.update_key_map, [k[i][1], False])
 
     def update(self, task):
         self.root.update()
