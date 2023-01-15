@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 
-from protorefactor import Player, LocationMap
+from proto import Player, LocationMap
 
 
 # ToDo: * Add Entity markers on the minimap.
@@ -17,16 +17,19 @@ class ViewPort(Frame):
 class ChatSection(Text):
     def __init__(self, master=None):
         super().__init__(master=master, bg='black', fg='#25a9f0',
-                         highlightthickness=0, borderwidth=0)
+                         highlightthickness=0, borderwidth=0,
+                         state=DISABLED)
         self.scroll_bar = Scrollbar(self)
         self.config(yscrollcommand=self.scroll_bar.set)
         self.scroll_bar.config(command=self.yview)
         self.scroll_bar.place(x=790, y=0, width=8, height=130)
-        self.say_in_chat()
         self.place(x=20, y=440, width=800, height=133)
 
-    def say_in_chat(self, user_name='Bob', says='hello!'):
-        self.insert('end', ' '+user_name+' says : '+says+'\n')
+    def say_in_chat(self, user_name='Bob', emote='says', text='hello!'):
+        self["state"] = NORMAL
+        self.insert('end', '    '+user_name+' '+emote+' : '+text+'\n')
+        self.see(END)
+        self["state"] = DISABLED
 
 
 class InputSection(Entry):

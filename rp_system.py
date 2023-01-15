@@ -1,7 +1,7 @@
 
 
 class Character:
-    def __init__(self, player_name='GM', character_name='character',
+    def __init__(self, player_name='gm', character_name='character',
                  stats=None, scores=None, props=None,
                  skills=None, traits=None, techniques=None,
                  campaign_data=None):
@@ -43,7 +43,7 @@ class Character:
             self.campaign_data = campaign_data
         else:
             self.campaign_data = {
-                'GM': 'Bob'}
+                'gm': 'Bob'}
 
 class Prop:
     def __init__(self):

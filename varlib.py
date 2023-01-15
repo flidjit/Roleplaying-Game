@@ -34,17 +34,17 @@ default_keyboard_bindings = [
     ["s", "Move Selected Down"],
     ["w", "Move Selected Up"],
     ["d", "Move Selected Right"],
-    ["f", "Add Empty Floor Tile"],
+    ["f", "Add New Floor Tile"],
     ["`", "Print Map Info"]]
 
 
-default_terrain_tiles = {
-    'Purple': 'catalog/terrain/basic/purp.gltf',
-    'Stone': 'catalog/terrain/basic/stone.gltf',
-    'Brick': 'catalog/terrain/basic/brick1.gltf',
-    'Floor': 'catalog/terrain/basic/standardTile.gltf',
-    'Pointer': 'catalog/terrain/basic/pointer.gltf',
-    'Target': 'catalog/terrain/basic/pointer_target.gltf'}
+default_terrain_tiles = [
+    'basic/purp',
+    'basic/stone',
+    'basic/brick1',
+    'basic/standardTile',
+    'basic/pointer',
+    'basic/pointer_target']
 
 
 directions = {
