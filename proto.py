@@ -1,5 +1,16 @@
-import varlib
-from varlib import default_terrain_tiles, default_ui_colors, default_keyboard_bindings
+from varlib import *
+import platform
+import os
+import uiwin
+import tkinter as tk
+from tkinter import ttk
+from direct.showbase.ShowBase import ShowBase
+from direct.task.TaskManagerGlobal import taskMgr
+from direct.actor.Actor import Actor
+from panda3d.core import WindowProperties, OrthographicLens, NodePath, AmbientLight, TextureStage, Vec3, LPoint3f
+from pandac.PandaModules import TransparencyAttrib, TexGenAttrib
+import simplepbr
+from toolbag import *
 
 
 class Player:
@@ -10,26 +21,24 @@ class Player:
         self.gm_mode = False
         self.my_campaigns = []
         self.my_characters = {}
-        self.ui_colors = varlib.default_ui_colors
-        self.tab_icons = {}
-        self.key_config = varlib.default_keyboard_bindings
+        self.ui_colors = default_ui_colors
+        self.ui_icons = default_ui_icons
+        self.key_config = default_keyboard_bindings
         self.key_map = {}
         self.control_mode = 'gm Standard'
-        self.cursor = None
 
 
 class Thing3D:
     def __init__(self, x=0, y=0, z=0, thing_id='Pointer',
-                 model_filename=None, facing='North', tags=None):
+                 model_id=None, facing='North', tags=None):
         self.thing_id = thing_id
-        if model_filename:
-            self.model_filename = model_filename
+        if model_id:
+            self.model_id = model_id
         else:
-            self.model_filename = 'basic/stone'
+            self.model_id = 'basic/stone'
         self.facing = facing
-        self.draw_at = [x, y, z]
-        self.moving = False
-        self.moving_to = [0, 0, 0]
+        self.map_loc = [x, y, z]
+        self.chunk_family = None
         if tags:
             self.tags = tags
         else:
@@ -39,17 +48,18 @@ class Thing3D:
 
 class GridTile(Thing3D):
     def __init__(self, x=0, y=0, z=0, thing_id='0,0',
-                 floor=False, occupied_by=None):
+                 is_floor=False, occupied_by=None):
         Thing3D.__init__(self, x=x, y=y, z=z, thing_id=thing_id,
-                         model_filename='basic/stone')
-        self.floor = floor
+                         model_id='basic/stone')
+        self.is_floor = is_floor
+        self.floor_height = 0
         self.occupied_by = occupied_by
 
 
 class MapChunk:
     def __init__(self, chunk_id='Chunk 1', display_name='Starting Area',
                  description='The place to start your game',
-                 tiles=None, characters=None, items=None,
+                 tiles=None, mobs=None,
                  active=True, minimap_color=None):
         self.chunk_id = chunk_id
         self.instance = None
@@ -59,14 +69,10 @@ class MapChunk:
             self.tiles = tiles
         else:
             self.tiles = {}
-        if characters:
-            self.characters = characters
+        if mobs:
+            self.mobs = mobs
         else:
-            self.characters = {}
-        if items:
-            self.items = items
-        else:
-            self.items = {}
+            self.mobs = {}
         self.active = active
         if minimap_color:
             self.minimap_color = minimap_color
@@ -75,26 +81,15 @@ class MapChunk:
 
 
 class LocationMap:
-    def __init__(self, name='Menu', terrain_model_list=None,
-                 terrain_texture_list=None, tiles_at=None, chunks=None):
-        self.name = name
-        if terrain_model_list:
-            self.terrain_model_list = terrain_model_list
-        else:
-            self.terrain_model_list = default_terrain_tiles
-        if tiles_at:
-            self.tiles_at = tiles_at
-        else:
-            self.tiles_at = {'0,0': 'Chunk 1'}
+    def __init__(self, map_id='Menu',
+                 terrain_model_list=default_terrain_tiles,
+                 tile_atlas=default_tile_atlas,
+                 chunks=None):
+        self.map_id = map_id
+        self.terrain_model_list = terrain_model_list
+        self.tile_atlas = tile_atlas
         if chunks:
             self.chunks = chunks
         else:
             self.chunks = {'Chunk 1': MapChunk(tiles={'0,0': GridTile(0, 0, 0)})}
-
-
-class Being(Thing3D):
-    def __init__(self, owner_name='gm', character_name='character'):
-        Thing3D.__init__(self)
-        self.owner_name = owner_name
-
 
