@@ -3,9 +3,64 @@ from uiwin import *
 
 
 # ToDo:
+#   * Bug: Camera rotation is weird.
+#   * Bug: DeBug is broken. (Ironic)
 #   * Swaps tile instances
 #   * Minimap Works
 #   * Saves/Loads Maps
+#   * Has at least 2 sets of tiles.
+#   * Has a button to pause/start all game activity.
+#   * Mob has AI during update.
+#   * Has Turn-based system, passes control to players or AI.
+#   * Has an activity mode, where control is paused except a
+#       continue button, and a series of actions take place,
+#       to create cut-scenes, and conversations.
+
+# Control States:
+#   1) the player is in combat but cannot move or take an action
+#       but can look at stats, roll dice, use the chat, etc.
+#   2) the player is in combat and can move with a measurement tool
+#       and take actions as well as the other stuff.
+#   3) the player is not in combat and can move around the map freely.
+#   4) the player is not in combat and can not move without permission.
+#   5) a cut-scene is taking place, and nobody can do anything. In
+#       single-player mode, the player has access to the enter
+#       button to progress events, but in multiplayer, the gm
+#       has a more in-depth control over activities. Also in
+#       multiplayer mode, the players can still click ok,
+#       but progress does not take place until all players or the
+#       gm have done so.
+#   6) gm powers are turned on. the gm cursor replaces the controlled
+#       character, and states can be turned on and off at will.
+
+# The game starts up and...
+#   If this is the first time the player is loading the program,
+# they will see a prompt welcoming them, and asking
+# for their name and email address. Then maybe you get to pick
+# some options like your colors and icons, and gm cursor.
+#   Next you are spawned into a room with a large computer, and we are
+# greeted by a guide. The guide tells you a little-bit about the game
+# and then tells you how to move, at which point he tells you to follow
+# and leaves the room.
+#   The player eventually follows the guide into the next room, which
+# is much smaller, and tells the player how to edit maps. The player
+# is given some time to edit this room, which will be considered
+# something like a 'bed-room' for the player. This is where you
+# will spawn when the game loads up from now on.
+#   You leave the room eventually, and the guide now takes you over
+# to the single-player mode area and tells you how to play.
+#   After this sequence is over the guide goes to the multi-player
+# area and waits for the player to make their way over to there before
+# the tutorial continues.
+#   The player starts out controlling a non-descript model, but
+# once a single player character is created, that is the model
+# that the player will walk around the options house.
+#   Single-player mode is a tactical strategy rpg, where the player
+# controls a hand-full of characters.
+#   Multiplayer mode is a campaign-builder when GM powers are turned on,
+# and anyone can play with making a campaign. A player cannot load up
+# a campaign without a gm to host it, but they can view campaign notes
+# and party character sheets. THE END.
 
 
 class AoaWindow(ShowBase):
@@ -87,19 +142,19 @@ class AoaWindow(ShowBase):
         # -----------------------------------
         if k['Move Selected Left']:
             m_dir = cam_dirs[c_dir]["Left"]
-            t.the_cast[star].walk_me(m_dir)
+            t.the_cast[star].walk_me(m_dir, t.the_stage)
         # -----------------------------------
         if k['Move Selected Right']:
             m_dir = cam_dirs[c_dir]["Right"]
-            t.the_cast[star].walk_me(m_dir)
+            t.the_cast[star].walk_me(m_dir, t.the_stage)
         # -----------------------------------
         if k['Move Selected Up']:
             m_dir = cam_dirs[c_dir]["Down"]
-            t.the_cast[star].walk_me(m_dir)
+            t.the_cast[star].walk_me(m_dir, t.the_stage)
         # -----------------------------------
         if k['Move Selected Down']:
             m_dir = cam_dirs[c_dir]["Up"]
-            t.the_cast[star].walk_me(m_dir)
+            t.the_cast[star].walk_me(m_dir, t.the_stage)
         # -----------------------------------
         if k['Add New Floor Tile']:
             if t.gm_mode:

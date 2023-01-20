@@ -8,33 +8,41 @@ class Mob:
         self.owner_name = ''
         self.character = None
         self.owner_name = owner_name
-        self.moving = False
-        self.move_offset = []
+        self.traveling = False
+        self.traveling_to = [0, 0]
 
     def update(self):
-        if self.moving:
-            if self.move_tick < 10:
-                f = self.core.facing
-                m_o = map_dirs[self.core.facing]["Position"]
-                loc = self.core.map_loc
-                x = loc[0]+t*m_o[f][0]/10
-                y = loc[1]+t*m_o[f][1]/10
-                z = 0
-                self.core.instance.setPos(x, y, z)
-                self.move_tick += 1
-            else:
-                self.moving = False
-                self.move_tick = 1
-                self.core.map_loc = self.get_new_location()
-                self.core.instance.setPos(
-                    self.core.map_loc[0],
-                    self.core.map_loc[1],
-                    self.core.map_loc[2])
+        self.first_task()
+        if self.traveling:
+            ml = self.core.map_loc
+            tt = self.traveling_to
+            if ml[0] < tt[0]:
+                self.core.map_loc[0] = round(self.core.map_loc[0]+.05, 2)
+            elif ml[0] > tt[0]:
+                self.core.map_loc[0] = round(self.core.map_loc[0]-.05, 2)
+            if ml[1] < tt[1]:
+                self.core.map_loc[1] = round(self.core.map_loc[1]+.05, 2)
+            elif ml[1] > tt[1]:
+                self.core.map_loc[1] = round(self.core.map_loc[1]-.05, 2)
+            if ml[0] == tt[0] and ml[1] == tt[1]:
+                self.traveling = False
+                self.core.map_loc[0] = int(self.core.map_loc[0])
+                self.core.map_loc[1] = int(self.core.map_loc[1])
+                self.core.map_loc[2] = int(self.core.map_loc[2])
+            ml = self.core.map_loc
+            self.core.instance.setPos(ml[0], ml[1], ml[2])
+        self.final_task()
 
-    def walk_me(self, direction=None):
+    def walk_me(self, direction=None, the_map=None):
         if direction:
             self.core.facing = direction
-        self.moving = True
+        t_id = self.get_tile_id(self.get_new_location())
+        if t_id in the_map.tile_atlas:
+            if not self.traveling:
+                of = map_dirs[self.core.facing]["position"]
+                self.traveling_to[0] = self.core.map_loc[0] + of[0]
+                self.traveling_to[1] = self.core.map_loc[1] + of[1]
+                self.traveling = True
 
     def get_new_location(self):
         d = map_dirs[self.core.facing]["position"]
@@ -49,6 +57,12 @@ class Mob:
         t_name = str(x) + ',' + str(y)
         return t_name
 
+    def first_task(self):
+        pass
+
+    def final_task(self):
+        pass
+
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 class GmPointer(Mob):
@@ -57,17 +71,33 @@ class GmPointer(Mob):
         self.edit_chunk = MapChunk()
         self.target = Thing3D()
         self.core.model_id = 'GM'
+        self.tile_placer = None
+        self.tile_placer_active = True
 
     def add_new_tile(self, theatre=None):
-        t_loc = self.get_new_location()
-        t_id = self.get_tile_id(t_loc)
-        tiles = self.edit_chunk.tiles
-        x = t_loc[0]
-        y = t_loc[1]
-        z = self.core.map_loc[2]
-        if t_id not in tiles:
-            tiles[t_id] = GridTile(x=x, y=y, z=z, thing_id=t_id)
-        theatre.place_instance(tiles[t_id], self.edit_chunk.chunk_id)
+        if self.tile_placer_active:
+            t_loc = self.get_new_location()
+            t_id = self.get_tile_id(t_loc)
+            tiles = self.edit_chunk.tiles
+            x = t_loc[0]
+            y = t_loc[1]
+            z = self.core.map_loc[2]
+            if t_id not in tiles:
+                tiles[t_id] = GridTile(x=x, y=y, z=z, thing_id=t_id)
+                ta = theatre.the_stage.tile_atlas
+                ta[t_id] = self.edit_chunk.chunk_id
+                print(str(t_id)+' added to atlas')
+                theatre.place_instance(tiles[t_id], ta[t_id])
+
+    def first_task(self):
+        if self.traveling:
+            if self.tile_placer_active:
+                self.tile_placer_active = False
+
+    def final_task(self):
+        if not self.traveling:
+            if not self.tile_placer_active:
+                self.tile_placer_active = True
 
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -106,21 +136,25 @@ class CameraMan:
     def focus(self, on=None):
         if on:
             self.look_at = on
-        self.cam.lookAt(self.look_at.instance)
+        self.cam.lookAt(self.look_at.core.instance)
 
     def follow(self):
         if self.look_at:
-            f_l = self.map_location
+            f_l = [0, 0, 10]
+            f_l[0] = self.map_location[0] + self.look_at.core.map_loc[0]
+            f_l[1] = self.map_location[1] + self.look_at.core.map_loc[1]
             self.cam.setPos(f_l[0], f_l[1], f_l[2])
             self.focus()
 
     def rotate(self, spin='Clockwise'):
-        self.traveling = True
-        self.shift_rotation_index(spin)
-        o_s = cam_dirs[self.facing]["position"]
-        self.traveling_to[0] = self.look_at.map_loc[0] + o_s[0]
-        self.traveling_to[1] = self.look_at.map_loc[1] + o_s[1]
-        self.traveling_to[2] = self.look_at.map_loc[2] + self.view_angle
+        if not self.look_at.traveling:
+            self.traveling = True
+            self.shift_rotation_index(spin)
+            o_s = cam_dirs[self.facing]["position"]
+            la_m = self.look_at.core.map_loc
+            self.traveling_to[0] = la_m[0] + o_s[0]
+            self.traveling_to[1] = la_m[1] + o_s[1]
+            self.traveling_to[2] = la_m[2] + self.view_angle
 
     def shift_rotation_index(self, spin='Clockwise'):
         if spin == 'Clockwise':

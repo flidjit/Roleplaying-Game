@@ -13,7 +13,7 @@ class Theatre:
         self.the_star = 'GM'
         self.gm_mode = True
         self.the_cameraman = CameraMan(
-            cam=cam, look_at=self.the_cast[self.the_star].core)
+            cam=cam, look_at=self.the_cast[self.the_star])
         self.the_lighting = AmbientLight('Base Light')
         self.the_lighting.setColor((0.7, 0.7, 0.7, 1))
         self.lighting = render.attachNewNode(self.the_lighting)

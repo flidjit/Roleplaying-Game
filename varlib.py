@@ -60,10 +60,10 @@ default_tile_atlas = {'0,0': 'Chunk 1'}
 
 map_dirs = {
     "North": {
-        "position": [-1, 0],
+        "position": [+1, 0],
         "rotation": 90},
     "South": {
-        "position": [+1, 0],
+        "position": [-1, 0],
         "rotation": 90},
     "East": {
         "position": [0, +1],
