@@ -80,6 +80,16 @@ class AoaWindow(ShowBase):
         self.text_input = uiwin.InputSection(self.root, col)  # !*!
         self.tab_frame = uiwin.TabSection(self.root, col, ico)  # !*!
         self.root.update()
+        self.base_build()
+        self.debugging = True
+        self.configure_keys()
+        self.theatre = Theatre(self.cam, self.loader)  # !*!
+        self.updateTask = taskMgr.add(self.update, "update")
+        # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        print(self.get_local_info())
+        self.theatre.build_stage()
+
+    def base_build(self):
         props = WindowProperties()
         props.setParentWindow(self.image_frame.winfo_id())
         props.setOrigin(0, 0)
@@ -87,17 +97,6 @@ class AoaWindow(ShowBase):
         self.win = base.makeDefaultPipe()
         base.openDefaultWindow(props=props)
         base.setBackgroundColor(0.007, 0, 0.007, 1)
-        self.debugging = True
-        self.configure_keys()
-        self.theatre = Theatre(self.cam, self.loader)  # !*!
-        simplepbr.init()
-        self.updateTask = taskMgr.add(self.update, "update")
-        # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        print(os.name+' - '+platform.machine())
-        print(base.win.gsg.driver_renderer)
-        print(platform.system()+' ('+platform.release()+')')
-
-        self.theatre.build_stage()
 
     def update_key_map(self, control_name, control_state):
         self.you.key_map[control_name] = control_state
@@ -167,6 +166,14 @@ class AoaWindow(ShowBase):
                     self.chat_output.say_in_chat(
                         user_name='System Core', emote='message', text='\n'+txt)
                     t.timers['Map Info'] = 100
+
+    @staticmethod
+    def get_local_info():
+        text_ = os.name+' - '+platform.machine()+'\n'
+        text_ += base.win.gsg.driver_renderer+'\n'
+        text_ += platform.system()+' ('+platform.release()+')\n'
+        text_ += 'Texture limit: '+str(base.win.getGsg().getMaxTextureStages())+'\n'
+        return text_
 
 
 testing = AoaWindow()

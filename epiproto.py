@@ -4,7 +4,7 @@ from proto import *
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 class Mob:
     def __init__(self, owner_name='gm'):
-        self.core = Thing3D()
+        self.thing_base = Thing3D()
         self.owner_name = ''
         self.character = None
         self.owner_name = owner_name
@@ -14,40 +14,40 @@ class Mob:
     def update(self):
         self.first_task()
         if self.traveling:
-            ml = self.core.map_loc
+            ml = self.thing_base.map_loc
             tt = self.traveling_to
             if ml[0] < tt[0]:
-                self.core.map_loc[0] = round(self.core.map_loc[0]+.05, 2)
+                self.thing_base.map_loc[0] = round(self.thing_base.map_loc[0] + .05, 2)
             elif ml[0] > tt[0]:
-                self.core.map_loc[0] = round(self.core.map_loc[0]-.05, 2)
+                self.thing_base.map_loc[0] = round(self.thing_base.map_loc[0] - .05, 2)
             if ml[1] < tt[1]:
-                self.core.map_loc[1] = round(self.core.map_loc[1]+.05, 2)
+                self.thing_base.map_loc[1] = round(self.thing_base.map_loc[1] + .05, 2)
             elif ml[1] > tt[1]:
-                self.core.map_loc[1] = round(self.core.map_loc[1]-.05, 2)
+                self.thing_base.map_loc[1] = round(self.thing_base.map_loc[1] - .05, 2)
             if ml[0] == tt[0] and ml[1] == tt[1]:
                 self.traveling = False
-                self.core.map_loc[0] = int(self.core.map_loc[0])
-                self.core.map_loc[1] = int(self.core.map_loc[1])
-                self.core.map_loc[2] = int(self.core.map_loc[2])
-            ml = self.core.map_loc
-            self.core.instance.setPos(ml[0], ml[1], ml[2])
+                self.thing_base.map_loc[0] = int(self.thing_base.map_loc[0])
+                self.thing_base.map_loc[1] = int(self.thing_base.map_loc[1])
+                self.thing_base.map_loc[2] = int(self.thing_base.map_loc[2])
+            ml = self.thing_base.map_loc
+            self.thing_base.instance.setPos(ml[0], ml[1], ml[2])
         self.final_task()
 
     def walk_me(self, direction=None, the_map=None):
         if direction:
-            self.core.facing = direction
+            self.thing_base.facing = direction
         t_id = self.get_tile_id(self.get_new_location())
         if t_id in the_map.tile_atlas:
             if not self.traveling:
-                of = map_dirs[self.core.facing]["position"]
-                self.traveling_to[0] = self.core.map_loc[0] + of[0]
-                self.traveling_to[1] = self.core.map_loc[1] + of[1]
+                of = map_dirs[self.thing_base.facing]["position"]
+                self.traveling_to[0] = self.thing_base.map_loc[0] + of[0]
+                self.traveling_to[1] = self.thing_base.map_loc[1] + of[1]
                 self.traveling = True
 
     def get_new_location(self):
-        d = map_dirs[self.core.facing]["position"]
-        x = self.core.map_loc[0]+d[0]
-        y = self.core.map_loc[1]+d[1]
+        d = map_dirs[self.thing_base.facing]["position"]
+        x = self.thing_base.map_loc[0] + d[0]
+        y = self.thing_base.map_loc[1] + d[1]
         return [x, y]
 
     @staticmethod
@@ -70,7 +70,7 @@ class GmPointer(Mob):
         Mob.__init__(self)
         self.edit_chunk = MapChunk()
         self.target = Thing3D()
-        self.core.model_id = 'GM'
+        self.thing_base.model_id = 'GM'
         self.tile_placer = None
         self.tile_placer_active = True
 
@@ -81,7 +81,7 @@ class GmPointer(Mob):
             tiles = self.edit_chunk.tiles
             x = t_loc[0]
             y = t_loc[1]
-            z = self.core.map_loc[2]
+            z = self.thing_base.map_loc[2]
             if t_id not in tiles:
                 tiles[t_id] = GridTile(x=x, y=y, z=z, thing_id=t_id)
                 ta = theatre.the_stage.tile_atlas
@@ -136,13 +136,13 @@ class CameraMan:
     def focus(self, on=None):
         if on:
             self.look_at = on
-        self.cam.lookAt(self.look_at.core.instance)
+        self.cam.lookAt(self.look_at.thing_base.instance)
 
     def follow(self):
         if self.look_at:
             f_l = [0, 0, 10]
-            f_l[0] = self.map_location[0] + self.look_at.core.map_loc[0]
-            f_l[1] = self.map_location[1] + self.look_at.core.map_loc[1]
+            f_l[0] = self.map_location[0] + self.look_at.thing_base.map_loc[0]
+            f_l[1] = self.map_location[1] + self.look_at.thing_base.map_loc[1]
             self.cam.setPos(f_l[0], f_l[1], f_l[2])
             self.focus()
 
@@ -151,7 +151,7 @@ class CameraMan:
             self.traveling = True
             self.shift_rotation_index(spin)
             o_s = cam_dirs[self.facing]["position"]
-            la_m = self.look_at.core.map_loc
+            la_m = self.look_at.thing_base.map_loc
             self.traveling_to[0] = la_m[0] + o_s[0]
             self.traveling_to[1] = la_m[1] + o_s[1]
             self.traveling_to[2] = la_m[2] + self.view_angle

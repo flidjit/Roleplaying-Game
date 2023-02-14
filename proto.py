@@ -35,22 +35,24 @@ class Thing3D:
         if model_id:
             self.model_id = model_id
         else:
-            self.model_id = 'basic/stone'
+            self.model_id = 'basicfloor'
         self.facing = facing
         self.map_loc = [x, y, z]
         self.chunk_family = None
+        self.instance = None
+        self.base_ts = None
+        self.add_ts = None
         if tags:
             self.tags = tags
         else:
             self.tags = []
-        self.instance = None
 
 
 class GridTile(Thing3D):
     def __init__(self, x=0, y=0, z=0, thing_id='0,0',
                  is_floor=False, occupied_by=None):
         Thing3D.__init__(self, x=x, y=y, z=z, thing_id=thing_id,
-                         model_id='basic/stone')
+                         model_id='basicfloor')
         self.is_floor = is_floor
         self.floor_height = 0
         self.occupied_by = occupied_by
@@ -82,14 +84,21 @@ class MapChunk:
 
 class LocationMap:
     def __init__(self, map_id='Menu',
-                 terrain_model_list=default_terrain_tiles,
+                 terrain_model_list=None,
+                 tile_texture_list=None,
                  tile_atlas=default_tile_atlas,
                  chunks=None):
         self.map_id = map_id
-        self.terrain_model_list = terrain_model_list
         self.tile_atlas = tile_atlas
+        if tile_texture_list:
+            self.tile_texture_list = tile_texture_list
+        else:
+            self.tile_texture_list = []
+        if terrain_model_list:
+            self.terrain_model_list = terrain_model_list
+        else:
+            self.terrain_model_list = []
         if chunks:
             self.chunks = chunks
         else:
             self.chunks = {'Chunk 1': MapChunk(tiles={'0,0': GridTile(0, 0, 0)})}
-

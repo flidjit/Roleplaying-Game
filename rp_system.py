@@ -45,6 +45,7 @@ class Character:
             self.campaign_data = {
                 'gm': 'Bob'}
 
+
 class Prop:
     def __init__(self):
         self.name = 'A prop.'

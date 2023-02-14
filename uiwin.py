@@ -124,6 +124,16 @@ class MapTab(tk.Frame):
         self.xy_label.config(bg=colors['MapTab - BG'])
         self.xy_label.config(fg=colors['MapTab - Text'])
         self.xy_label.place(x=25, y=327)
+        self.texid_lbl = tk.Label(self, justify=tk.LEFT, text='Tile Texture:')
+        self.texid_lbl.config(bg='black')
+        self.texid_lbl.config(fg='white')
+        self.texid_lbl.place(x=20, y=350)
+        self.texture_id_box = ttk.Combobox(self)
+        self.texture_id_box['state'] = 'readonly'
+        self.texture_id_box.place(x=120, y=350, width=200, height=20)
+        self.new_texture_button = tk.Button(
+            self, text='Add Texture', bg='black', fg='white')
+        self.new_texture_button.place(x=120, y=380, width=200, height=20)
         self.initialize_minimap()
         self.set_location_text()
 

@@ -50,12 +50,6 @@ default_keyboard_bindings = [
     ["f", "Add New Floor Tile"],
     ["`", "Print Map Info"]]
 
-default_terrain_tiles = [
-    'basic/purp',
-    'basic/stone',
-    'basic/brick1',
-    'basic/standardTile']
-
 default_tile_atlas = {'0,0': 'Chunk 1'}
 
 map_dirs = {
