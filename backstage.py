@@ -32,7 +32,7 @@ class Theatre:
     def build_stage(self):
         self.add_chunk_nodes()
         self.get_tile_types()
-        self.instantiate_tiles()
+        self.instantiate_stage()
         self.add_gm()
 
     def add_chunk_nodes(self):
@@ -65,7 +65,7 @@ class Theatre:
                 filename = "Catalog/Terrain/tiletex/"+i+'.png'
                 self.texture_library[i] = self.loader.loadTexture(filename)
 
-    def instantiate_tiles(self):
+    def instantiate_stage(self):
         chunks = self.the_stage.chunks
         for c in chunks:
             for t in chunks[c].tiles:
