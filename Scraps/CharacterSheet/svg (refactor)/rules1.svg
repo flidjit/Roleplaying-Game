@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.5in"
+   height="11in"
+   viewBox="0 0 215.9 279.4"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="rules1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     units="in"
+     showguides="false"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="316.78384"
+     inkscape:cy="475.88286"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-object-midpoints="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid846" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="217.11328"
+       y="1011.4531"
+       width="61.972655"
+       height="30.937499"
+       id="rect690490" />
+    <rect
+       x="-604.31444"
+       y="809.12107"
+       width="42.074218"
+       height="24.210937"
+       id="rect686632" />
+    <rect
+       x="72.754657"
+       y="316.96337"
+       width="31.181751"
+       height="29.427795"
+       id="rect48150" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter1520"
+       x="-0.018106088"
+       y="-0.13998423"
+       width="1.0497916"
+       height="1.3849553">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1510" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1512" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1514" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1516" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1518" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1640"
+       x="-0.026164691"
+       y="-0.06580315"
+       width="1.0721887"
+       height="1.1839139">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1630" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1632" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1634" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1636" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1638" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter2678"
+       x="-0.095617784"
+       y="-0.10634296"
+       width="1.2639726"
+       height="1.302231">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2668" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2670" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur2672" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset2674" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2676" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter7131"
+       x="-0.02338716"
+       y="-0.25177168"
+       width="1.0643284"
+       height="1.6925197">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood7121" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite7123" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur7125" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset7127" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite7129" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter2678-3"
+       x="-0.095617784"
+       y="-0.10634296"
+       width="1.2639726"
+       height="1.302231">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2668-6" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2670-7" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur2672-5" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset2674-3" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2676-5" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter51262"
+       x="-0.031117052"
+       y="-0.071825925"
+       width="1.1047268"
+       height="1.2417356">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood51252" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite51254" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur51256" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset51258" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite51260" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter53340-7"
+       x="-0.044083153"
+       y="-0.42219998"
+       width="1.1483652"
+       height="2.4209461">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood53330-1" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite53332-7" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur53334-2" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset53336-7" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite53338-2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter1894"
+       x="-0.031117052"
+       y="-0.071825922"
+       width="1.1047268"
+       height="1.2417356">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1884" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1886" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur1888" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1890" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1892" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter1906"
+       x="-0.031117052"
+       y="-0.071825922"
+       width="1.1047268"
+       height="1.2417356">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1896" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1898" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur1900" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1902" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1904" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter307595-3"
+       x="-0.057085898"
+       y="-0.22126176"
+       width="1.1248838"
+       height="1.5255616">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood307585-8" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite307587-8" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur307589-3" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset307591-1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite307593-8" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter307675-9"
+       x="-0.057085898"
+       y="-0.22126176"
+       width="1.1248838"
+       height="1.5255616">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood307665-6" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite307667-4" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur307669-3" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset307671-3" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite307673-3" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter78384-3-8"
+       x="-0.025605605"
+       y="-0.080090031"
+       width="1.0512112"
+       height="1.1601801">
+      <feGaussianBlur
+         stdDeviation="0.5 0.5"
+         result="blur"
+         id="feGaussianBlur78382-6-6" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter377994-0"
+       x="-0.1615429"
+       y="-0.39091974"
+       width="1.3782356"
+       height="2.0487548">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood377984-4" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite377986-8" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur377988-8" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset377990-8" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite377992-9" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter377994-0-8-6"
+       x="-0.16154291"
+       y="-0.39091974"
+       width="1.3782356"
+       height="2.0487547">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood377984-4-7-1" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite377986-8-9-5" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur377988-8-0-9" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset377990-8-3-4" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite377992-9-3-9" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter377994-0-3"
+       x="-0.1615429"
+       y="-0.39091974"
+       width="1.3782356"
+       height="2.0487548">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood377984-4-07" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite377986-8-86" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur377988-8-8" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset377990-8-8" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite377992-9-4" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect848"
+       width="207.69792"
+       height="271.19791"
+       x="3.96875"
+       y="3.96875"
+       sodipodi:insensitive="true" />
+    <rect
+       style="fill:#555555;fill-opacity:1;stroke:none;stroke-width:1.54549;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect104828-8-3"
+       width="207.69792"
+       height="271.19791"
+       x="3.9687507"
+       y="3.96875" />
+    <g
+       id="g651299"
+       transform="translate(0,41.904391)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:129.427;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3-6"
+         transform="translate(-21.339914,55.406747)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan14697"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14689">Hit Points</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14691"> (</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14693">HP</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14695">):</tspan> Characters with 0 HP are unconscious. </tspan><tspan
+           x="42.929974"
+           y="86.235366"
+           id="tspan14699">Characters with -10 HP are dead. 
+</tspan></text>
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.276955;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 13.372354,142.31347 c 0,-2.06068 -1.500542,-1.88733 -3.4344631,-3.43447 -3.434464,-2.74757 -0.1782659,-7.14453 3.4344631,-4.12136 2.980902,-3.24352 6.868927,1.37379 3.434464,4.12136 -1.933921,1.54714 -3.434464,1.37379 -3.434464,3.43447 z"
+         id="path42877-4"
+         sodipodi:nodetypes="cscsc" />
+    </g>
+    <g
+       id="g651299-7"
+       transform="translate(0,110.43265)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:199.457;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3-6-5"
+         transform="translate(-34.223107,67.170336)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan14709"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14701">Action Points</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14703"> (</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14705">AP</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14707">):</tspan> In combat, each character begins each turn with 6 Action Points. </tspan><tspan
+           x="42.929974"
+           y="86.235366"
+           id="tspan14711">Every action will cost a number of AP, which represents how long the action takes to </tspan><tspan
+           x="42.929974"
+           y="91.153594"
+           id="tspan14713">perform. 1 AP is roughly 1 second. A turn is 6 seconds, and 10 turns is a minute.</tspan></text>
+    </g>
+    <g
+       id="g651299-2"
+       transform="translate(0.05688718,93.72314)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:186.589;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3-6-0"
+         transform="translate(-21.339914,55.406747)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan14719"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14715">Instinct</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14717">:</tspan> This score represents your ability to act quickly, and be prepared. In </tspan><tspan
+           x="42.929974"
+           y="86.235366"
+           id="tspan14721">situations where the GM needs to determine who is able to act first, such as combat, </tspan><tspan
+           x="42.929974"
+           y="91.153594"
+           id="tspan14723">all parties involved make a chance roll and add their instinct score. Actions are </tspan><tspan
+           x="42.929974"
+           y="96.071822"
+           id="tspan14725">resolved one at a time from highest to lowest Instinct rolls.</tspan></text>
+      <path
+         id="path42877-4-2"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.04676;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45.246094,855.07812 c -0.853157,2.01982 -0.88086,4.62501 -0.88086,4.625 0,0 -3.432604,-2.38787 -4.269531,-4.10937 -0.680694,1.71667 -0.130859,5.08984 -0.130859,5.08984 0,0 -3.909295,-1.87224 -5.03711,-3.96093 -0.462657,2.38096 1.681641,5.48828 1.681641,5.48828 0,0 -4.21123,-0.19271 -5.236328,-2.99024 -0.625624,3.0204 2.837891,5.23047 2.837891,5.23047 0,0 -2.028124,1.59835 -3.56836,-0.85547 0.314884,3.78862 2.388672,3.52539 2.388672,3.52539 0,0 -0.267397,1.09656 -1.201172,0.33594 0.803436,1.89448 1.851563,1.29297 1.851563,1.29297 7.665589,-12.9222 21.626076,-7.51266 29.5,2.16406 0,0 3.231196,-1.99589 3.574218,-3.72461 -2.186056,1.75669 -4.371093,1.33594 -4.371093,1.33594 0,0 1.942862,-3.22521 2.03125,-4.93359 -1.105546,1.20654 -4.792969,1.95117 -4.792969,1.95117 0,0 2.136887,-3.47138 2.074219,-5.29492 -1.207741,1.47636 -4.71875,2.13086 -4.71875,2.13086 0,0 0.513288,-2.81873 -0.0293,-4.66797 -0.37824,0.82518 -4.291016,2.85156 -4.291016,2.85156 0,0 -1.641676,-4.56303 -1.896484,-4.90625 0,0.33751 -2.464844,4.25391 -2.464844,4.25391 0,0 -2.039149,-3.3415 -3.050781,-4.83204 z m 0.105468,7.5918 c -4.863978,-0.0282 -9.339256,2.32762 -11.451171,8.88281 5.738786,10.7726 22.479991,5.88102 28.55664,0 -3.04528,-4.32782 -10.440015,-8.84415 -17.105469,-8.88281 z m -1.259765,1.42188 c 0.728458,4.18265 2.931677,9.17633 0,12.0039 -2.695877,-2.29005 -2.975195,-9.04744 0,-12.0039 z"
+         transform="matrix(0.26458333,0,0,0.26458333,-0.05688718,-92.630898)" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="42.929974"
+       y="81.317139"
+       id="text95322-5-6-3-6-6"
+       transform="translate(-34.503228,115.73856)"><tspan
+         x="42.929974"
+         y="81.317139"
+         id="tspan14731"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14727">Quirks</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14729">:</tspan> A quirk is a description of your character and what they are capable of. These are </tspan><tspan
+         x="42.929974"
+         y="86.235366"
+         id="tspan14733">simply words and a bonus denoting magnitude. The player requests a quality magnitude be </tspan><tspan
+         x="42.929974"
+         y="91.153594"
+         id="tspan14735">added to the result of a chance roll, before it is made. The player must justify the use of this </tspan><tspan
+         x="42.929974"
+         y="96.071822"
+         id="tspan14737">quirk narratively, and the GM may or may not approve this request. A trinity bonus can be </tspan><tspan
+         x="42.929974"
+         y="100.99005"
+         id="tspan14739">used in place of, or in conjunction with a quirk bonus, also at the GM's approval.
+</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text48148"
+       style="font-size:10.6667px;line-height:1;font-family:FreeMono;-inkscape-font-specification:FreeMono;white-space:pre;shape-inside:url(#rect48150);fill:#b3b3b3;stroke:#c8c8c8;stroke-width:2" />
+    <g
+       id="g629305"
+       transform="translate(0,41.147905)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3"
+         transform="translate(-35.434862,-43.464499)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan14757"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14741">The Trinity</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14743"> (</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14745">Angles</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14747">):</tspan> There are three <tspan
+   style="font-weight:bold"
+   id="tspan14749">angles</tspan> of the trinity, <tspan
+   style="font-weight:bold"
+   id="tspan14751">Mind</tspan>, <tspan
+   style="font-weight:bold"
+   id="tspan14753">Body</tspan>, and <tspan
+   style="font-weight:bold"
+   id="tspan14755">Spirit</tspan>, each </tspan><tspan
+           x="42.929974"
+           y="86.235366"
+           id="tspan14765">of which have 3 sub-stats of thier own: <tspan
+   style="font-weight:bold"
+   id="tspan14759">Bonus</tspan>, <tspan
+   style="font-weight:bold"
+   id="tspan14761">Defense</tspan>, and <tspan
+   style="font-weight:bold"
+   id="tspan14763">Energy</tspan>. Each attack will </tspan><tspan
+           x="42.929974"
+           y="91.153594"
+           id="tspan14773">denote one of the <tspan
+   style="font-weight:bold"
+   id="tspan14767">angles</tspan> as a target for the attack. <tspan
+   style="font-weight:bold"
+   id="tspan14769">Defense</tspan> is 10 + the <tspan
+   style="font-weight:bold"
+   id="tspan14771">bonus</tspan> for the </tspan><tspan
+           x="42.929974"
+           y="96.071822"
+           id="tspan14785">specified <tspan
+   style="font-weight:bold"
+   id="tspan14775">angle</tspan>, which is the DC one must pass to land the hit. <tspan
+   style="font-weight:bold"
+   id="tspan14777">Energy</tspan><tspan
+   style="font-weight:bold"
+   id="tspan14779">(</tspan><tspan
+   style="font-weight:bold"
+   id="tspan14781">EP</tspan><tspan
+   style="font-weight:bold"
+   id="tspan14783">)</tspan> is a seperate </tspan><tspan
+           x="42.929974"
+           y="100.99005"
+           id="tspan14787">pool of points to spend on things like techniques. The GM may have you spend one
+</tspan><tspan
+           x="42.929974"
+           y="105.90828"
+           id="tspan14789">ofthese points in order to perform a difficult task. </tspan></text>
+      <g
+         id="g577899"
+         transform="translate(-1.899023,-5.8986455)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="42.929974"
+           y="81.317139"
+           id="text95322-5-6-3-0"
+           transform="translate(-19.240458,11.548177)"><tspan
+             x="42.929974"
+             y="81.317139"
+             id="tspan14799"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14791">Body</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14793">(</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14795">B</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14797">):</tspan> Resistance to Poison/Bleed. Weapon Attacks and Martial Arts. 
+</tspan><tspan
+             x="42.929974"
+             y="86.235366"
+             id="tspan14801">Chance rolls involving strength, speed, and endurance. Expend (B)EP performing 
+</tspan><tspan
+             x="42.929974"
+             y="91.153594"
+             id="tspan14803">taxing physical feats. Defends against attacks targeting the body. Resting heals HP 
+</tspan><tspan
+             x="42.929974"
+             y="96.071822"
+             id="tspan14805">equal to your (B)Bonus.</tspan></text>
+        <g
+           id="g391235"
+           transform="matrix(1.5243568,0,0,1.5243568,16.656572,52.799533)">
+          <circle
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.209599;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="circle78116-6-5"
+             cx="-0.63004011"
+             cy="27.332043"
+             r="3.1582768" />
+          <path
+             id="path78118-2-3"
+             style="color:#000000;fill:#00ff00;stroke-width:0.792187;stroke-linecap:round;-inkscape-stroke:none"
+             d="m -0.630037,25.202198 c -1.1732,0 -2.13062,0.957421 -2.13062,2.130621 0,1.1732 0.95742,2.129069 2.13062,2.129069 1.1732,0 2.13062,-0.955869 2.13062,-2.129069 0,-1.173199 -0.95742,-2.130621 -2.13062,-2.130621 z m 0,0.529168 c 0.797,0 1.45431,0.576498 1.57974,1.336869 h -3.15898 c 0.12544,-0.760371 0.78223,-1.336869 1.57924,-1.336869 z m -1.57924,1.866036 h 3.15898 c -0.12543,0.760117 -0.78274,1.335319 -1.57974,1.335319 -0.79701,0 -1.4538,-0.575202 -1.57924,-1.335319 z" />
+        </g>
+      </g>
+      <g
+         id="g577891"
+         transform="translate(-1.899023,-0.51806673)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="42.929974"
+           y="81.317139"
+           id="text95322-5-6-3-0-6"
+           transform="translate(-19.240458,-10.954778)"><tspan
+             x="42.929974"
+             y="81.317139"
+             id="tspan14815"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14807">Mind</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14809">(</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14811">M</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14813">):</tspan> Resistance to Stun. Science, Technology and Psionics. 
+</tspan><tspan
+             x="42.929974"
+             y="86.235366"
+             id="tspan14817">Chance rolls involving intelligence, memory, and knowledge. Expend (M)EP 
+</tspan><tspan
+             x="42.929974"
+             y="91.153594"
+             id="tspan14819">performing taxing mental feats. Defends against attacks targeting the mind.</tspan></text>
+        <g
+           id="g78500-5-5"
+           transform="matrix(1.5243568,0,0,1.5243568,-32.988203,-9.6093857)">
+          <circle
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.209599;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="circle78122-8-6"
+             cx="31.937647"
+             cy="53.510929"
+             r="3.1582768" />
+          <path
+             id="path78124-6-2"
+             style="color:#000000;fill:#00ffff;stroke-width:0.792187;stroke-linecap:round;-inkscape-stroke:none"
+             d="m 30.74728,50.880084 c -0.004,0.0376 -0.006,0.07571 -0.006,0.114205 0,0.397611 0.19714,0.751729 0.49816,0.96945 -0.30113,0.217765 -0.49816,0.57169 -0.49816,0.969449 0,0.566675 0.39985,1.045637 0.93121,1.167372 v 0.540533 H 30.964 a 0.26458349,0.26458349 0 0 0 -0.26458,0.264584 0.26458349,0.26458349 0 0 0 0.26458,0.264583 h 0.70849 v 0.706935 a 0.26458349,0.26458349 0 0 0 0.26458,0.264584 0.26458349,0.26458349 0 0 0 0.26458,-0.264584 V 55.17026 h 0.709 a 0.26458349,0.26458349 0 0 0 0.26459,-0.264583 0.26458349,0.26458349 0 0 0 -0.26459,-0.264584 h -0.709 V 54.10056 c 0.53174,-0.12137 0.93173,-0.600349 0.93173,-1.167372 0,-0.39761 -0.19671,-0.751664 -0.49765,-0.969449 0.30106,-0.217701 0.49765,-0.571691 0.49765,-0.96945 0,-0.0385 -0.002,-0.07661 -0.006,-0.114205 h -0.49247 c 0.006,0.0371 0.009,0.07533 0.009,0.114205 0,0.39317 -0.31376,0.706933 -0.70694,0.706933 -0.39316,0 -0.70745,-0.313763 -0.70745,-0.706933 0,-0.03888 0.003,-0.0771 0.009,-0.114205 z m 1.19062,1.347204 c 0.39318,0 0.70694,0.312731 0.70694,0.7059 0,0.393171 -0.31376,0.706934 -0.70694,0.706934 -0.39317,0 -0.70745,-0.313763 -0.70745,-0.706934 0,-0.393169 0.31428,-0.7059 0.70745,-0.7059 z" />
+        </g>
+      </g>
+      <g
+         id="g577921"
+         transform="translate(-1.899023,-8.9706723)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="42.929974"
+           y="81.317139"
+           id="text95322-5-6-3-0-2"
+           transform="translate(-19.240458,36.660808)"><tspan
+             x="42.929974"
+             y="81.317139"
+             id="tspan14829"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14821">Spirit</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14823">(</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14825">S</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan14827">):</tspan> Resistance to Frighten. Spiritual Attacks and Magic. 
+</tspan><tspan
+             x="42.929974"
+             y="86.235366"
+             id="tspan14831">Chance rolls involving charisma, and emotional control. Expend (S)EP performing 
+</tspan><tspan
+             x="42.929974"
+             y="91.153594"
+             id="tspan14833">taxing emotional feats. Defends against magical attacks. Resting heals EP 
+</tspan><tspan
+             x="42.929974"
+             y="96.071822"
+             id="tspan14835">in a single category equal to your (S)Bonus, per hour.</tspan></text>
+        <g
+           id="g78496-2-9"
+           transform="matrix(1.5243568,0,0,1.5243568,-32.988203,27.080821)">
+          <circle
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.209599;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="circle78128-8-1"
+             cx="31.937647"
+             cy="60.678135"
+             r="3.1582768" />
+          <path
+             id="path78130-4-2"
+             style="color:#000000;fill:#ffaaaa;stroke-width:0.264583;stroke-linecap:round;-inkscape-stroke:none"
+             d="m 31.93739,57.982694 -0.88005,1.524454 -0.88005,1.523938 h 0.45837 1.03714 v 0.533818 h -0.9281 a 0.26458349,0.26458349 0 0 0 -0.26459,0.264583 0.26458349,0.26458349 0 0 0 0.26459,0.264583 h 0.9281 v 1.014927 a 0.26458349,0.26458349 0 0 0 0.26459,0.264583 0.26458349,0.26458349 0 0 0 0.26458,-0.264583 V 62.09407 H 33.1306 A 0.26458349,0.26458349 0 0 0 33.39518,61.829487 0.26458349,0.26458349 0 0 0 33.1306,61.564904 H 32.20197 V 61.031086 H 33.698 l -0.88005,-1.523938 z m 5.1e-4,1.058333 0.42168,0.730702 0.42168,0.73019 h -0.84387 -0.84336 l 0.42168,-0.73019 z" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g629313">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:184.294;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6"
+         transform="translate(-20.737571,-71.065833)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan14843"><tspan
+   style="font-weight:bold"
+   id="tspan14837">Chance Roll</tspan><tspan
+   style="font-weight:bold"
+   id="tspan14839">:</tspan><tspan
+   style="fill:#ffff00"
+   id="tspan14841"> </tspan>Roll 4, 6-sided die and add them togeather to get your chance score. </tspan><tspan
+           x="42.929974"
+           y="86.235366"
+           id="tspan14853">Chance scores will have a <tspan
+   style="font-weight:bold"
+   id="tspan14845">Difficulty Class</tspan><tspan
+   style="font-weight:bold"
+   id="tspan14847"> (</tspan><tspan
+   style="font-weight:bold"
+   id="tspan14849">DC</tspan><tspan
+   style="font-weight:bold"
+   id="tspan14851">)</tspan> that must be met or exceeded in </tspan><tspan
+           x="42.929974"
+           y="91.153594"
+           id="tspan14855">order for the roll to be considered a success. Advantage means you add 1 die to the </tspan><tspan
+           x="42.929974"
+           y="96.071822"
+           id="tspan14857">roll, and Disadvantage means you take 1 away. Chance rolls that land in the critical </tspan><tspan
+           x="42.929974"
+           y="100.99005"
+           id="tspan14859">or fluke sections of the chart below, are context dependent, but generally speaking it </tspan><tspan
+           x="42.929974"
+           y="105.90828"
+           id="tspan14861">means you either performed really well or really poorly at the given task.</tspan></text>
+      <path
+         sodipodi:type="star"
+         style="fill:#ffffff;stroke-width:2.016;stroke-linecap:round"
+         id="path581025"
+         inkscape:flatsided="true"
+         sodipodi:sides="6"
+         sodipodi:cx="127.55543"
+         sodipodi:cy="-81.063164"
+         sodipodi:r1="43.632225"
+         sodipodi:r2="37.786613"
+         sodipodi:arg1="0.52359878"
+         sodipodi:arg2="1.0471976"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 165.34204,-59.247051 -37.78661,21.816112 -37.786618,-21.816112 0,-43.632229 37.786618,-21.81611 37.78661,21.81611 z"
+         transform="matrix(0.15092167,0,0,0.15092167,-5.8953206,30.792506)" />
+    </g>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text686630"
+       style="fill:#ffffff;font-size:16px;-inkscape-font-specification:'Ubuntu Bold';font-family:Ubuntu;line-height:1;stroke-linecap:round;text-align:end;font-weight:bold;stroke-width:2.016;white-space:pre;shape-inside:url(#rect686632)" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text690488"
+       style="fill:#ffffff;font-size:16px;-inkscape-font-specification:'Ubuntu Bold';font-family:Ubuntu;line-height:1;stroke-linecap:round;text-align:end;font-weight:bold;stroke-width:2.016;white-space:pre;shape-inside:url(#rect690490)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 15.490185,70.973463 H 200.14524"
+       id="path694822" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 15.490187,170.60118 H 200.14524"
+       id="path694822-7" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 15.490187,189.02861 H 200.14524"
+       id="path694822-9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 15.490185,222.41994 H 200.14524"
+       id="path694822-9-3" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 15.490185,250.89304 H 200.14524"
+       id="path694822-9-3-2" />
+    <g
+       id="g203732"
+       transform="translate(-0.58020095,-211.91232)">
+      <rect
+         style="fill:#000000;stroke:#000000;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect66270"
+         width="135.30157"
+         height="24.572739"
+         x="8.7998009"
+         y="252.84084" />
+      <rect
+         style="fill:#ff0000;fill-opacity:0.974085;stroke:#000000;stroke-width:0.482429;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-5-2"
+         width="22.483019"
+         height="16.884008"
+         x="20.462738"
+         y="252.95177" />
+      <rect
+         style="fill:#d45500;fill-opacity:0.974085;stroke:#000000;stroke-width:0.482429;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-5-61"
+         width="33.724525"
+         height="16.884008"
+         x="42.945759"
+         y="252.95177" />
+      <rect
+         style="fill:#aa8800;fill-opacity:0.974085;stroke:#000000;stroke-width:0.482429;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-5-61-9"
+         width="67.320213"
+         height="16.753899"
+         x="76.670288"
+         y="252.95177" />
+      <rect
+         style="fill:#4d4d4d;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5"
+         width="11.246537"
+         height="6.2117538"
+         x="9.1431637"
+         y="268.16513" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="11.249943"
+         y="272.37997"
+         id="text4134-9-3-3-5"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="11.249943"
+           y="272.37997">Odds</tspan></text>
+      <rect
+         style="fill:#4d4d4d;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6"
+         width="11.246537"
+         height="6.2117538"
+         x="9.1431637"
+         y="257.71994" />
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9"
+         width="11.246537"
+         height="6.2117538"
+         x="20.389713"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3"
+         width="11.246537"
+         height="6.2117538"
+         x="20.389713"
+         y="264.99008" />
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-7"
+         width="11.246537"
+         height="6.2117538"
+         x="31.636251"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-4"
+         width="11.246537"
+         height="6.2117538"
+         x="31.636251"
+         y="264.99008" />
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-5"
+         width="11.246537"
+         height="6.2117538"
+         x="42.88279"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2"
+         width="11.246537"
+         height="6.2117538"
+         x="42.88279"
+         y="264.99008" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-5"
+         width="11.246537"
+         height="6.2117538"
+         x="20.389713"
+         y="271.20181" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-4-4"
+         width="11.246537"
+         height="6.2117538"
+         x="31.636255"
+         y="271.20187" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2-7"
+         width="11.246537"
+         height="6.2117538"
+         x="42.882793"
+         y="271.20181" />
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-4"
+         width="11.246537"
+         height="6.2117538"
+         x="54.129326"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-43"
+         width="11.246537"
+         height="6.2117538"
+         x="54.129326"
+         y="264.99008" />
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-7-0"
+         width="11.246537"
+         height="6.2117538"
+         x="65.375854"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-4-7"
+         width="11.246537"
+         height="6.2117538"
+         x="65.375854"
+         y="264.99008" />
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-5-8"
+         width="11.246537"
+         height="6.2117538"
+         x="76.622398"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2-6"
+         width="11.246537"
+         height="6.2117538"
+         x="76.622398"
+         y="264.99008" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-5-8"
+         width="11.246537"
+         height="6.2117538"
+         x="54.129326"
+         y="271.20181" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-4-4-8"
+         width="11.246537"
+         height="6.2117538"
+         x="65.375862"
+         y="271.20187" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2-7-4"
+         width="11.246537"
+         height="6.2117538"
+         x="76.622406"
+         y="271.20181" />
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-3"
+         width="11.246537"
+         height="6.2117538"
+         x="87.868935"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-1"
+         width="11.246537"
+         height="6.2117538"
+         x="87.868935"
+         y="264.99008" />
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-7-4"
+         width="11.246537"
+         height="6.2117538"
+         x="99.115425"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-4-9"
+         width="11.246537"
+         height="6.2117538"
+         x="99.115425"
+         y="264.99008" />
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-5-2"
+         width="11.246537"
+         height="6.2117538"
+         x="110.36195"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2-0"
+         width="11.246537"
+         height="6.2117538"
+         x="110.36195"
+         y="264.99008" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-5-6"
+         width="11.246537"
+         height="6.2117538"
+         x="87.868935"
+         y="271.20181" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-4-4-89"
+         width="11.246537"
+         height="6.2117538"
+         x="99.115425"
+         y="271.20187" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2-7-2"
+         width="11.246537"
+         height="6.2117538"
+         x="110.36195"
+         y="271.20181" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="14.625328"
+         y="261.93484"
+         id="text4134-9-3-3-5-5"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="14.625328"
+           y="261.93484">Roll</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="31.500803"
+         y="256.33694"
+         id="text4134-9-3-3-5-5-3"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-9"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="31.500803"
+           y="256.33694">Fluke (0.39%)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;white-space:pre;inline-size:22.1292;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="76.18924"
+         y="93.96479"
+         id="text4134-9-3-3-5-5-3-0"
+         transform="translate(-16.487496,162.25003)"><tspan
+           x="76.18924"
+           y="93.96479"
+           id="tspan14865"><tspan
+             style="font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold'"
+             id="tspan14863">Critical (5.01%)</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;white-space:pre;inline-size:22.1292;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="76.18924"
+         y="93.96479"
+         id="text4134-9-3-3-5-5-3-0-8"
+         transform="translate(34.409757,162.33304)"><tspan
+           x="76.18924"
+           y="93.96479"
+           id="tspan14867">Normal (94.6%)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="26.025681"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="26.025681"
+           y="261.53568">4 | 24</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="37.2948"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6-4"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-9"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="37.2948"
+           y="261.53568">5 | 23</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="48.525814"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6-5"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-0"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="48.525814"
+           y="261.53568">6 | 22</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="59.924751"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6-48"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-7"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="59.924751"
+           y="261.53568">7 | 21</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="70.992073"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6-1"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-72"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="70.992073"
+           y="261.53568">8 | 20</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="82.26683"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6-7"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="82.26683"
+           y="261.53568">9 | 19</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="93.447044"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6-7-50"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-2-96"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="93.447044"
+           y="261.53568">10 | 18</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="104.69636"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6-7-3"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-2-8"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="104.69636"
+           y="261.53568">11 | 17</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="115.93581"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6-7-561"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-2-15"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="115.93581"
+           y="261.53568">12 | 16</tspan></text>
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-5-8-0"
+         width="11.246537"
+         height="6.2117538"
+         x="121.60839"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2-6-6"
+         width="11.246537"
+         height="6.2117538"
+         x="121.60839"
+         y="264.99008" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2-7-4-1"
+         width="11.246537"
+         height="6.2117538"
+         x="121.60841"
+         y="271.20181" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="127.21614"
+         y="261.53568"
+         id="text4134-9-3-3-5-5-6-7-5"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-2-9"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="127.21614"
+           y="261.53568">13 | 15</tspan></text>
+      <rect
+         style="fill:#c5c5c5;fill-opacity:0.974085;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-9-5-8-4"
+         width="11.246537"
+         height="6.2117538"
+         x="132.85484"
+         y="257.71994" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2-6-9"
+         width="11.246537"
+         height="6.2117538"
+         x="132.85484"
+         y="264.99008" />
+      <rect
+         style="fill:#555555;fill-opacity:1;stroke:#000000;stroke-width:0.292685;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1099-3-0-3-6-5-6-3-2-7-4-0"
+         width="11.246537"
+         height="6.2117538"
+         x="132.85484"
+         y="271.20181" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:2.82223px;line-height:1;font-family:Loma;-inkscape-font-specification:'Loma Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="138.42026"
+         y="261.66974"
+         id="text4134-9-3-3-5-5-6-7-9"><tspan
+           sodipodi:role="line"
+           id="tspan4132-1-1-2-4-6-6-2-1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-miterlimit:4;stroke-dasharray:none"
+           x="138.42026"
+           y="261.66974">14</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,2055 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.5in"
+   height="11in"
+   viewBox="0 0 215.9 279.4"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="Page1.svg"
+   inkscape:export-filename="/home/vulpecula/DriveSync/Roleplay/Roleplaying Game/Scraps/Card Catalog/Page1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     units="in"
+     showguides="false"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="681.65094"
+     inkscape:cy="498.51028"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3">
+    <inkscape:grid
+       type="xygrid"
+       id="grid846" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient272615">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0"
+         id="stop272611" />
+      <stop
+         style="stop-color:#836f83;stop-opacity:1"
+         offset="1"
+         id="stop272613" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient232544">
+      <stop
+         style="stop-color:#fff6d5;stop-opacity:1"
+         offset="0"
+         id="stop232540" />
+      <stop
+         style="stop-color:#836f83;stop-opacity:1"
+         offset="1"
+         id="stop232542" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient153747">
+      <stop
+         style="stop-color:#fff6d5;stop-opacity:1"
+         offset="0"
+         id="stop153743" />
+      <stop
+         style="stop-color:#a07c7c;stop-opacity:1"
+         offset="1"
+         id="stop153745" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient150659">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0"
+         id="stop150655" />
+      <stop
+         style="stop-color:#5b7465;stop-opacity:1"
+         offset="1"
+         id="stop150657" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient81685">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0"
+         id="stop81681" />
+      <stop
+         style="stop-color:#a07c7c;stop-opacity:1"
+         offset="1"
+         id="stop81683" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient35709">
+      <stop
+         style="stop-color:#fff6d5;stop-opacity:1"
+         offset="0"
+         id="stop35705" />
+      <stop
+         style="stop-color:#5b7465;stop-opacity:1"
+         offset="1"
+         id="stop35707" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1520"
+       x="-0.013998425"
+       y="-0.13998426"
+       width="1.0384955"
+       height="1.3849554">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1510" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1512" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1514" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1516" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1518" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1640"
+       x="-0.016451604"
+       y="-0.065803135"
+       width="1.0453901"
+       height="1.1839139">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1630" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1632" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1634" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1636" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1638" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter2678"
+       x="-0.095617784"
+       y="-0.10634296"
+       width="1.2639726"
+       height="1.302231">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2668" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2670" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur2672" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset2674" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2676" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter7131"
+       x="-0.031471458"
+       y="-0.25177166"
+       width="1.086565"
+       height="1.6925197">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood7121" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite7123" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur7125" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset7127" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite7129" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient153747"
+       id="radialGradient35711"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.825483"
+       gradientTransform="matrix(0.99995817,0.00914662,-0.01303684,1.4252575,-0.29575698,30.329116)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient81685"
+       id="radialGradient81687"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391085"
+       gradientTransform="matrix(1.8377154,2.8104069e-8,0,0.27364296,-48.049453,57.381617)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient35709"
+       id="radialGradient35711-7"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914681,-0.0130371,1.4252576,-0.29575296,63.407915)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient150659"
+       id="radialGradient81687-1"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391087"
+       gradientTransform="matrix(1.7080735,2.8104069e-8,0,0.27364296,-37.481916,90.460425)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient35709"
+       id="radialGradient35711-7-6"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914681,-0.0130371,1.4252576,-0.29575428,96.842856)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient232544"
+       id="radialGradient35711-7-6-5"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914681,-0.0130371,1.4252576,-0.29575528,132.39465)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient272615"
+       id="radialGradient81687-1-1"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391087"
+       gradientTransform="matrix(1.7080735,3.6886046e-8,0,0.35915109,-37.481918,158.12874)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient153747"
+       id="radialGradient35711-0"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914662,-0.01303684,1.4252575,-0.29575689,190.09731)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient81685"
+       id="radialGradient81687-4"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391087"
+       gradientTransform="matrix(1.8377154,6.8357602e-8,0,0.66558249,-48.049453,211.10649)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient153747"
+       id="radialGradient35711-0-8"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914662,-0.01303684,1.4252575,101.23553,13.39638)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient81685"
+       id="radialGradient81687-4-4"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391087"
+       gradientTransform="matrix(1.8377154,3.1090061e-8,0,0.30271689,53.481826,40.000618)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient272615"
+       id="radialGradient81687-1-1-7"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391087"
+       gradientTransform="matrix(1.7080735,6.269307e-8,0,0.61042824,64.237163,72.159354)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient232544"
+       id="radialGradient35711-7-6-5-8"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914681,-0.0130371,1.4252576,101.42333,50.299728)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient35709"
+       id="radialGradient35711-7-6-2"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914681,-0.0130371,1.4252576,101.42336,97.275888)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient150659"
+       id="radialGradient81687-1-0"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391087"
+       gradientTransform="matrix(1.7080735,2.7986552e-8,0,0.27249873,64.237203,124.34606)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient153747"
+       id="radialGradient35711-0-6"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914662,-0.01303684,1.4252575,101.19067,155.92871)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient81685"
+       id="radialGradient81687-4-7"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391087"
+       gradientTransform="matrix(1.8377154,3.0760672e-8,0,0.2995097,53.436979,182.58248)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient153747"
+       id="radialGradient35711-0-6-0"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914662,-0.01303684,1.4252575,101.19066,208.29561)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient81685"
+       id="radialGradient81687-4-7-9"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391087"
+       gradientTransform="matrix(1.8377154,3.0760672e-8,0,0.2995097,53.436983,234.94938)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient150659"
+       id="radialGradient81687-1-0-2"
+       cx="57.357735"
+       cy="30.242649"
+       fx="57.357735"
+       fy="30.242649"
+       r="44.391087"
+       gradientTransform="matrix(1.7080735,9.2703676e-8,0,0.90263476,208.533,216.06211)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient35709"
+       id="radialGradient35711-7-6-2-4"
+       cx="97.662849"
+       cy="17.590908"
+       fx="97.662849"
+       fy="17.590908"
+       r="6.8254828"
+       gradientTransform="matrix(0.99995817,0.00914681,-0.0130371,1.4252576,245.71916,198.70801)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Template"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <g
+       id="g10633">
+      <path
+         id="rect13864"
+         style="fill:#dfdfdf;fill-opacity:1;stroke:none;stroke-width:2.016;stroke-linejoin:bevel"
+         d="M 49.007812,49.007812 V 1009.0078 H 385.26758 V 49.007812 Z m 383.740238,0 V 1009.0078 H 769.00781 V 49.007812 Z"
+         transform="scale(0.26458333)" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Decorations"
+     sodipodi:insensitive="true" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Frames">
+    <rect
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.895825;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect677548-3"
+       width="89.014854"
+       height="24.011471"
+       x="12.96665"
+       y="189.66719" />
+    <rect
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.895825;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect677548-3-3"
+       width="89.014854"
+       height="24.011471"
+       x="114.49792"
+       y="12.96665" />
+    <rect
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.895825;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect677548-3-3-3"
+       width="89.014854"
+       height="24.011471"
+       x="114.45307"
+       y="155.49945" />
+    <rect
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.895825;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect677548-3-3-3-8"
+       width="89.014854"
+       height="24.011471"
+       x="114.45308"
+       y="207.86618" />
+    <rect
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.895825;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect677548"
+       width="89.014854"
+       height="24.011471"
+       x="12.96665"
+       y="29.899994" />
+    <rect
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331"
+       width="85.70536"
+       height="4.4322872"
+       x="12.96665"
+       y="49.479179" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       id="rect35324"
+       width="88.782173"
+       height="7.6894536"
+       x="12.96665"
+       y="53.911472" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="15.311407"
+       y="59.45694"
+       id="text17678"><tspan
+         sodipodi:role="line"
+         id="tspan17676"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="15.311407"
+         y="59.45694">Baseball Bat</tspan></text>
+    <path
+       id="path35554"
+       style="fill:url(#radialGradient35711);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 97.22266,46.565914 -3.337175,3.937199 -3.337171,3.937515 h 2.677697 v 6.318508 h 7.993649 v -6.318508 h 2.67769 l -3.33717,-3.937515 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="94.731537"
+       y="57.685238"
+       id="text39504"><tspan
+         sodipodi:role="line"
+         id="tspan39502"
+         style="font-size:4.23333px;fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="94.731537"
+         y="57.685238">14</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="86.039124"
+       y="57.213638"
+       id="text50301"><tspan
+         sodipodi:role="line"
+         id="tspan50299"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="57.213638">TL:1  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="60.057003"
+         id="tspan58709">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#e4e07c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="14.192228"
+       y="52.531635"
+       id="text75831"><tspan
+         sodipodi:role="line"
+         id="tspan75829"
+         style="fill:#e4e07c;fill-opacity:1;stroke-width:0.5334"
+         x="14.192228"
+         y="52.531635">Weapon, Melee, 1-Hand</tspan></text>
+    <path
+       id="rect81347"
+       style="fill:url(#radialGradient81687);fill-opacity:1;stroke:none;stroke-width:0.488548;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 12.96665,61.600914 v 8.112784 h 88.78217 v -8.112784 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect81347-2"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47138;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 12.96665,69.713698 v 7.552614 h 88.78217 v -7.552614 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="14.032734"
+       y="64.843102"
+       id="text86169"><tspan
+         sodipodi:role="line"
+         id="tspan86167"
+         style="fill:#000000;stroke-width:0.79375"
+         x="14.032734"
+         y="64.843102">Melee Attack:</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="14.032734"
+         y="67.665329"
+         id="tspan86171">    3AP/(Body)+2+[Club]/5ft./1d6(bash)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="14.335241"
+       y="72.936859"
+       id="text86169-2"><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="14.335241"
+         y="72.936859"
+         id="tspan86171-9">++ Trait: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan109303">Tough +1</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="14.335241"
+         y="75.759087"
+         id="tspan89657">++ HP: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan115083">+3</tspan></tspan></text>
+    <rect
+       style="fill:#5b7465;fill-opacity:1;stroke:none;stroke-width:0.666755;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-3"
+       width="77.990768"
+       height="7.6106024"
+       x="19.229799"
+       y="79.379677" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.514242;stroke-linejoin:bevel"
+       id="rect35324-1"
+       width="82.51902"
+       height="7.6894536"
+       x="19.229799"
+       y="86.99028" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="21.84197"
+       y="92.535751"
+       id="text17678-9"><tspan
+         sodipodi:role="line"
+         id="tspan17676-4"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="21.84197"
+         y="92.535751">Nail Bat</tspan></text>
+    <path
+       id="path35554-7"
+       style="fill:url(#radialGradient35711-7);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 97.222661,79.644722 -3.33718,3.937199 -3.33717,3.937515 h 2.6777 v 6.318508 h 7.993649 v -6.318508 h 2.67769 l -3.33717,-3.937515 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#00801e;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="96.018448"
+       y="90.764046"
+       id="text39504-8"><tspan
+         sodipodi:role="line"
+         id="tspan39502-4"
+         style="font-size:4.23333px;fill:#00801e;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="96.018448"
+         y="90.764046">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="86.039124"
+       y="90.292442"
+       id="text50301-5"><tspan
+         sodipodi:role="line"
+         id="tspan50299-0"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="90.292442">TL:3  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="93.135803"
+         id="tspan58709-3">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#d09ac7;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="20.662363"
+       y="82.214676"
+       id="text75831-6"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1"
+         style="fill:#d09ac7;fill-opacity:1;stroke-width:0.5334"
+         x="20.662363"
+         y="82.214676">Weapon Upgrade</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#d09ac7;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="20.662363"
+       y="85.439713"
+       id="text75831-6-7"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-6"
+         style="fill:#d09ac7;fill-opacity:1;stroke-width:0.5334"
+         x="20.662363"
+         y="85.439713">Requires: Baseball Bat</tspan></text>
+    <path
+       id="rect81347-0"
+       style="fill:url(#radialGradient81687-1);fill-opacity:1;stroke:none;stroke-width:0.471001;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.229798,94.679722 v 8.465628 h 82.519022 v -8.465628 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect81347-0-8"
+       style="fill:url(#radialGradient81687-1-1);fill-opacity:1;stroke:none;stroke-width:0.539595;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.229796,163.66649 v 11.11095 h 82.519024 v -11.11095 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect81347-2-6"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.454449;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.229798,103.14535 v 7.55266 h 82.519022 v -7.55266 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="20.563295"
+       y="97.921913"
+       id="text86169-3"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="20.563295"
+         y="97.921913"
+         id="tspan171448">    Successful attacks with the Baseball Bat</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="20.563295"
+         y="100.74414"
+         id="tspan175789">now do an additional +3(stab) damage.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="21.910421"
+       y="167.06187"
+       id="text86169-3-4"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="21.910421"
+         y="167.06187"
+         id="tspan258982">Cost:4AP+2EP  Range:5ft./Single Enemy.</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="21.910421"
+         y="169.88411"
+         id="tspan258986">(Body)+4+[Club]/1d10(bash)</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="21.910421"
+         y="172.70633"
+         id="tspan258988">! Stun(80%)Shake DC:15 !</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="20.865805"
+       y="106.36848"
+       id="text86169-2-6"><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865805"
+         y="106.36848"
+         id="tspan86171-9-1">++ Traits: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan109303-5">Tough +1, Intimidating +2</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865805"
+         y="109.19071"
+         id="tspan89657-5">++ HP: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan115083-4">+2</tspan></tspan></text>
+    <path
+       id="path156518"
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.703276;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="-0.53964175"
+       d="m 12.96665,77.266108 v 13.689087 0.810802 h 3.025138 v 1.450041 l 1.619023,-1.190625 1.619023,-1.190625 -1.619023,-1.190625 -1.619023,-1.190625 v 1.450557 H 14.828552 V 77.266108 Z" />
+    <path
+       id="path156518-8"
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.703276;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="-0.53964175"
+       d="m 258.98156,212.65556 v 13.68908 0.8108 h 3.02514 v 1.45004 l 1.61902,-1.19062 1.61902,-1.19063 -1.61902,-1.19062 -1.61902,-1.19063 v 1.45056 h -1.16324 v -12.63798 z" />
+    <path
+       id="path156518-7"
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.703276;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="-0.53964175"
+       d="m 114.51374,52.506216 v 25.286105 0.810802 h 3.02514 v 1.450041 l 1.61902,-1.190625 1.61902,-1.190625 -1.61902,-1.190625 -1.61902,-1.190625 v 1.450557 h -1.16324 V 52.506216 Z"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <path
+       id="path156518-7-0"
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.703276;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="-0.53964175"
+       d="m 114.51374,78.603123 v 46.452797 0.8108 h 3.02514 v 1.45004 l 1.61902,-1.19062 1.61902,-1.19063 -1.61902,-1.19062 -1.61902,-1.19063 v 1.45056 h -1.16324 V 78.603123 Z"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <rect
+       style="fill:#5b7465;fill-opacity:1;stroke:none;stroke-width:0.666755;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-3-2"
+       width="77.990768"
+       height="7.6106024"
+       x="19.229797"
+       y="112.81462" />
+    <rect
+       style="fill:#5b7465;fill-opacity:1;stroke:none;stroke-width:0.304256;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-3-2-6"
+       width="82.51902"
+       height="2.2318721"
+       x="19.229797"
+       y="128.11462" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.514242;stroke-linejoin:bevel"
+       id="rect35324-1-5"
+       width="82.51902"
+       height="7.6894536"
+       x="19.229797"
+       y="120.42519" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="21.841969"
+       y="125.97069"
+       id="text17678-9-4"><tspan
+         sodipodi:role="line"
+         id="tspan17676-4-7"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="21.841969"
+         y="125.97069">Thug Life</tspan></text>
+    <path
+       id="path35554-7-4"
+       style="fill:url(#radialGradient35711-7-6);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 97.22266,113.07973 -3.33718,3.93723 -3.33717,3.93753 h 2.6777 v 6.31855 h 7.99365 v -6.31855 h 2.67769 l -3.33717,-3.93753 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#00801e;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="94.778084"
+       y="124.19891"
+       id="text39504-8-4"><tspan
+         sodipodi:role="line"
+         id="tspan39502-4-3"
+         style="font-size:4.23333px;fill:#00801e;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="94.778084"
+         y="124.19891">12</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="86.039124"
+       y="123.72736"
+       id="text50301-5-0"><tspan
+         sodipodi:role="line"
+         id="tspan50299-0-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="123.72736">TL:3  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="126.57072"
+         id="tspan58709-3-8">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#d09ac7;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="20.662361"
+       y="115.64962"
+       id="text75831-6-6"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-8"
+         style="fill:#d09ac7;fill-opacity:1;stroke-width:0.5334"
+         x="20.662361"
+         y="115.64962">Weapon Upgrade</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#d09ac7;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="20.662361"
+       y="118.87463"
+       id="text75831-6-7-8"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-6-4"
+         style="fill:#d09ac7;fill-opacity:1;stroke-width:0.5334"
+         x="20.662361"
+         y="118.87463">Requires: Baseball Bat</tspan></text>
+    <path
+       id="rect81347-2-6-1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.490587;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.229797,130.34672 v 16.0662 h 82.519023 v -16.0662 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="20.865803"
+       y="133.45329"
+       id="text86169-2-6-0"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865803"
+         y="133.45329"
+         id="tspan86171-9-1-6"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan293145">++ Traits:</tspan> Tough +2, Intimidating +2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865803"
+         y="136.27553"
+         id="tspan89657-5-9"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan296861">++ Skills:</tspan> Lockpicking +2, Sneak +2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865803"
+         y="139.09775"
+         id="tspan214231"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan299737">++ Def:</tspan> (Body)+2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865803"
+         y="141.91998"
+         id="tspan214233"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan303393">++ Resistances:</tspan> (Bleed)+3, (Stun)+3</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865803"
+         y="144.74222"
+         id="tspan199966"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan307505">++ HP:</tspan> +6</tspan></text>
+    <path
+       id="rect81347-0-2"
+       style="fill:url(#radialGradient81687-1-0);fill-opacity:1;stroke:none;stroke-width:0.470016;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 120.9489,128.54772 v 8.43021 h 82.51903 v -8.43021 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="123.36478"
+       y="132.20079"
+       id="text86169-3-6"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="123.36478"
+         y="132.20079"
+         id="tspan175789-5">    While the Battleaxe is in this character's</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="123.36478"
+         y="135.02303"
+         id="tspan463537">loadout, they gain an additional (Body)+2.</tspan></text>
+    <rect
+       style="fill:#5b7465;fill-opacity:1;stroke:none;stroke-width:0.666755;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-3-2-62"
+       width="77.990768"
+       height="7.6106024"
+       x="120.94891"
+       y="113.24766" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.514242;stroke-linejoin:bevel"
+       id="rect35324-1-5-9"
+       width="82.51902"
+       height="7.6894536"
+       x="120.94891"
+       y="120.85823" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="123.5611"
+       y="126.40372"
+       id="text17678-9-4-0"><tspan
+         sodipodi:role="line"
+         id="tspan17676-4-7-8"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="123.5611"
+         y="126.40372">Defensive Stance</tspan></text>
+    <path
+       id="path35554-7-4-1"
+       style="fill:url(#radialGradient35711-7-6-2);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 198.94177,113.51271 -3.33718,3.9372 -3.33717,3.93751 h 2.6777 v 6.31852 h 7.99365 v -6.31852 h 2.67769 l -3.33717,-3.93751 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#00801e;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="198.90172"
+       y="124.632"
+       id="text39504-8-4-3"><tspan
+         sodipodi:role="line"
+         id="tspan39502-4-3-1"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#00801e;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="198.90172"
+         y="124.632">12</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="187.75826"
+       y="124.16041"
+       id="text50301-5-0-1"><tspan
+         sodipodi:role="line"
+         id="tspan50299-0-7-0"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.75826"
+         y="124.16041">TL:1  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.75826"
+         y="127.00377"
+         id="tspan58709-3-8-3">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#d09ac7;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="122.38149"
+       y="116.08263"
+       id="text75831-6-6-4"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-8-0"
+         style="fill:#d09ac7;fill-opacity:1;stroke-width:0.5334"
+         x="122.38149"
+         y="116.08263">Weapon Upgrade</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#d09ac7;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="122.38149"
+       y="119.30767"
+       id="text75831-6-7-8-3"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-6-4-9"
+         style="fill:#d09ac7;fill-opacity:1;stroke-width:0.5334"
+         x="122.38149"
+         y="119.30767">Requires: Battleaxe</tspan></text>
+    <path
+       id="rect81347-2-6-1-1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.43997;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 120.9489,136.97793 1e-5,14.28825 h 82.51902 l -1e-5,-14.28825 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="122.58785"
+       y="140.53716"
+       id="text86169-2-6-0-9"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="122.58785"
+         y="140.53716"
+         id="tspan86171-9-1-6-6"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan293145-9">++ Traits:</tspan> Tough +3</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="122.58785"
+         y="143.35939"
+         id="tspan214233-5"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan296861-3">++ Skills:</tspan> Axe Master +2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="122.58785"
+         y="146.18161"
+         id="tspan199966-6"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+           id="tspan307505-4"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan535392">++ Resistance:</tspan> (Stun)+2</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="122.58785"
+         y="149.00385"
+         id="tspan528478"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan528480">++ HP:</tspan> +10</tspan></text>
+    <path
+       id="path156518-6"
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.703276;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="-0.53964175"
+       d="m 12.96665,91.765997 -10e-7,32.624273 v 0.81081 h 3.025138 v 1.45005 l 1.619023,-1.19063 1.619023,-1.19064 -1.619023,-1.19063 -1.619023,-1.19063 v 1.45057 h -1.163236 l 1e-6,-31.573173 z"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <rect
+       style="fill:#836f83;fill-opacity:1;stroke:none;stroke-width:0.666755;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-3-2-67"
+       width="77.990768"
+       height="7.6106024"
+       x="19.229795"
+       y="148.36594" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.514242;stroke-linejoin:bevel"
+       id="rect35324-1-5-6"
+       width="82.51902"
+       height="7.6894536"
+       x="19.229795"
+       y="155.97641" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="21.841967"
+       y="161.5218"
+       id="text17678-9-4-5"><tspan
+         sodipodi:role="line"
+         id="tspan17676-4-7-6"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="21.841967"
+         y="161.5218">Home Run</tspan></text>
+    <path
+       id="path35554-7-4-3"
+       style="fill:url(#radialGradient35711-7-6-5);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 97.222659,148.63148 -3.33718,3.9372 -3.33717,3.93751 h 2.6777 v 6.31851 h 7.993651 v -6.31851 h 2.67769 l -3.33717,-3.93751 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#804aaa;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="97.220711"
+       y="159.75011"
+       id="text39504-8-4-9"><tspan
+         sodipodi:role="line"
+         id="tspan39502-4-3-4"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#804aaa;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="97.220711"
+         y="159.75011">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="86.039124"
+       y="159.27853"
+       id="text50301-5-0-8"><tspan
+         sodipodi:role="line"
+         id="tspan50299-0-7-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="159.27853">TL:1  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="162.1219"
+         id="tspan58709-3-8-2">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#aca8ff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="20.662359"
+       y="151.20085"
+       id="text75831-6-6-9"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-8-3"
+         style="fill:#aca8ff;fill-opacity:1;stroke-width:0.5334"
+         x="20.662359"
+         y="151.20085">Weapon Technique</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#aca8ff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="20.662359"
+       y="154.42587"
+       id="text75831-6-7-8-9"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-6-4-0"
+         style="fill:#aca8ff;fill-opacity:1;stroke-width:0.5334"
+         x="20.662359"
+         y="154.42587">Requires: Baseball Bat</tspan></text>
+    <path
+       id="rect81347-2-6-1-8"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.399889;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.229796,174.77744 v 10.6748 h 82.519024 v -10.6748 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="20.865801"
+       y="177.88354"
+       id="text86169-2-6-0-8"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865801"
+         y="177.88354"
+         id="tspan89657-5-9-9"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan315913">++ Trait:</tspan> Tough +1</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865801"
+         y="180.70578"
+         id="tspan214233-8"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan318495">++ Skill:</tspan> Club Master +2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="20.865801"
+         y="183.528"
+         id="tspan199966-5"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan320825">++ HP:</tspan> +2</tspan></text>
+    <path
+       id="path156518-6-1"
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.703276;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="-0.53964175"
+       d="m 12.966649,125.20108 -1e-6,34.74087 v 0.8108 h 3.025138 v 1.45004 l 1.619023,-1.19062 1.619023,-1.19063 -1.619023,-1.19062 -1.619023,-1.19062 v 1.45055 H 14.82855 l 10e-7,-33.68977 z"
+       sodipodi:nodetypes="ccccccccccccc" />
+    <path
+       id="path156518-6-1-2-8"
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:1.17279;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="-0.53964166"
+       d="m 258.98156,227.15544 v 89.16794 h 1.8619 v -89.16794 z" />
+    <path
+       id="path156518-6-1-2-8-6"
+       style="fill:#5b7465;fill-opacity:1;stroke:none;stroke-width:0.926153;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="-0.53964166"
+       d="m 260.31434,260.71586 v 1.8619 53.74556 h 1.8619 v -53.74556 h 4.06797 v -1.8619 h -4.06797 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       id="rect81347-0-2-6"
+       style="fill:url(#radialGradient81687-1-0-2);fill-opacity:1;stroke:none;stroke-width:0.855435;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 265.2447,229.97982 v 27.92455 h 82.51903 v -27.92455 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="267.64502"
+       y="233.25008"
+       id="text86169-3-6-0"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="267.64502"
+         y="233.25008"
+         id="tspan617173">The dagger now has:</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="267.64502"
+         y="236.07231"
+         id="tspan617177">Ranged Attack:</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="267.64502"
+         y="238.89453"
+         id="tspan617179">    2AP/(Body)+2+[Throw]/20ft./1d4(stab)</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="267.64502"
+         y="241.71677"
+         id="tspan633509">    Reload - ∞/4/5AP</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="267.64502"
+         y="244.539"
+         id="tspan639021" /><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="267.64502"
+         y="247.36122"
+         id="tspan639023">    This character now has 4 daggers. When all</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="267.64502"
+         y="250.18346"
+         id="tspan639025">4 have been thrown, this character can no </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="267.64502"
+         y="253.00569"
+         id="tspan645123">longer make attacks with the Dagger until 5AP</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="267.64502"
+         y="255.82791"
+         id="tspan645125">are spent to retrieve them.</tspan></text>
+    <rect
+       style="fill:#5b7465;fill-opacity:1;stroke:none;stroke-width:0.666755;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-3-2-62-2"
+       width="77.990768"
+       height="7.6106024"
+       x="265.24472"
+       y="214.67976" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.514242;stroke-linejoin:bevel"
+       id="rect35324-1-5-9-9"
+       width="82.51902"
+       height="7.6894536"
+       x="265.24472"
+       y="222.29037" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="267.85687"
+       y="227.83585"
+       id="text17678-9-4-0-4"><tspan
+         sodipodi:role="line"
+         id="tspan17676-4-7-8-3"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="267.85687"
+         y="227.83585">Target Practice</tspan></text>
+    <path
+       id="path35554-7-4-1-5"
+       style="fill:url(#radialGradient35711-7-6-2-4);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 343.23757,214.94481 -3.33718,3.9372 -3.33717,3.93752 h 2.6777 v 6.31851 h 7.99365 v -6.31851 h 2.67769 l -3.33717,-3.93752 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#00801e;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="343.19754"
+       y="226.06413"
+       id="text39504-8-4-3-1"><tspan
+         sodipodi:role="line"
+         id="tspan39502-4-3-1-7"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#00801e;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="343.19754"
+         y="226.06413">10</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="332.05405"
+       y="225.59253"
+       id="text50301-5-0-1-4"><tspan
+         sodipodi:role="line"
+         id="tspan50299-0-7-0-3"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="332.05405"
+         y="225.59253">TL:1  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="332.05405"
+         y="228.4359"
+         id="tspan58709-3-8-3-1">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#d09ac7;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="266.67728"
+       y="217.51477"
+       id="text75831-6-6-4-4"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-8-0-6"
+         style="fill:#d09ac7;fill-opacity:1;stroke-width:0.5334"
+         x="266.67728"
+         y="217.51477">Weapon Upgrade</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#d09ac7;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="266.67728"
+       y="220.73979"
+       id="text75831-6-7-8-3-9"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-6-4-9-4"
+         style="fill:#d09ac7;fill-opacity:1;stroke-width:0.5334"
+         x="266.67728"
+         y="220.73979">Requires: Dagger</tspan></text>
+    <path
+       id="rect81347-2-6-1-1-2"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3492;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 265.2447,257.90437 10e-6,9.00085 h 82.51902 l -1e-5,-9.00085 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="266.69193"
+       y="261.81464"
+       id="text86169-2-6-0-9-2"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="266.69193"
+         y="261.81464"
+         id="tspan214233-5-1"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan296861-3-2">++ Skills:</tspan> Throw +2, Juggling +3, </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="266.69193"
+         y="264.63687"
+         id="tspan528478-2">           Knife Master +2</tspan></text>
+    <rect
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-7"
+       width="85.70536"
+       height="4.4322872"
+       x="12.96665"
+       y="209.24638" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       id="rect35324-6"
+       width="88.782173"
+       height="7.6894536"
+       x="12.96665"
+       y="213.67867" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="15.311407"
+       y="219.22414"
+       id="text17678-3"><tspan
+         sodipodi:role="line"
+         id="tspan17676-1"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="15.311407"
+         y="219.22414">Bashlight</tspan></text>
+    <path
+       id="path35554-75"
+       style="fill:url(#radialGradient35711-0);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 97.22266,206.3341 -3.337175,3.9372 -3.337171,3.93751 h 2.677697 v 6.31851 h 7.993649 v -6.31851 h 2.67769 l -3.33717,-3.93751 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="97.254578"
+       y="217.45244"
+       id="text39504-9"><tspan
+         sodipodi:role="line"
+         id="tspan39502-6"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="97.254578"
+         y="217.45244">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="86.039124"
+       y="216.98083"
+       id="text50301-2"><tspan
+         sodipodi:role="line"
+         id="tspan50299-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="216.98083">TL:3  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="86.039124"
+         y="219.8242"
+         id="tspan58709-7">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#e4e07c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="14.192228"
+       y="212.29883"
+       id="text75831-8"><tspan
+         sodipodi:role="line"
+         id="tspan75829-5"
+         style="fill:#e4e07c;fill-opacity:1;stroke-width:0.5334"
+         x="14.192228"
+         y="212.29883">Weapon, Melee, 1-Hand</tspan></text>
+    <path
+       id="rect81347-7"
+       style="fill:url(#radialGradient81687-4);fill-opacity:1;stroke:none;stroke-width:0.761932;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 12.96665,221.3691 v 19.73275 h 88.78217 V 221.3691 Z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect81347-2-4"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47138;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 12.96665,241.10185 v 7.55261 h 88.78217 v -7.55261 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="14.032734"
+       y="224.61029"
+       id="text86169-1"><tspan
+         sodipodi:role="line"
+         id="tspan86167-8"
+         style="fill:#000000;stroke-width:0.79375"
+         x="14.032734"
+         y="224.61029">Melee Attack:</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="14.032734"
+         y="227.43253"
+         id="tspan86171-5">    2AP/(Body)+2+[Club]/5ft./1d4(bash)</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="14.032734"
+         y="230.25475"
+         id="tspan335233" /><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="14.032734"
+         y="233.07698"
+         id="tspan336575">    While the Bashlight is in this character's</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="14.032734"
+         y="235.89922"
+         id="tspan336579">loadout, they light up a 40ft. cone in the </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="14.032734"
+         y="238.72144"
+         id="tspan336581">direction they're facing</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="14.335241"
+       y="244.32401"
+       id="text86169-2-9"><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="14.335241"
+         y="244.32401"
+         id="tspan86171-9-7">++ Skill: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan342400">Investigate</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan109303-53"> +4</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="14.335241"
+         y="247.14624"
+         id="tspan89657-8">++ Def: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan347112">(Spirit)+3</tspan></tspan></text>
+    <rect
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-7-2"
+       width="85.70536"
+       height="4.4322872"
+       x="114.45307"
+       y="175.07867" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       id="rect35324-6-9"
+       width="88.782173"
+       height="7.6894536"
+       x="114.45307"
+       y="179.51094" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="116.79783"
+       y="185.05638"
+       id="text17678-3-9"><tspan
+         sodipodi:role="line"
+         id="tspan17676-1-6"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="116.79783"
+         y="185.05638">Butcher's Knife</tspan></text>
+    <path
+       id="path35554-75-0"
+       style="fill:url(#radialGradient35711-0-6);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 198.70909,172.16555 -3.33718,3.93726 -3.33717,3.93752 h 2.6777 v 6.31851 h 7.99365 v -6.31851 h 2.67769 l -3.33717,-3.93752 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="198.741"
+       y="183.28474"
+       id="text39504-9-2"><tspan
+         sodipodi:role="line"
+         id="tspan39502-6-7"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="198.741"
+         y="183.28474">7</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="187.52554"
+       y="182.81311"
+       id="text50301-2-6"><tspan
+         sodipodi:role="line"
+         id="tspan50299-1-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.52554"
+         y="182.81311">TL:2  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.52554"
+         y="185.65648"
+         id="tspan58709-7-3">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#e4e07c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="115.67866"
+       y="178.13113"
+       id="text75831-8-2"><tspan
+         sodipodi:role="line"
+         id="tspan75829-5-1"
+         style="fill:#e4e07c;fill-opacity:1;stroke-width:0.5334"
+         x="115.67866"
+         y="178.13113">Weapon, Melee, 1-Hand</tspan></text>
+    <path
+       id="rect81347-7-5"
+       style="fill:url(#radialGradient81687-4-7);fill-opacity:1;stroke:none;stroke-width:0.511117;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 114.45308,187.20062 v 8.87967 h 88.78217 v -8.87967 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect81347-2-4-9"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47138;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 114.45308,196.08029 v 7.55261 h 88.78217 v -7.55261 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="115.51917"
+       y="190.44252"
+       id="text86169-1-9"><tspan
+         sodipodi:role="line"
+         id="tspan86167-8-1"
+         style="fill:#000000;stroke-width:0.79375"
+         x="115.51917"
+         y="190.44252">Melee Attack:</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="115.51917"
+         y="193.26476"
+         id="tspan336581-7">    2AP/(Body)+1+[Knife]/5ft./1d4(cut)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="115.82169"
+       y="199.30293"
+       id="text86169-2-9-5"><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="115.82169"
+         y="199.30293"
+         id="tspan86171-9-7-8">++ Skill: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan342400-7">Cook +2</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="115.82169"
+         y="202.12517"
+         id="tspan89657-8-4">++ EP: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan347112-8">+1</tspan></tspan></text>
+    <rect
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-7-2-0"
+       width="85.70536"
+       height="4.4322872"
+       x="114.45308"
+       y="227.44537" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       id="rect35324-6-9-4"
+       width="88.782173"
+       height="7.6894536"
+       x="114.45308"
+       y="231.87766" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="116.79781"
+       y="237.4231"
+       id="text17678-3-9-2"><tspan
+         sodipodi:role="line"
+         id="tspan17676-1-6-2"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="116.79781"
+         y="237.4231">Dagger</tspan></text>
+    <path
+       id="path35554-75-0-2"
+       style="fill:url(#radialGradient35711-0-6-0);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 198.70908,224.53245 -3.33718,3.93726 -3.33717,3.93752 h 2.6777 v 6.31851 h 7.99365 v -6.31851 h 2.67769 l -3.33717,-3.93752 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="198.74101"
+       y="235.65144"
+       id="text39504-9-2-0"><tspan
+         sodipodi:role="line"
+         id="tspan39502-6-7-5"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="198.74101"
+         y="235.65144">9</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="187.52556"
+       y="235.17982"
+       id="text50301-2-6-5"><tspan
+         sodipodi:role="line"
+         id="tspan50299-1-1-2"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.52556"
+         y="235.17982">TL:1  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.52556"
+         y="238.02319"
+         id="tspan58709-7-3-9">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#e4e07c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="115.67867"
+       y="230.49785"
+       id="text75831-8-2-0"><tspan
+         sodipodi:role="line"
+         id="tspan75829-5-1-2"
+         style="fill:#e4e07c;fill-opacity:1;stroke-width:0.5334"
+         x="115.67867"
+         y="230.49785">Weapon, Melee, 1-Hand</tspan></text>
+    <path
+       id="rect81347-7-5-8"
+       style="fill:url(#radialGradient81687-4-7-9);fill-opacity:1;stroke:none;stroke-width:0.511117;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 114.45307,239.56752 v 8.87967 h 88.78217 v -8.87967 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect81347-2-4-9-3"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47138;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 114.45307,248.44719 v 7.55261 h 88.78217 v -7.55261 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="115.51918"
+       y="242.80923"
+       id="text86169-1-9-8"><tspan
+         sodipodi:role="line"
+         id="tspan86167-8-1-0"
+         style="fill:#000000;stroke-width:0.79375"
+         x="115.51918"
+         y="242.80923">Melee Attack:</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="115.51918"
+         y="245.63147"
+         id="tspan336581-7-4">    2AP/(Body)+3+[Knife]/5ft./1d4(cut)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="115.82167"
+       y="251.66965"
+       id="text86169-2-9-5-0"><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="115.82167"
+         y="251.66965"
+         id="tspan577061">++ Skill: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan342400-7-1">Sneak +3</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="115.82167"
+         y="254.49188"
+         id="tspan89657-8-4-9">++ Trait: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan578633">Nimble</tspan> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan347112-8-6">+2</tspan></tspan></text>
+    <rect
+       style="fill:#a07c7c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-7-3"
+       width="85.70536"
+       height="4.4322872"
+       x="114.49792"
+       y="32.545841" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       id="rect35324-6-8"
+       width="88.782173"
+       height="7.6894536"
+       x="114.49792"
+       y="36.978123" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="116.84267"
+       y="42.523594"
+       id="text17678-3-6"><tspan
+         sodipodi:role="line"
+         id="tspan17676-1-0"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="116.84267"
+         y="42.523594">Battleaxe</tspan></text>
+    <path
+       id="path35554-75-4"
+       style="fill:url(#radialGradient35711-0-8);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 198.75395,29.633172 -3.33717,3.9372 -3.33718,3.93752 h 2.6777 v 6.3185 h 7.99365 v -6.3185 h 2.67769 l -3.33717,-3.93752 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="198.78584"
+       y="40.751896"
+       id="text39504-9-8"><tspan
+         sodipodi:role="line"
+         id="tspan39502-6-8"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#c23d3d;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="198.78584"
+         y="40.751896">16</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="187.57039"
+       y="40.280293"
+       id="text50301-2-8"><tspan
+         sodipodi:role="line"
+         id="tspan50299-1-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.57039"
+         y="40.280293">TL:1  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.57039"
+         y="43.123657"
+         id="tspan58709-7-7">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#e4e07c;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="115.7235"
+       y="35.598286"
+       id="text75831-8-7"><tspan
+         sodipodi:role="line"
+         id="tspan75829-5-6"
+         style="fill:#e4e07c;fill-opacity:1;stroke-width:0.5334"
+         x="115.7235"
+         y="35.598286">Weapon, Melee, 2-Hand</tspan></text>
+    <path
+       id="rect81347-7-4"
+       style="fill:url(#radialGradient81687-4-4);fill-opacity:1;stroke:none;stroke-width:0.513847;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 114.49794,44.668208 v 8.97475 h 88.78217 v -8.97475 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect81347-2-4-3"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.556112;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 114.49794,53.642958 v 10.51186 h 88.78217 v -10.51186 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="115.564"
+       y="48.340763"
+       id="text86169-1-0"><tspan
+         sodipodi:role="line"
+         id="tspan86167-8-3"
+         style="fill:#000000;stroke-width:0.79375"
+         x="115.564"
+         y="48.340763">Melee Attack:</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="115.564"
+         y="51.162994"
+         id="tspan336581-4">    3AP/(Body)+0+[Axe]/5ft./1d10(cut)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="115.8665"
+       y="56.865757"
+       id="text86169-2-9-0"><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="115.8665"
+         y="56.865757"
+         id="tspan86171-9-7-5">++ Traits: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan342400-9">Strong +2, Intimidating +2</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="115.8665"
+         y="59.687988"
+         id="tspan89657-8-6">++ Resistance: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono"
+   id="tspan347112-9">(Stun)+3</tspan></tspan><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="115.8665"
+         y="62.510216"
+         id="tspan376629">++ HP: +6</tspan></text>
+    <path
+       id="rect81347-0-8-8"
+       style="fill:url(#radialGradient81687-1-1-7);fill-opacity:1;stroke:none;stroke-width:0.703472;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 120.94892,81.571545 v 18.884635 h 82.51902 V 81.571545 Z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="123.62949"
+       y="84.716057"
+       id="text86169-3-4-9"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="123.62949"
+         y="84.716057"
+         id="tspan258982-3">Cost:5AP+4EP  Range:5ft./3 Enemies.</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="123.62949"
+         y="87.538284"
+         id="tspan258986-6">(Body)+4+[Axe]/1d12(Cut)</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="123.62949"
+         y="90.360519"
+         id="tspan258988-8">! Bleed(80%)Shake DC:15 !</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="123.62949"
+         y="93.182747"
+         id="tspan401226" /><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="123.62949"
+         y="96.004974"
+         id="tspan401228">    Targets up to 3 enemies which are 5ft.</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke-width:0.79375"
+         x="123.62949"
+         y="98.827209"
+         id="tspan404698">from both this character, and each-other.</tspan></text>
+    <rect
+       style="fill:#836f83;fill-opacity:1;stroke:none;stroke-width:0.666755;stroke-linejoin:bevel;stroke-opacity:1"
+       id="rect80331-3-2-67-0"
+       width="77.990768"
+       height="7.6106024"
+       x="120.94884"
+       y="66.271484" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.514242;stroke-linejoin:bevel"
+       id="rect35324-1-5-6-2"
+       width="82.51902"
+       height="7.6894536"
+       x="120.94884"
+       y="73.882088" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.9389px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel"
+       x="123.56103"
+       y="79.427559"
+       id="text17678-9-4-5-1"><tspan
+         sodipodi:role="line"
+         id="tspan17676-4-7-6-0"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="123.56103"
+         y="79.427559">Cleave</tspan></text>
+    <path
+       id="path35554-7-4-3-5"
+       style="fill:url(#radialGradient35711-7-6-5-8);fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-y="-1.3124668"
+       d="m 198.94178,66.536535 -3.33718,3.9372 -3.33717,3.93751 h 2.6777 v 6.31851 h 7.99365 v -6.31851 h 2.67769 l -3.33717,-3.93751 z"
+       sodipodi:nodetypes="cccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#804aaa;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="198.93968"
+       y="77.655853"
+       id="text39504-8-4-9-1"><tspan
+         sodipodi:role="line"
+         id="tspan39502-4-3-4-1"
+         style="font-size:4.23333px;text-align:center;text-anchor:middle;fill:#804aaa;fill-opacity:1;stroke:none;stroke-width:0.5334"
+         x="198.93968"
+         y="77.655853">8</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:2.82222px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="187.7581"
+       y="77.184242"
+       id="text50301-5-0-8-0"><tspan
+         sodipodi:role="line"
+         id="tspan50299-0-7-1-8"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.7581"
+         y="77.184242">TL:1  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#808080;stroke-width:0.5334"
+         x="187.7581"
+         y="80.027603"
+         id="tspan58709-3-8-2-5">FL:0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#aca8ff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="122.38143"
+       y="69.106483"
+       id="text75831-6-6-9-0"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-8-3-6"
+         style="fill:#aca8ff;fill-opacity:1;stroke-width:0.5334"
+         x="122.38143"
+         y="69.106483">Weapon Technique</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold';fill:#aca8ff;fill-opacity:1;stroke:none;stroke-width:0.5334;stroke-linejoin:bevel;stroke-opacity:1"
+       x="122.38143"
+       y="72.331512"
+       id="text75831-6-7-8-9-4"><tspan
+         sodipodi:role="line"
+         id="tspan75829-1-6-4-0-6"
+         style="fill:#aca8ff;fill-opacity:1;stroke-width:0.5334"
+         x="122.38143"
+         y="72.331512">Requires: Battleaxe</tspan></text>
+    <path
+       id="rect81347-2-6-1-8-2"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.399889;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 120.94892,100.45618 v 10.67481 h 82.51902 v -10.67481 z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82223px;line-height:1;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="122.58489"
+       y="103.563"
+       id="text86169-2-6-0-8-5"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="122.58489"
+         y="103.563"
+         id="tspan89657-5-9-9-8"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan315913-6">++ Trait:</tspan> Strong +2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="122.58489"
+         y="106.38523"
+         id="tspan214233-8-2"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan318495-8">++ Skill:</tspan> Axe Master +2</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:FreeMono;fill:#ffffff;fill-opacity:1;stroke-width:0.79375"
+         x="122.58489"
+         y="109.20747"
+         id="tspan199966-5-4"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:FreeMono;-inkscape-font-specification:'FreeMono Bold'"
+   id="tspan320825-7">++ HP:</tspan> +4</tspan></text>
+  </g>
+</svg>

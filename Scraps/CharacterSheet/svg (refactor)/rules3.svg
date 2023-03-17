@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.5in"
+   height="11in"
+   viewBox="0 0 215.9 279.4"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="rules3.svg"
+   inkscape:export-filename="/home/vulpecula/DriveSync/Roleplay/Roleplaying Game/Scraps/CharacterSheet/svg (refactor)/rules1.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     units="in"
+     showguides="false"
+     inkscape:zoom="0.5"
+     inkscape:cx="214"
+     inkscape:cy="521"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-object-midpoints="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid846" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="706.07031"
+       y="836.66016"
+       width="215.6875"
+       height="82.722656"
+       id="rect46677" />
+    <rect
+       x="217.11328"
+       y="1011.4531"
+       width="61.972655"
+       height="30.937499"
+       id="rect690490" />
+    <rect
+       x="-604.31444"
+       y="809.12107"
+       width="42.074218"
+       height="24.210937"
+       id="rect686632" />
+    <rect
+       x="72.754657"
+       y="316.96337"
+       width="31.181751"
+       height="29.427795"
+       id="rect48150" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter1520"
+       x="-0.018106088"
+       y="-0.13998423"
+       width="1.0497916"
+       height="1.3849553">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1510" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1512" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1514" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1516" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1518" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1640"
+       x="-0.026164691"
+       y="-0.06580315"
+       width="1.0721887"
+       height="1.1839139">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1630" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1632" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1634" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1636" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1638" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter2678"
+       x="-0.095617784"
+       y="-0.10634296"
+       width="1.2639726"
+       height="1.302231">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2668" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2670" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur2672" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset2674" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2676" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter7131"
+       x="-0.02338716"
+       y="-0.25177168"
+       width="1.0643284"
+       height="1.6925197">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood7121" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite7123" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur7125" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset7127" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite7129" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter2678-3"
+       x="-0.095617784"
+       y="-0.10634296"
+       width="1.2639726"
+       height="1.302231">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2668-6" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2670-7" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur2672-5" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset2674-3" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2676-5" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter51262"
+       x="-0.031117052"
+       y="-0.071825925"
+       width="1.1047268"
+       height="1.2417356">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood51252" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite51254" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur51256" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset51258" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite51260" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter53340-7"
+       x="-0.044083153"
+       y="-0.42219998"
+       width="1.1483652"
+       height="2.4209461">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood53330-1" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite53332-7" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur53334-2" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset53336-7" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite53338-2" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter1894"
+       x="-0.031117052"
+       y="-0.071825922"
+       width="1.1047268"
+       height="1.2417356">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1884" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1886" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur1888" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1890" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1892" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter1906"
+       x="-0.031117052"
+       y="-0.071825922"
+       width="1.1047268"
+       height="1.2417356">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1896" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1898" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur1900" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1902" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1904" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter307595-3"
+       x="-0.057085898"
+       y="-0.22126176"
+       width="1.1248838"
+       height="1.5255616">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood307585-8" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite307587-8" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur307589-3" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset307591-1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite307593-8" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter307675-9"
+       x="-0.057085898"
+       y="-0.22126176"
+       width="1.1248838"
+       height="1.5255616">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood307665-6" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite307667-4" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur307669-3" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset307671-3" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite307673-3" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter78384-3-8"
+       x="-0.025605605"
+       y="-0.080090031"
+       width="1.0512112"
+       height="1.1601801">
+      <feGaussianBlur
+         stdDeviation="0.5 0.5"
+         result="blur"
+         id="feGaussianBlur78382-6-6" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter377994-0"
+       x="-0.1615429"
+       y="-0.39091974"
+       width="1.3782356"
+       height="2.0487548">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood377984-4" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite377986-8" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur377988-8" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset377990-8" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite377992-9" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter377994-0-8-6"
+       x="-0.16154291"
+       y="-0.39091974"
+       width="1.3782356"
+       height="2.0487547">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood377984-4-7-1" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite377986-8-9-5" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur377988-8-0-9" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset377990-8-3-4" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite377992-9-3-9" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter377994-0-3"
+       x="-0.1615429"
+       y="-0.39091974"
+       width="1.3782356"
+       height="2.0487548">
+      <feFlood
+         flood-opacity="0.517647"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood377984-4-07" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite377986-8-86" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.5"
+         result="blur"
+         id="feGaussianBlur377988-8-8" />
+      <feOffset
+         dx="0.5"
+         dy="1"
+         result="offset"
+         id="feOffset377990-8-8" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite377992-9-4" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect848"
+       width="207.69792"
+       height="271.19791"
+       x="3.96875"
+       y="3.96875"
+       sodipodi:insensitive="true" />
+    <rect
+       style="fill:#555555;fill-opacity:1;stroke:none;stroke-width:1.54549;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect104828-8-3"
+       width="207.6958"
+       height="271.19791"
+       x="3.9687507"
+       y="3.96875" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="42.929974"
+       y="81.317139"
+       id="text95322-5-6-3-6-6-6"
+       transform="translate(-35.451016,-49.25115)"><tspan
+         x="42.929974"
+         y="81.317139"
+         id="tspan108184"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108180">Attack</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108182">:</tspan> An attack will have a bonus for ease of use, and ones that requre skill will have </tspan><tspan
+         x="42.929974"
+         y="86.235366"
+         id="tspan108186">another bonus for 'weapon mastery' (found under qualities). An attack will target one of the </tspan><tspan
+         x="42.929974"
+         y="91.153594"
+         id="tspan108188">3 (Angle)DEF scores. ( ex: body[+2 +(swordsman)] ) The attacker makes a chande roll + </tspan><tspan
+         x="42.929974"
+         y="96.071822"
+         id="tspan108190">weapon bonuses vs specified (Angle)DEF. The target must be within the given range. A </tspan><tspan
+         x="42.929974"
+         y="100.99005"
+         id="tspan108192">critical success does x2 damage, and fluke success does x4 damage. The attack will specify </tspan><tspan
+         x="42.929974"
+         y="105.90828"
+         id="tspan108194">any AP and Energy costs.
+</tspan><tspan
+         x="42.929974"
+         y="110.82651"
+         id="tspan108196">    Ranged attacks may have a set ammount of ammunition per clip and/or clips per day. </tspan><tspan
+         x="42.929974"
+         y="115.74474"
+         id="tspan108198">When a clip is empty reloading will have a seprate AP cost for each weapon. If your target is </tspan><tspan
+         x="42.929974"
+         y="120.66296"
+         id="tspan108200">behind cover, roll ranged attacks at disadvantage.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="42.929974"
+       y="81.317139"
+       id="text95322-5-6-3-6-6-7"
+       transform="translate(-35.544033,45.831105)"><tspan
+         x="42.929974"
+         y="81.317139"
+         id="tspan108210"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108202">Defend</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108204">/</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108206">Relax</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108208">:</tspan> A quirk is a description of your character and what they are capable of. These </tspan><tspan
+         x="42.929974"
+         y="86.235366"
+         id="tspan108212">are simply words and a bonus denoting magnitude. The player requests a quality magnitude </tspan><tspan
+         x="42.929974"
+         y="91.153594"
+         id="tspan108214">be added to the result of a chance roll, before it is made. The player must justify the use of </tspan><tspan
+         x="42.929974"
+         y="96.071822"
+         id="tspan108216">this quirk narratively, and the GM may or may not approve this request. A trinity bonus can </tspan><tspan
+         x="42.929974"
+         y="100.99005"
+         id="tspan108218">be used in place of, or in conjunction with a quirk bonus, also at the GM's approval.
+</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="42.929974"
+       y="81.317139"
+       id="text95322-5-6-3-6-6-7-6"
+       transform="translate(-35.417943,10.175239)"><tspan
+         x="42.929974"
+         y="81.317139"
+         id="tspan108228"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108220">Go Prone</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108222">/</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108224">Stand Up</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108226">:</tspan> A quirk is a description of your character and what they are capable of. </tspan><tspan
+         x="42.929974"
+         y="86.235366"
+         id="tspan108230">These are simply words and a bonus denoting magnitude. The player requests a quality </tspan><tspan
+         x="42.929974"
+         y="91.153594"
+         id="tspan108232">magnitude be added to the result of a chance roll, before it is made. The player must justify </tspan><tspan
+         x="42.929974"
+         y="96.071822"
+         id="tspan108234">the use of this quirk narratively, and the GM may or may not approve this request. A trinity </tspan><tspan
+         x="42.929974"
+         y="100.99005"
+         id="tspan108236">bonus can be used in place of, or in conjunction with a quirk bonus, also at the GM's </tspan><tspan
+         x="42.929974"
+         y="105.90828"
+         id="tspan108238">approval.
+</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="42.929974"
+       y="81.317139"
+       id="text95322-5-6-3-6-6-5"
+       transform="translate(-35.544033,76.568748)"><tspan
+         x="42.929974"
+         y="81.317139"
+         id="tspan108248"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108240">Move</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108242">/</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108244">Dash</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108246">:</tspan> A quirk is a description of your character and what they are capable of. These </tspan><tspan
+         x="42.929974"
+         y="86.235366"
+         id="tspan108250">are simply words and a bonus denoting magnitude. The player requests a quality magnitude </tspan><tspan
+         x="42.929974"
+         y="91.153594"
+         id="tspan108252">be added to the result of a chance roll, before it is made. The player must justify the use of </tspan><tspan
+         x="42.929974"
+         y="96.071822"
+         id="tspan108254">this quirk narratively, and the GM may or may not approve this request. A trinity bonus can </tspan><tspan
+         x="42.929974"
+         y="100.99005"
+         id="tspan108256">be used in place of, or in conjunction with a quirk bonus, also at the GM's approval.
+</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="42.929974"
+       y="81.317139"
+       id="text95322-5-6-3-6-6-3"
+       transform="translate(-35.451016,107.30639)"><tspan
+         x="42.929974"
+         y="81.317139"
+         id="tspan108262"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108258">Techniques</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108260">:</tspan> A quirk is a description of your character and what they are capable of. These </tspan><tspan
+         x="42.929974"
+         y="86.235366"
+         id="tspan108264">are simply words and a bonus denoting magnitude. The player requests a quality magnitude </tspan><tspan
+         x="42.929974"
+         y="91.153594"
+         id="tspan108266">be added to the result of a chance roll, before it is made. The player must justify the use of </tspan><tspan
+         x="42.929974"
+         y="96.071822"
+         id="tspan108268">this quirk narratively, and the GM may or may not approve this request. A trinity bonus can </tspan><tspan
+         x="42.929974"
+         y="100.99005"
+         id="tspan108270">be used in place of, or in conjunction with a quirk bonus, also at the GM's approval.
+</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="42.929974"
+       y="81.317139"
+       id="text95322-5-6-3-6-6-3-56"
+       transform="translate(-35.641185,138.04403)"><tspan
+         x="42.929974"
+         y="81.317139"
+         id="tspan108276"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108272">Consuming Items</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108274">:</tspan> A quirk isl.
+</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:202.149;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="42.929974"
+       y="81.317139"
+       id="text95322-5-6-3-6-6-3-5"
+       transform="translate(-35.544033,149.14184)"><tspan
+         x="42.929974"
+         y="81.317139"
+         id="tspan108282"><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108278">House Rules</tspan><tspan
+   style="font-weight:bold;fill:#ffff00"
+   id="tspan108280">:</tspan> A quirk is a description of your character and what they are capable of. These </tspan><tspan
+         x="42.929974"
+         y="86.235366"
+         id="tspan108284">are simply words and a bonus denoting magnitude. The player requests a quality magnitude </tspan><tspan
+         x="42.929974"
+         y="91.153594"
+         id="tspan108286">be added to the result of a chance roll, before it is made. The player must justify the use of </tspan><tspan
+         x="42.929974"
+         y="96.071822"
+         id="tspan108288">this quirk narratively, and the GM may or may not approve this request. A trinity bonus can </tspan><tspan
+         x="42.929974"
+         y="100.99005"
+         id="tspan108290">be used in place of, or in conjunction with a quirk bonus, also at the GM's approval.
+</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text48148"
+       style="font-size:10.6667px;line-height:1;font-family:FreeMono;-inkscape-font-specification:FreeMono;white-space:pre;shape-inside:url(#rect48150);fill:#b3b3b3;stroke:#c8c8c8;stroke-width:2" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text686630"
+       style="fill:#ffffff;font-size:16px;-inkscape-font-specification:'Ubuntu Bold';font-family:Ubuntu;line-height:1;stroke-linecap:round;text-align:end;font-weight:bold;stroke-width:2.016;white-space:pre;shape-inside:url(#rect686632)" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text690488"
+       style="fill:#ffffff;font-size:16px;-inkscape-font-specification:'Ubuntu Bold';font-family:Ubuntu;line-height:1;stroke-linecap:round;text-align:end;font-weight:bold;stroke-width:2.016;white-space:pre;shape-inside:url(#rect690490)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 15.490185,120.44799 H 200.14524"
+       id="path694822" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 25.912512,84.792129 H 210.56757"
+       id="path694822-2" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 16.750112,151.18564 H 201.40517"
+       id="path694822-7" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 15.490185,181.92328 H 200.14524"
+       id="path694822-9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 17.54816,223.75873 H 202.20322"
+       id="path694822-9-3" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5334;stroke-linecap:round;stroke-opacity:1"
+       d="M 20.82075,212.66092 H 205.47581"
+       id="path694822-9-3-2" />
+    <g
+       id="g34483"
+       transform="translate(5.5707559,-3.0747475)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:199.395;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3-6-6-2-1-9-0-7-8-6"
+         transform="translate(-22.095468,-65.702409)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan108292">Uses per Day</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:199.395;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3-6-6-2-1-9-0-7-8-6-3"
+         transform="translate(23.70622,-65.637296)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan108294">Uses per Combat</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:199.395;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3-6-6-2-1-9-0-7-8-6-3-6"
+         transform="translate(78.058947,-65.637296)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan108296">Ammo per Clip</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:199.395;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3-6-6-2-1-9-0-7-8-6-3-6-7"
+         transform="translate(127.41881,-65.637296)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan108298">Clips per Day</tspan></text>
+      <path
+         id="path20037"
+         style="fill:#000000;stroke:none;stroke-width:0.819197;stroke-linecap:round;stroke-opacity:1"
+         d="m 12.153205,11.198917 -0.657937,1.139673 h 1.315859 z m -2.015862,0.520637 v 1.31586 l 1.139672,-0.657922 z m 4.031725,0.02534 -1.139688,0.657922 1.139688,0.657154 z m -2.015863,0.937284 a 2.2449313,2.2449313 0 0 0 -2.2452337,2.245235 2.2449313,2.2449313 0 0 0 0.0046,0.119024 h -3.924588 a 6.2023554,3.1011777 0 0 0 6.1642627,2.778558 6.2023554,3.1011777 0 0 0 6.165061,-2.778558 h -3.923804 a 2.2449313,2.2449313 0 0 0 0.0046,-0.119024 2.2449313,2.2449313 0 0 0 -2.245219,-2.245235 z m -3.5499897,0.621432 0.657937,1.139672 0.657938,-1.139672 z m 5.7841057,0 0.657937,1.139672 0.657922,-1.139672 z" />
+      <path
+         id="path20037-3"
+         style="fill:#000000;stroke:none;stroke-width:0.819197;stroke-linecap:round;stroke-opacity:1"
+         d="m 55.04372,10.764745 c -0.264802,0.458744 -0.647755,0.726542 -0.04607,0.968246 l -0.0794,0.137302 -1.145247,-0.356338 0.880951,0.813485 -0.239677,0.415864 c -0.854981,-0.493622 -0.52999,0.80456 -1.323001,1.222222 0,0 1.140763,0.880828 2.280143,0.709525 -0.232627,-1.336608 0.587614,-1.202978 -0.275399,-1.53809 l 0.239692,-0.41588 2.091255,1.20714 -2.68968,1.553172 h -2.947603 a 6.2023554,3.1011777 0 0 0 6.164263,2.777774 6.2023554,3.1011777 0 0 0 6.165046,-2.777774 h -2.946804 l -2.689665,-1.553172 2.091255,-1.20714 0.239677,0.41588 c -0.863013,0.335112 -0.0427,0.201482 -0.2754,1.53809 1.139396,0.171303 2.280159,-0.709525 2.280159,-0.709525 -0.793011,-0.417662 -0.468036,-1.715844 -1.323017,-1.222222 l -0.239677,-0.415864 0.880951,-0.813485 -1.145232,0.356338 -0.0794,-0.137302 c 0.601712,-0.241704 0.218775,-0.509502 -0.04607,-0.968246 -0.106431,0.522219 -0.886587,1.043947 -1.445235,0.834125 0.317112,0.524677 0.258353,0.845997 0.809521,0.527779 l 0.0794,0.137301 -2.354753,1.359522 -2.354752,-1.359522 0.0794,-0.137301 c 0.551168,0.318218 0.492408,-0.0031 0.809521,-0.527779 -0.558648,0.209822 -1.338789,-0.311906 -1.44522,-0.834125 z m 2.911097,3.468241 2.161887,1.248407 h -4.323789 z" />
+      <path
+         id="path271019-0-8-2-8"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.911775;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         inkscape:transform-center-x="-0.72027111"
+         d="m 105.86786,11.624666 v 4.088872 c 0.0823,3.95e-4 0.8353,0.0037 1.27381,0.0055 v -4.094427 z m 1.83413,0 v 4.096808 c 1.48577,0.0069 3.40879,0.01505 4.84045,0.01906 v -4.115857 z m 5.16902,0 v 4.11665 c 0.27969,8.13e-4 0.57812,0.0017 0.79762,0.0017 1.65205,0 2.05973,-1.289788 4.46823,-1.230949 -1.33791,-1.840355 -2.64347,-2.295407 -4.62457,-2.88729 z m 5.26585,2.88729 c -2.23673,1.333093 -2.5693,1.943804 -4.62457,1.934914 l -0.64128,-0.0032 v 0.955552 h 0.64128 c 1.98109,-0.591866 3.28666,-1.046955 4.62457,-2.887291 z m -12.269,1.902373 v 0.984917 h 1.27381 v -0.979362 z m 1.83413,0.0072 v 0.977773 h 4.84045 v -0.957139 z"
+         inkscape:transform-center-y="-2.3346487e-05" />
+      <path
+         id="rect273188-9-0-3-5"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.933373;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 155.0943,11.480206 1.11428,4.925379 c 0.16347,0.602621 0.17174,0.994524 0.65317,1.111901 l 0.71508,0.02622 -1.36269,-6.022197 z m 1.56348,0.480156 0.25952,1.159521 a 0.20196078,0.2405536 0 0 1 0.0333,-0.01106 h 9.37774 a 0.20196078,0.2405536 0 0 1 0.20317,0.241269 0.20196078,0.2405536 0 0 1 -0.20317,0.242061 h -9.30471 l 0.16112,0.717455 h 9.34043 a 0.20196078,0.2405536 0 0 1 0.20318,0.241269 0.20196078,0.2405536 0 0 1 -0.20318,0.238095 h -9.2333 l 0.25715,1.150789 h 10.15234 l -0.89048,-3.979349 z" />
+    </g>
+    <g
+       id="g39923"
+       transform="translate(3.2883379,-7.8372479)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:199.395;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3-6-6-2-1-9-0-7-8-6-3-5"
+         transform="translate(31.084481,-50.726637)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan108300">Ranged Attack</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Saab;-inkscape-font-specification:Saab;text-align:start;text-anchor:start;white-space:pre;inline-size:199.395;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="42.929974"
+         y="81.317139"
+         id="text95322-5-6-3-6-6-2-1-9-0-7-8-6-3-5-3"
+         transform="translate(76.182438,-50.316327)"><tspan
+           x="42.929974"
+           y="81.317139"
+           id="tspan108302">Melee Attack</tspan></text>
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0541654;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 110.49767,32.364204 c -0.48833,-0.850149 -0.6708,-1.145833 -0.70066,-1.135249 -0.0232,0.0078 -0.57054,0.321269 -1.21858,0.696438 -1.16159,0.672482 -1.18044,0.682134 -1.33165,0.682134 -0.2163,0 -0.34544,-0.09599 -0.52951,-0.393878 -0.22556,-0.364825 -0.24657,-0.619049 -0.0672,-0.809914 0.0403,-0.04282 0.59714,-0.378839 1.23758,-0.746716 0.64044,-0.367878 1.17498,-0.678622 1.18785,-0.690539 0.0185,-0.01645 -1.068,-1.945465 -1.2741,-2.263642 -0.0357,-0.05509 -0.0232,-0.06593 0.3356,-0.2708 0.20496,-0.117397 0.37942,-0.216606 0.38752,-0.220473 0.007,-0.0037 0.16582,0.255634 0.35022,0.57669 0.18457,0.321056 0.34368,0.588816 0.35373,0.595017 0.009,0.0063 1.21133,-0.677921 2.66954,-1.520278 l 2.65133,-1.53155 1.70603,0.167786 c 0.93834,0.09229 1.70715,0.169594 1.70847,0.171818 10e-4,0.0026 -0.3155,0.706972 -0.70408,1.566154 l -0.70649,1.562139 -2.65961,1.535419 c -2.21855,1.280797 -2.6557,1.542668 -2.63604,1.579139 0.0138,0.02402 0.16883,0.294535 0.34618,0.601096 l 0.32263,0.557375 -0.23159,0.133169 c -0.12738,0.07326 -0.30021,0.172558 -0.38421,0.220706 l -0.15261,0.08754 z"
+         id="path42258-0-1-1" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0541654;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 67.448156,34.586141 c -0.1195,-0.06299 -0.175778,-0.119037 -0.233073,-0.231359 -0.04563,-0.08939 -0.05142,-0.164661 -0.05142,-0.677658 V 33.099933 L 66.9374,33.053383 c -1.35777,-0.279486 -2.460976,-1.297849 -2.844676,-2.625894 -0.03752,-0.13013 -0.07642,-0.297687 -0.08639,-0.372352 l -0.01852,-0.135759 -0.571959,-5.95e-4 c -0.649913,-6.14e-4 -0.732359,-0.01992 -0.871916,-0.202804 -0.06137,-0.0805 -0.07874,-0.13467 -0.08593,-0.26698 -0.01152,-0.212114 0.06254,-0.35211 0.237797,-0.450263 0.117182,-0.06556 0.140112,-0.06807 0.704824,-0.07638 l 0.583794,-0.0086 0.03127,-0.182031 c 0.04446,-0.259727 0.179251,-0.655973 0.316492,-0.930659 0.533654,-1.068532 1.484797,-1.788422 2.675337,-2.024902 l 0.155629,-0.03095 v -0.571752 c 0,-0.527283 0.0046,-0.580972 0.05744,-0.690404 0.157019,-0.324389 0.603618,-0.363931 0.825598,-0.07309 l 0.07828,0.102592 0.0092,0.616624 0.0069,0.616621 0.154239,0.03009 c 0.512441,0.09995 1.010755,0.304265 1.438201,0.589646 0.468093,0.312534 0.969649,0.888475 1.238363,1.422068 0.11302,0.224317 0.262879,0.66553 0.314893,0.926702 l 0.03775,0.189558 0.580019,0.01459 c 0.318993,0.0081 0.604382,0.02513 0.634165,0.03786 0.327562,0.140065 0.430505,0.514274 0.212601,0.773133 -0.138729,0.164962 -0.182725,0.174967 -0.832707,0.189812 l -0.59292,0.01344 -0.04678,0.230178 c -0.288307,1.41706 -1.428359,2.567371 -2.849562,2.875155 l -0.291041,0.06299 -6.9e-5,0.573674 c -6.9e-5,0.609037 -0.01152,0.676222 -0.130389,0.803967 -0.139651,0.149377 -0.389907,0.197315 -0.560196,0.107227 z m -0.284347,-3.108026 v -0.607604 l -0.182725,-0.08926 C 66.735782,30.661472 66.42552,30.352166 66.299836,30.102097 l -0.09193,-0.182795 h -0.608714 -0.608713 l 0.01852,0.112275 c 0.02964,0.185388 0.189441,0.577263 0.330363,0.810477 0.23166,0.383209 0.605239,0.740391 1.01284,0.968429 0.16165,0.09046 0.30197,0.146737 0.554914,0.222629 0.281684,0.08453 0.257251,0.137333 0.257251,-0.554959 z m 1.418145,0.49684 c 0.259754,-0.0943 0.518115,-0.233967 0.71953,-0.388956 0.177398,-0.13657 0.475038,-0.446111 0.590325,-0.614114 0.169293,-0.246795 0.343379,-0.646546 0.409406,-0.940469 l 0.02525,-0.112114 h -0.614132 -0.614155 l -0.08361,0.169247 c -0.148681,0.301533 -0.398104,0.549282 -0.706676,0.702146 l -0.169293,0.08384 v 0.607965 0.607956 l 0.115093,-0.01853 c 0.06323,-0.01158 0.210979,-0.05396 0.328164,-0.09643 z m -0.491968,-1.603692 c 0.538634,-0.263515 0.754036,-0.887329 0.491621,-1.423678 -0.295903,-0.604813 -1.119648,-0.75444 -1.62264,-0.294736 -0.284348,0.259879 -0.39968,0.644656 -0.311444,1.03896 0.06879,0.307858 0.355423,0.613523 0.673466,0.718436 0.230201,0.07594 0.569228,0.05876 0.768997,-0.03898 z m -1.80562,-1.596077 c 0.163271,-0.325911 0.413505,-0.575589 0.719552,-0.717973 l 0.159335,-0.0741 2.78e-4,-0.61607 c 1.61e-4,-0.338839 -0.0092,-0.616072 -0.02084,-0.616072 -0.06902,0 -0.452203,0.125061 -0.618045,0.201693 -0.700261,0.323544 -1.202628,0.881158 -1.444641,1.603544 -0.132939,0.397048 -0.185041,0.361179 0.525017,0.361179 h 0.607879 z m 3.980234,-0.09026 c -0.247477,-0.899536 -0.94526,-1.605794 -1.843741,-1.866163 -0.128761,-0.0373 -0.244906,-0.06784 -0.258129,-0.06784 -0.01382,0 -0.02339,0.273998 -0.02316,0.616071 l 0.0012,0.61607 0.194769,0.09255 c 0.252525,0.119992 0.538169,0.400812 0.670084,0.658819 l 0.09333,0.182678 0.614249,1.12e-4 0.614271,1.04e-4 -0.06392,-0.232411 z"
+         id="path42696-6-2-5" />
+    </g>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text46675"
+       style="fill:#008000;font-size:16px;-inkscape-font-specification:'Ubuntu Bold';font-family:Ubuntu;line-height:1;stroke-linecap:round;text-align:end;font-weight:bold;stroke-width:2.016;white-space:pre;shape-inside:url(#rect46677)" />
+  </g>
+</svg>
