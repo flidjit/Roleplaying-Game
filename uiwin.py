@@ -1,4 +1,5 @@
 from backstage import *
+from rp_frames import *
 
 
 # ToDo: * Add Entity markers on the minimap.
@@ -10,7 +11,7 @@ class ViewPort(tk.Frame):
                  colors=default_ui_colors):
         super().__init__(master=master)
         self.config(bg=colors['Viewport BG'])
-        self.place(x=20, y=20, width=800, height=400)
+        self.place(x=0, y=0, width=800, height=400)
 
 
 class ChatSection(tk.Text):
@@ -24,7 +25,7 @@ class ChatSection(tk.Text):
         self.config(yscrollcommand=self.scroll_bar.set)
         self.scroll_bar.config(command=self.yview)
         self.scroll_bar.place(x=790, y=0, width=8, height=130)
-        self.place(x=20, y=440, width=800, height=133)
+        self.place(x=0, y=440, width=800, height=133)
 
     def say_in_chat(self, user_name='Bob', emote='says',
                     text='hello!'):
@@ -40,20 +41,20 @@ class InputSection(tk.Entry):
         super().__init__(master=master, highlightthickness=0)
         self.config(bg=colors['InputSection - BG'])
         self.config(fg=colors['InputSection - FG'])
-        self.place(x=20, y=580, width=800, height=20)
+        self.place(x=0, y=580, width=800, height=20)
 
 
 class TabSection(ttk.Notebook):
     def __init__(self, master=None,
                  colors=default_ui_colors,
                  icons=default_ui_icons):
-        super().__init__(master=master, width=350, height=546)
+        super().__init__(master=master, width=450, height=600)
         self.map_tab_icon = tk.PhotoImage(file=icons['Map'])
         self.map_tab = MapTab(self, colors)
         self.map_tab.grid()
         self.add(self.map_tab, image=self.map_tab_icon)
         self.sheet_tab_icon = tk.PhotoImage(file=icons['Sheet'])
-        self.sheet_tab = SheetTab(self, colors)
+        self.sheet_tab = CSheet1(self)
         self.sheet_tab.grid()
         self.add(self.sheet_tab, image=self.sheet_tab_icon)
         self.prop_tab_icon = tk.PhotoImage(file=icons['Props'])
@@ -76,20 +77,7 @@ class TabSection(ttk.Notebook):
         self.help_tab = HelpTab(self, colors)
         self.help_tab.grid()
         self.add(self.help_tab, image=self.help_tab_icon)
-        self.place(x=840, y=20)
-
-
-class SheetTab(tk.Canvas):
-    def __init__(self, master=None,
-                 colors=default_ui_colors):
-        super().__init__(master=master)
-        self.config(bg=colors['SheetTab - BG'])
-        self.images = {
-            "Top": tk.PhotoImage(file='Scraps/Images/UI/Topsectionui.png')}
-        self.sheet_1 = tk.Label(
-            self, image=self.images['Top'],
-            highlightthickness=0, borderwidth=0)
-        self.sheet_1.place(x=0, y=0)
+        self.place(x=807, y=0)
 
 
 class MiniMap(tk.Canvas):

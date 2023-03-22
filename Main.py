@@ -73,7 +73,7 @@ class AoaWindow(ShowBase):
         self.ttk_style = ttk.Style()
         self.root = self.tkRoot
         self.root['bg'] = col['Root BG']
-        self.root.geometry("1210x620")
+        self.root.geometry("1260x640")
         self.root.resizable(False, False)
         self.image_frame = uiwin.ViewPort(self.root, col)  # !*!
         self.chat_output = uiwin.ChatSection(self.root, col)  # !*!

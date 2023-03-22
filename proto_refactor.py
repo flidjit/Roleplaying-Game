@@ -37,17 +37,16 @@ class Character(RenderedObject):
             'Eye Color': 'Yellow',
             'Age': 20}
         self.power_level = 0
-        self.ups = 50
+        self.credits = 50
         self.hp = [30, 30]
         self.ap = [6, 6]
-        self.energy = {
-            'EP': [10, 10]}
-        self.defense = {
-            'Body': 0,
-            'Mind': 0,
-            'Spirit': 0}
-        self.resistances = {}
-        self.weaknesses = {}
+        self.instinct = +0
+        self.Triad = {
+            'Body': [+4, 7, 7],
+            'Mind': [+4, 7, 7],
+            'Spirit': [+4, 7, 7]}
+        self.resistances = []
+        self.weaknesses = []
         self.status_effects = []
         self.loadout = {
             'Left': None,
@@ -72,8 +71,7 @@ class Character(RenderedObject):
             'Right': [],
             'Left': []}
         self.key_items = []
-        self.skills = {}
-        self.traits = {}
+        self.quirks = {}
         self.techniques = {}
         self.card_list = {}
 
