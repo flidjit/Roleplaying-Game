@@ -44,6 +44,7 @@ class Shopping(tk.Toplevel):
         self.bt_cols = ('prop_name_', 'prop_cost_')
         self.buy_tree = ttk.Treeview(
             self, columns=self.bt_cols, show='headings')
+        self.buy_tree.bind("<<TreeviewSelect>>", self.show_this_node)
         self.buy_tree.heading('prop_name_', text='Shop', anchor='w')
         self.buy_tree.column('prop_name_', minwidth=0, width=200,
                              stretch=tk.NO)
@@ -88,6 +89,14 @@ class Shopping(tk.Toplevel):
             self.edit_card_butt = tk.Button(self, text='Edit')
             self.edit_card_butt.place(x=430, y=559, height=20, width=50)
 
+    def show_this_node(self, *args):
+        selected_item = self.buy_tree.selection()[0]
+        item_name = self.buy_tree.item(selected_item)['values'][0]
+        print(item_name)
+        print('something happened')
+        this_node = self.shop.card_list[item_name]
+        self.card_display.show_node(node=this_node)
+
     def save_shop(self):
         filename = 'Catalog/Prop Shop/'+self.shop.name+'.shop'
         s_file = open(filename, 'wb')
@@ -101,6 +110,7 @@ class Shopping(tk.Toplevel):
         file = open(filename, 'rb')
         self.shop = pickle.load(file)
         file.close()
+        self.make_shop_list()
 
     def new_card(self):
         crd = NodeEditor().show()
@@ -157,7 +167,7 @@ class NodeEditor(tk.Toplevel):
         self.type_l.place(x=380, y=0, width=90, height=15)
         self.type_val = [
             'Melee Weapon', 'Ranged Weapon', 'Tool', 'Attire',
-            'Consumable', 'Prop Mod', 'Technique Mod']
+            'Consumable', 'Book', 'Trinket']
         self.type_entry_i = ttk.Combobox(self, values=self.type_val)
         self.type_entry_i.place(x=380, y=18, width=150, height=25)
 
@@ -165,7 +175,7 @@ class NodeEditor(tk.Toplevel):
             self, bg='#2C2331', fg='green', text='Placement:', justify='left')
         self.placement_l.place(x=380, y=50, width=90, height=15)
         self.placement_val = [
-            'Pack', 'At-Hand', 'Head', 'Face', 'Neck', 'Wrists',
+            'Pack', 'At Hand', 'Head', 'Face', 'Neck', 'Wrists',
             'Hands', 'Back', 'Torso', 'Waist', 'Legs', 'Feet', 'Finger']
         self.placement_cbox_i = ttk.Combobox(self, values=self.placement_val)
         self.placement_cbox_i.place(x=380, y=68, width=150, height=25)
@@ -269,11 +279,11 @@ class NodeViewer(tk.Canvas):
                 file=f_loc+'torsogear.png'),
             'Waist': tk.PhotoImage(
                 file=f_loc+'waistgear.png'),
-            'Wrist': tk.PhotoImage(
+            'Wrists': tk.PhotoImage(
                 file=f_loc+'wristgear.png'),
-            'At-Hand': tk.PhotoImage(
+            'At Hand': tk.PhotoImage(
                 file=f_loc+'athandgear.png')}
-        ico = self.placement_icons['At-Hand']
+        ico = self.placement_icons['At Hand']
         self.placement_i = self.create_image(
             230, -10, anchor='nw', image=ico)
 
@@ -302,7 +312,7 @@ class NodeViewer(tk.Canvas):
         self.gains_i = tk.Text(
             self, bg='black', fg='green',
             highlightthickness=0, borderwidth=0)
-        self.gains_i.place(x=8, y=160, width=284, height=84)
+        self.gains_i.place(x=100, y=90, width=100, height=54)
 
     def show_node(self, node=Node()):
         self.itemconfig(
@@ -316,9 +326,12 @@ class NodeViewer(tk.Canvas):
             self.tech_lev_i, text=node.dat['Technology Level'])
         self.itemconfig(
             self.fant_lev_i, text=node.dat['Fantasy Level'])
+        img = self.placement_icons[node.dat['Placement']]
+        self.itemconfig(
+            self.placement_i, image=img)
 
         self.description_i.delete('0.0', 'end')
-        self.description_i.insert('end', node.dat['Description'])
+        self.description_i.insert('0.0', node.dat['Description'])
 
         self.gains_i.delete('0.0', 'end')
         q = node.dat['Quirk Gains']
