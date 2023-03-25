@@ -1,30 +1,38 @@
 class Node:
-    def __init__(self, name_='', description_='',
-                 placement_='', type_='', credit_cost_=0,
-                 is_prop_=True, parent_=None, unlocked_=False,
-                 tech_level_=0, fantasy_level_=0, ammo_=None,
-                 clips_=None, quality_gains_=None, stat_gains_=None,
-                 technique_gains_=None, mod_gains_=None,
-                 parent_mods_=None, sub_nodes_=None):
+    def __init__(self, name_='<Node Name>',
+                 description_='<Node Description>',
+                 placement_='<Placement>',
+                 type_='<Type>',
+                 credit_cost_=0,
+                 parent_=None,
+                 tech_level_=0,
+                 fantasy_level_=0,
+                 ammo_=None,
+                 clips_=None,
+                 quirk_gains_=None,
+                 stat_gains_=None,
+                 technique_gains_=None,
+                 character_mods_=None,
+                 technique_mods_=None,
+                 parent_mods_=None,
+                 sub_nodes_=None):
         self.dat = {
             'Name': name_,
             'Description': description_,
             'Placement': placement_,
             'Type': type_,
             'Credit Cost': credit_cost_,
-            'Is Prop': is_prop_,
             'Parent': parent_,
-            'Unlocked': unlocked_,
             'Technology Level': tech_level_,
             'Fantasy Level': fantasy_level_,
             'Ammo': ammo_,
             'Clips': clips_,
-            'Character Gains': {
-                'Qualities': quality_gains_,
-                'Stats': stat_gains_,
-                'Techniques': technique_gains_,
-                'Mods': mod_gains_},
-            'Parent Mods': parent_mods_,
+            'Quirk Gains': quirk_gains_,
+            'Stat Gains': stat_gains_,
+            'Technique Gains': technique_gains_,
+            'Character Mod': character_mods_,
+            'Technique Mod': technique_mods_,
+            'Parent Mod': parent_mods_,
             'Sub-Nodes': sub_nodes_}
 
 
@@ -62,12 +70,12 @@ class Technique:
 punch = Technique(
     name_='Punch', description_='Hit a guy with your fist.', requires_='Fist',
     ap_cost_=2, tohit_roll_='(C)+1 VS (B)', target_='Single Enemy',
-    range_=5, damage_roll_='1d4-[Bash]')
+    range_=5, damage_roll_='1d4[Bash]')
 
 
 fist = Node(
     name_='Fist', description_='A bare hand crumpled up into a ball.',
-    placement_='At Hand', type_='Melee Weapon', unlocked_=True)
+    placement_='At Hand', type_='Melee Weapon')
 
 
 class Character:
@@ -95,7 +103,6 @@ class Character:
             'Resistances': ['Slash DR:5', 'Pierce DR:10'],
             'Weaknesses': ['Bash x2'],
             'Quirks': ['Juggling +4', 'Sword Master +3'],
-            'Mods': [" ** This character can now do stuff."],
             'Loadout': {
                 'Left': "Fist",
                 'Right': "Fist"},
@@ -108,13 +115,11 @@ class Character:
                 'Wrists': None,
                 'Hands': None,
                 'Back': None,
-                'Chest': None,
-                'Belt': None,
+                'Torso': None,
+                'Waist': None,
                 'Legs': None,
                 'Feet': None,
-                'Rings': {
-                    'Left Hand': {},
-                    'Right Hand': {}}},
+                'Finger': []},
             'Techniques': {'Punch': punch},
             'Notes': []}
 

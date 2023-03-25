@@ -5,6 +5,18 @@ from rp_frames import *
 # ToDo: * Add Entity markers on the minimap.
 #       * Switch between viewing local and regional on the minimap.
 
+style = ttk.Style()
+style.theme_use('alt')
+style.configure(
+    'Treeview.Heading', background='black', foreground='white',
+    highlightthickness=0, borderwidth=0)
+style.configure(
+    'Treeview', fieldbackground='black', foreground='green')
+style.configure(
+    'TNotebook.Tab', background='lime green', padding=0)
+style.configure(
+    'TNotebook', background='#2C2331', boarderwidth=0)
+
 
 class ViewPort(tk.Frame):
     def __init__(self, master=None,

@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 from rp_proto import *
+from propshop import *
 
 
 class CSheet1(tk.Canvas):
@@ -119,8 +120,17 @@ class CSheet1(tk.Canvas):
             font=("courier", 10, "normal"))
         self.right_hand_i.place(x=239, y=536, width=195, height=50)
 
+        self.shop_button = tk.Button(
+            self, bg='black', fg='green', text='shop',
+            command=self.open_shop)
+        self.shop_button.place(x=390, y=75, height=25, width=45)
+
         self.character_to_sheet()
         self.place(x=0, y=0)
+
+    def open_shop(self, *args):
+        self.character = Shopping(
+            self, character=self.character, gm_=True).show()
 
     def character_to_sheet(self, *args):
         c = self.character
