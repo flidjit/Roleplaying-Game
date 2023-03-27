@@ -1,147 +1,13 @@
 import tkinter as tk
 from tkinter import ttk
-from tkinter.filedialog import askopenfile, askopenfilename
+from tkinter.filedialog import askopenfilename
 from rp_proto import *
-from copy import copy, deepcopy
+from copy import deepcopy
 import pickle
 
 
-class Shop:
-    def __init__(self):
-        self.name = "A Shop"
-        self.description = "No really. It's a shop."
-        self.card_list = {}
-
-
-class Shopping(tk.Toplevel):
-    def __init__(self, master=None, gm_=True,
-                 character=Character(), shop=Shop()):
-        tk.Toplevel.__init__(self, master=master,
-                             width=600, height=600,
-                             bg='#2C2331')
-        self.protocol("WM_DELETE_WINDOW", self.destroy)
-
-        self.character = character
-        self.shop = shop
-
-        self.bg_image = tk.PhotoImage(
-            file='Scraps/CharacterSheet/UIsheet/shopimage.png')
-        self.bg_i = tk.Label(self, image=self.bg_image)
-        self.bg_i.place(x=0, y=0, width=600, height=600)
-
-        self.card_display = NodeViewer(self)
-        self.card_display.place(x=300, y=0)
-
-        self.shop_name_i = tk.Label(
-            self, bg='#2C2331', fg='white', text=shop.name)
-        self.shop_name_i.place(x=10, y=10)
-        self.shop_description_i = tk.Label(
-            self, bg='#2C2331', fg='white', text=shop.description)
-        self.shop_description_i.place(x=10, y=40)
-
-        self.buy_butt = tk.Button(self, text='Buy')
-        self.buy_butt.place(x=198, y=273, height=20, width=60)
-        self.bt_cols = ('prop_name_', 'prop_cost_')
-        self.buy_tree = ttk.Treeview(
-            self, columns=self.bt_cols, show='headings')
-        self.buy_tree.bind("<<TreeviewSelect>>", self.show_this_node)
-        self.buy_tree.heading('prop_name_', text='Shop', anchor='w')
-        self.buy_tree.column('prop_name_', minwidth=0, width=200,
-                             stretch=tk.NO)
-        self.buy_tree.heading('prop_cost_', text='$$', anchor='w')
-        self.buy_tree.column('prop_cost_', minwidth=0, width=100)
-        self.buy_tree.place(x=10, y=300, width=276, height=293)
-
-        h = 293
-        if gm_:
-            h = 185
-
-        self.sell_butt = tk.Button(self, text='Sell')
-        self.sell_butt.place(x=348, y=273, height=20, width=60)
-        self.st_cols = ('prop_name_', 'prop_cost_')
-        self.sell_tree = ttk.Treeview(
-            self, columns=self.bt_cols, show='headings')
-        self.sell_tree.heading('prop_name_', text='Character', anchor='w')
-        self.sell_tree.column('prop_name_', minwidth=0, width=200,
-                              stretch=tk.NO)
-        self.sell_tree.heading('prop_cost_', text='$$', anchor='w')
-        self.sell_tree.column('prop_cost_', minwidth=0, width=100,
-                              stretch=tk.NO)
-        self.sell_tree.place(x=315, y=300, width=276, height=h)
-
-        if gm_:
-            self.new_shop_butt = tk.Button(self, text='New')
-            self.new_shop_butt.place(x=320, y=510, height=20, width=50)
-            self.save_shop_butt = tk.Button(
-                self, text='Save', command=self.save_shop)
-            self.save_shop_butt.place(x=375, y=510, height=20, width=50)
-            self.load_shop_butt = tk.Button(
-                self, text='Load', command=self.load_shop)
-            self.load_shop_butt.place(x=430, y=510, height=20, width=50)
-            self.merge_shop_butt = tk.Button(
-                self, text='Merge', command=self.load_shop)
-            self.merge_shop_butt.place(x=485, y=510, height=20, width=50)
-            self.new_card_butt = tk.Button(
-                self, text='New', command=self.new_card)
-            self.new_card_butt.place(x=320, y=559, height=20, width=50)
-            self.del_card_butt = tk.Button(self, text='Delete')
-            self.del_card_butt.place(x=375, y=559, height=20, width=50)
-            self.edit_card_butt = tk.Button(self, text='Edit')
-            self.edit_card_butt.place(x=430, y=559, height=20, width=50)
-
-    def show_this_node(self, *args):
-        selected_item = self.buy_tree.selection()[0]
-        item_name = self.buy_tree.item(selected_item)['values'][0]
-        print(item_name)
-        print('something happened')
-        this_node = self.shop.card_list[item_name]
-        self.card_display.show_node(node=this_node)
-
-    def save_shop(self):
-        filename = 'Catalog/Prop Shop/'+self.shop.name+'.shop'
-        s_file = open(filename, 'wb')
-        pickle.dump(self.shop, s_file)
-        s_file.close()
-
-    def load_shop(self):
-        filename = askopenfilename(
-            title='Open a Shop File', initialdir='Catalog/Prop Shop/',
-            filetypes=[('Shop Files', '*.shop')])
-        file = open(filename, 'rb')
-        self.shop = pickle.load(file)
-        file.close()
-        self.make_shop_list()
-
-    def new_card(self):
-        crd = NodeEditor().show()
-        self.shop.card_list[crd.dat['Name']] = crd
-        self.make_shop_list()
-        self.card_display.show_node(crd)
-
-    def make_shop_list(self):
-        for i in self.buy_tree.get_children():
-            self.buy_tree.delete(i)
-        lst = self.shop.card_list
-        num = 0
-        for i in lst:
-            val = [lst[i].dat['Name'],
-                   lst[i].dat['Credit Cost']]
-            print(val)
-            self.buy_tree.insert(parent='', id=str(num), index='end',
-                                 values=val)
-            num += 1
-        for i in lst:
-            print(i)
-            print('N:'+lst[i].dat['Name'])
-
-    def show(self):
-        self.deiconify()
-        self.wait_window()
-        return deepcopy(self.character)
-
-
-class NodeEditor(tk.Toplevel):
-    def __init__(self, master=None, card=Node()):
+class CardEditor(tk.Toplevel):
+    def __init__(self, master=None, card=Card()):
         tk.Toplevel.__init__(self, master=master,
                              width=540, height=660,
                              bg='#2C2331')
@@ -149,6 +15,9 @@ class NodeEditor(tk.Toplevel):
         self.protocol("WM_DELETE_WINDOW", self.save_and_close)
 
         self.card = card
+
+        self.font1 = ("Comic Sans MS", 20, "bold")
+        self.font2 = ("Comic Sans MS", 20, "bold")
 
         self.name_l = tk.Label(
             self, bg='#2C2331', fg='green', text='Name:', justify='left')
@@ -244,16 +113,27 @@ class NodeEditor(tk.Toplevel):
         return deepcopy(self.card)
 
 
-class NodeViewer(tk.Canvas):
-    def __init__(self, master=None, node=Node()):
+class CardView(tk.Canvas):
+    def __init__(self, master=None, card=Card()):
         tk.Canvas.__init__(
             self, master=master,
-            width=300, height=250,
-            highlightthickness=0, borderwidth=0)
+            width=249, height=340,
+            highlightthickness=0, borderwidth=0,
+            background='#18121b')
         self.bg_image = tk.PhotoImage(
-            file='Scraps/CharacterSheet/UIsheet/cardimage.png')
+            file='Scraps/CharacterSheet/UIsheet/poker-card.png')
         self.bg_i = self.create_image(
             0, 0, anchor='nw', image=self.bg_image)
+        self.fonts = {
+            'Title': ("Times", 10, "bold"),
+            'Sub-Title': ("Courier", 8, "bold"),
+            'Numbers': ("FreeMono", 8, "bold"),
+            'Description': ("Sans", 10, "normal")}
+        self.colors = {
+            'Background': '#18121b',
+            'Text 1': 'white',
+            'Text 2': 'grey',
+            'Text 3': 'lime green'}
 
         f_loc = 'Scraps/CharacterSheet/UIsheet/gearicons/'
         self.placement_icons = {
@@ -285,58 +165,275 @@ class NodeViewer(tk.Canvas):
                 file=f_loc+'athandgear.png')}
         ico = self.placement_icons['At Hand']
         self.placement_i = self.create_image(
-            230, -10, anchor='nw', image=ico)
+            165, 10, anchor='nw', image=ico)
 
         self.name_i = self.create_text(
-            10, 6, fill='pink', anchor='nw',
-            text=node.dat['Name'])
+            30, 30, anchor='nw',
+            fill=self.colors['Text 1'],
+            text=card.dat['Name'],
+            font=self.fonts['Title'])
         self.type_i = self.create_text(
-            10, 27, fill='pink', anchor='nw',
-            text=node.dat['Type'])
-        cost = str(node.dat['Credit Cost'])+'.00'
+            30, 54, anchor='nw',
+            fill=self.colors['Text 2'],
+            text=card.dat['Type'],
+            font=self.fonts['Sub-Title'])
+        cost = '$ ' + str(card.dat['Credit Cost']) + '.00'
         self.cost_i = self.create_text(
-            205, 45, fill='lime green', anchor='nw',
-            text=cost)
+            150, 73, anchor='nw',
+            fill=self.colors['Text 1'],
+            text=cost,
+            font=self.fonts['Numbers'])
         self.tech_lev_i = self.create_text(
-            240, 60, fill='grey', anchor='nw',
-            text=node.dat['Technology Level'])
+            45, 69, anchor='nw',
+            fill=self.colors['Text 2'],
+            text='TL: '+str(card.dat['Technology Level']),
+            font=self.fonts['Numbers'])
         self.fant_lev_i = self.create_text(
-            277, 60, fill='grey', anchor='nw',
-            text=node.dat['Fantasy Level'])
+            97, 69, anchor='nw',
+            fill=self.colors['Text 2'],
+            text='FL: '+str(card.dat['Fantasy Level']),
+            font=self.fonts['Numbers'])
 
         self.description_i = tk.Text(
-            self, bg='black', fg='green',
-            highlightthickness=0, borderwidth=0)
-        self.description_i.place(x=8, y=160, width=284, height=84)
+            self, highlightthickness=0, borderwidth=0,
+            bg='black',
+            fg=self.colors['Text 3'],
+            font=self.fonts['Description'])
+        self.description_i.place(x=38, y=174, width=172, height=130)
+        self.grid()
 
-        self.gains_i = tk.Text(
-            self, bg='black', fg='green',
-            highlightthickness=0, borderwidth=0)
-        self.gains_i.place(x=100, y=90, width=100, height=54)
-
-    def show_node(self, node=Node()):
+    def display_card(self, card=Card()):
         self.itemconfig(
-            self.name_i, text=node.dat['Name'])
+            self.name_i, text=card.dat['Name'])
         self.itemconfig(
-            self.type_i, text=node.dat['Type'])
-        c = str(node.dat['Credit Cost'])+'.00'
+            self.type_i, text=card.dat['Type'])
+        c = str(card.dat['Credit Cost']) + '.00'
         self.itemconfig(
             self.cost_i, text=c)
         self.itemconfig(
-            self.tech_lev_i, text=node.dat['Technology Level'])
+            self.tech_lev_i, text=card.dat['Technology Level'])
         self.itemconfig(
-            self.fant_lev_i, text=node.dat['Fantasy Level'])
-        img = self.placement_icons[node.dat['Placement']]
+            self.fant_lev_i, text=card.dat['Fantasy Level'])
+        img = self.placement_icons[card.dat['Placement']]
         self.itemconfig(
             self.placement_i, image=img)
 
         self.description_i.delete('0.0', 'end')
-        self.description_i.insert('0.0', node.dat['Description'])
+        self.description_i.insert('0.0', card.dat['Description'])
 
-        self.gains_i.delete('0.0', 'end')
-        q = node.dat['Quirk Gains']
-        if q:
-            t = 'Quirk Gains: \n'
-            for i in q:
-                t += '   '+q[i]+'\n'
-            self.gains_i.insert('end', t)
+
+class DeckView(tk.Canvas):
+    def __init__(self, master=None, gm_=True):
+        tk.Canvas.__init__(
+            self, master=master, bg='black',
+            width=249, height=540, highlightthickness=0,
+            borderwidth=0)
+        self.card_i = CardView(self)
+        self.card_i.place(x=0, y=0)
+
+        self.sell_butt = tk.Button(self, text='< SELL')
+        self.sell_butt.place(x=170, y=310, width=60, height=20)
+
+        self.deck_tree = ttk.Treeview(
+            self, columns='prop_name_', show='headings')
+        self.deck_tree.heading('prop_name_', text='<Character Name>', anchor='w')
+        self.deck_tree.column('prop_name_', minwidth=0, width=249,
+                              stretch=tk.NO)
+        self.deck_tree.place(x=0, y=340, width=249, height=200)
+        self.grid()
+
+    def display_card(self, card=Card()):
+        self.card_i.display_card(card=card)
+
+    def get_selected_(self):
+        return'selected string'
+
+    def pupulate_list_(self, deck=None):
+        print('populate the treeview')
+
+
+class Shop:
+    def __init__(self):
+        self.name = "A Shop"
+        self.description = "No really. It's a shop."
+        self.card_list = {}
+
+
+class ShopView(tk.Canvas):
+    def __init__(self, master=None, gm_=True):
+        tk.Canvas.__init__(
+            self, master=master, bg='#18121b',
+            width=249, height=540, highlightthickness=0, borderwidth=0)
+
+        self.description_i = tk.Text(
+            self, bg='black', fg='lime green',
+            highlightthickness=0, borderwidth=0)
+        self.description_i.place(x=10, y=10, width=229, height=200)
+
+        self.buy_butt = tk.Button(self, text='BUY >')
+        self.buy_butt.place(x=170, y=225, width=60, height=20)
+
+        if gm_:
+            self.gm_options = GMShopOptions(self)
+            self.gm_options.place(x=0, y=248, width=249, height=90)
+        self.shop_tree = ttk.Treeview(
+            self, columns='prop_name_', show='headings')
+        self.shop_tree.heading('prop_name_', text='<Shop Name>', anchor='w')
+        self.shop_tree.column('prop_name_', minwidth=0, width=249,
+                              stretch=tk.NO)
+        y = 250
+        h = 290
+        if gm_:
+            y = 340
+            h = 200
+        self.shop_tree.place(x=0, y=y, width=249, height=h)
+        self.grid()
+
+    def get_selected_(self):
+        return'selected string'
+
+    def pupulate_list_(self, shop=Shop()):
+        print('populate the treeview')
+
+    @staticmethod
+    def save_shop_(shop=Shop()):
+        filename = 'Catalog/Prop Shop/'+shop.name+'.shop'
+        s_file = open(filename, 'wb')
+        pickle.dump(shop, s_file)
+        s_file.close()
+
+    @staticmethod
+    def load_shop_():
+        filename = askopenfilename(
+            title='Open a Shop File', initialdir='Catalog/Prop Shop/',
+            filetypes=[('Shop Files', '*.shop')])
+        file = open(filename, 'rb')
+        shop = pickle.load(file)
+        file.close()
+        return shop
+
+
+class GMShopOptions(tk.Frame):
+    def __init__(self, master=None):
+        tk.Frame.__init__(
+            self, master=master, bg='black',
+            width=249, height=100, highlightthickness=0, borderwidth=0)
+        self.new_shop_butt = tk.Button(self, text='New')
+        self.new_shop_butt.place(x=10, y=10, height=20, width=50)
+        self.save_shop_butt = tk.Button(
+            self, text='Save')
+        self.save_shop_butt.place(x=65, y=10, height=20, width=50)
+        self.load_shop_butt = tk.Button(self, text='Load')
+        self.load_shop_butt.place(x=120, y=10, height=20, width=50)
+        self.merge_shop_butt = tk.Button(self, text='Merge')
+        self.merge_shop_butt.place(x=175, y=10, height=20, width=50)
+        self.new_card_butt = tk.Button(self, text='New')
+        self.new_card_butt.place(x=10, y=35, height=20, width=50)
+        self.del_card_butt = tk.Button(self, text='Delete')
+        self.del_card_butt.place(x=65, y=35, height=20, width=50)
+        self.edit_card_butt = tk.Button(self, text='Edit')
+        self.edit_card_butt.place(x=120, y=35, height=20, width=50)
+
+
+class Shopping(tk.Toplevel):
+    def __init__(self, master=None, gm_=True,
+                 shop=Shop(), character=Character()):
+        tk.Toplevel.__init__(
+            self, master=master, bg='#18121b')
+        self.protocol("WM_DELETE_WINDOW", self.destroy)
+
+        self.shop = shop
+        self.shop_view = ShopView(self, gm_)
+        self.shop_view.grid(row=0, column=0, padx=10, pady=10)
+
+        self.character = character
+        self.deck_view = DeckView(self)
+        self.deck_view.grid(row=0, column=1, padx=10, pady=10)
+        self.grid()
+
+        self.shop_view.shop_tree.bind("<<TreeviewSelect>>",
+                                      self.display_shop_card)
+        self.deck_view.deck_tree.bind("<<TreeviewSelect>>",
+                                      self.display_deck_card)
+        self.shop_view.gm_options.new_shop_butt.configure(
+            command=self.new_shop_)
+        self.shop_view.gm_options.load_shop_butt.configure(
+            command=self.load_shop_)
+        self.shop_view.gm_options.save_shop_butt.configure(
+            command=self.save_shop_)
+        self.shop_view.gm_options.merge_shop_butt.configure(
+            command=self.merge_shop_)
+        self.shop_view.gm_options.new_card_butt.configure(
+            command=self.new_card_)
+        self.shop_view.gm_options.del_card_butt.configure(
+            command=self.delete_card_)
+        self.shop_view.gm_options.edit_card_butt.configure(
+            command=self.edit_card_)
+        self.shop_view.buy_butt.configure(
+            command=self.buy_)
+        self.shop_view.buy_butt.configure(
+            command=self.sell_)
+
+    def display_deck_card(self):
+        selected_card = self.deck_view.get_selected_()
+        card = self.character.dat['Deck'][selected_card]
+        self.deck_view.display_card(card=card)
+
+    def display_shop_card(self):
+        selected_card = self.shop_view.get_selected_()
+        card = self.shop.card_list[selected_card]
+        self.deck_view.display_card(card=card)
+
+    def new_shop_(self, *args):
+        print('a new shop')
+
+    def save_shop_(self):
+        self.shop_view.save_shop_(self.shop)
+
+    def load_shop_(self):
+        self.shop = self.shop_view.load_shop_()
+
+    def edit_shop_(self):
+        print('edit the shop name/description.')
+
+    def merge_shop_(self):
+        print('Merge 2 shops.')
+
+    def new_card_(self):
+        crd = CardEditor().show()
+        self.shop.card_list[crd.dat['Name']] = crd
+
+    def delete_card_(self):
+        print('delete a card.')
+
+    def edit_card_(self):
+        print('Edit a card.')
+
+    def refresh_shop_list_(self):
+        self.shop_view.pupulate_list_(self.shop)
+
+    def refresh_deck_list_(self):
+        self.deck_view.pupulate_list_(
+            self.character.dat['Deck'])
+
+    def buy_(self):
+        print('buy selected card.')
+
+    def sell_(self):
+        print('sell selected card.')
+
+    def done_(self):
+        print('confirm purchase')
+
+    def cancel_(self):
+        print('cancel purchase')
+
+    def show(self):
+        self.deiconify()
+        self.wait_window()
+        return deepcopy(self.character)
+
+
+xx = Shopping()
+if __name__ == "__main__":
+    xx.mainloop()

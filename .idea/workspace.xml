@@ -48,7 +48,7 @@
       <recent name="$PROJECT_DIR$/usr/config/ui/Default" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.propshop">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Roleplaying Game" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,9 +177,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.propshop" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.propsheet" />
-        <item itemvalue="Python.propshop" />
         <item itemvalue="Python.rp_frames" />
         <item itemvalue="Python.eeeeg" />
       </list>

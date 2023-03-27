@@ -1,4 +1,4 @@
-class Node:
+class Card:
     def __init__(self, name_='<Node Name>',
                  description_='<Node Description>',
                  placement_='<Placement>',
@@ -73,7 +73,7 @@ punch = Technique(
     range_=5, damage_roll_='1d4[Bash]')
 
 
-fist = Node(
+fist = Card(
     name_='Fist', description_='A bare hand crumpled up into a ball.',
     placement_='At Hand', type_='Melee Weapon')
 
@@ -121,5 +121,6 @@ class Character:
                 'Feet': None,
                 'Finger': []},
             'Techniques': {'Punch': punch},
+            'Deck': {},
             'Notes': []}
 
