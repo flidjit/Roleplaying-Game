@@ -242,11 +242,12 @@ class DeckView(tk.Canvas):
         self.deck_tree.place(x=0, y=340, width=249, height=200)
         self.grid()
 
+    def get_selected_(self):
+        selected = self.deck_tree.focus()
+        return self.deck_tree.item(selected)['values'][0]
+
     def display_card(self, card=Card()):
         self.card_i.display_card(card=card)
-
-    def get_selected_(self):
-        return'selected string'
 
     def pupulate_list_(self, deck=None):
         print('populate the treeview')
@@ -290,10 +291,14 @@ class ShopView(tk.Canvas):
         self.grid()
 
     def get_selected_(self):
-        return'selected string'
+        selected = self.shop_tree.focus()
+        return self.shop_tree.item(selected)['values'][0]
 
-    def pupulate_list_(self, shop=Shop()):
-        print('populate the treeview')
+    def populate_list_(self, shop=Shop()):
+        for i in shop.card_list:
+            name = shop.card_list[i].dat['Name']
+            self.shop_tree.insert(
+                '', tk.END, iid=name, values=[name])
 
     @staticmethod
     def save_shop_(shop=Shop()):
@@ -320,8 +325,7 @@ class GMShopOptions(tk.Frame):
             width=249, height=100, highlightthickness=0, borderwidth=0)
         self.new_shop_butt = tk.Button(self, text='New')
         self.new_shop_butt.place(x=10, y=10, height=20, width=50)
-        self.save_shop_butt = tk.Button(
-            self, text='Save')
+        self.save_shop_butt = tk.Button(self, text='Save')
         self.save_shop_butt.place(x=65, y=10, height=20, width=50)
         self.load_shop_butt = tk.Button(self, text='Load')
         self.load_shop_butt.place(x=120, y=10, height=20, width=50)
@@ -349,12 +353,15 @@ class Shopping(tk.Toplevel):
         self.character = character
         self.deck_view = DeckView(self)
         self.deck_view.grid(row=0, column=1, padx=10, pady=10)
-        self.grid()
 
-        self.shop_view.shop_tree.bind("<<TreeviewSelect>>",
-                                      self.display_shop_card)
-        self.deck_view.deck_tree.bind("<<TreeviewSelect>>",
-                                      self.display_deck_card)
+        self.grid()
+        self.bind_actions()
+
+    def bind_actions(self):
+        self.shop_view.shop_tree.bind(
+            "<<TreeviewSelect>>", self.display_shop_card)
+        self.deck_view.deck_tree.bind(
+            "<<TreeviewSelect>>", self.display_deck_card)
         self.shop_view.gm_options.new_shop_butt.configure(
             command=self.new_shop_)
         self.shop_view.gm_options.load_shop_butt.configure(
@@ -374,45 +381,50 @@ class Shopping(tk.Toplevel):
         self.shop_view.buy_butt.configure(
             command=self.sell_)
 
-    def display_deck_card(self):
+    def display_deck_card(self, *args):
         selected_card = self.deck_view.get_selected_()
         card = self.character.dat['Deck'][selected_card]
         self.deck_view.display_card(card=card)
 
-    def display_shop_card(self):
+    def display_shop_card(self, *args):
         selected_card = self.shop_view.get_selected_()
         card = self.shop.card_list[selected_card]
         self.deck_view.display_card(card=card)
 
     def new_shop_(self, *args):
         print('a new shop')
+        self.refresh_shop_list_()
 
-    def save_shop_(self):
+    def save_shop_(self, *args):
         self.shop_view.save_shop_(self.shop)
 
-    def load_shop_(self):
+    def load_shop_(self, *args):
         self.shop = self.shop_view.load_shop_()
+        self.refresh_shop_list_()
 
-    def edit_shop_(self):
+    def edit_shop_(self, *args):
         print('edit the shop name/description.')
 
-    def merge_shop_(self):
+    def merge_shop_(self, *args):
         print('Merge 2 shops.')
+        self.refresh_shop_list_()
 
-    def new_card_(self):
+    def new_card_(self, *args):
         crd = CardEditor().show()
         self.shop.card_list[crd.dat['Name']] = crd
+        self.refresh_shop_list_()
 
-    def delete_card_(self):
+    def delete_card_(self, *args):
         print('delete a card.')
+        self.refresh_shop_list_()
 
-    def edit_card_(self):
-        print('Edit a card.')
+    def edit_card_(self, *args):
+        self.refresh_shop_list_()
 
-    def refresh_shop_list_(self):
-        self.shop_view.pupulate_list_(self.shop)
+    def refresh_shop_list_(self, *args):
+        self.shop_view.populate_list_(self.shop)
 
-    def refresh_deck_list_(self):
+    def refresh_deck_list_(self, *args):
         self.deck_view.pupulate_list_(
             self.character.dat['Deck'])
 
@@ -434,6 +446,3 @@ class Shopping(tk.Toplevel):
         return deepcopy(self.character)
 
 
-xx = Shopping()
-if __name__ == "__main__":
-    xx.mainloop()

@@ -1,6 +1,6 @@
 class Card:
-    def __init__(self, name_='<Node Name>',
-                 description_='<Node Description>',
+    def __init__(self, name_='<Card Name>',
+                 description_='<Card Description>',
                  placement_='<Placement>',
                  type_='<Type>',
                  credit_cost_=0,
