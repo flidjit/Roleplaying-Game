@@ -1,12 +1,12 @@
 
 default_ui_icons = {
-    'Map': 'usr/config/ui/Default/maptabicon.png',
-    'Sheet': 'usr/config/ui/Default/stattabicon.png',
-    'Props': 'usr/config/ui/Default/proptabicon.png',
-    'Party': 'usr/config/ui/Default/grouptabicon.png',
-    'Actions': 'usr/config/ui/Default/actiontabicon.png',
-    'World': 'usr/config/ui/Default/worldtabicon.png',
-    'Help': 'usr/config/ui/Default/helptabicon.png'}
+    'Map': 'usr/config/UI/Default/maptabicon.png',
+    'Sheet': 'usr/config/UI/Default/stattabicon.png',
+    'Props': 'usr/config/UI/Default/proptabicon.png',
+    'Party': 'usr/config/UI/Default/grouptabicon.png',
+    'Actions': 'usr/config/UI/Default/actiontabicon.png',
+    'World': 'usr/config/UI/Default/worldtabicon.png',
+    'Help': 'usr/config/UI/Default/helptabicon.png'}
 
 default_ui_colors = {
     'Root BG': '#240e28',

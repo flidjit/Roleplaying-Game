@@ -13,11 +13,18 @@ class CardEditor(tk.Toplevel):
                              bg='#2C2331')
         self.grab_set()
         self.protocol("WM_DELETE_WINDOW", self.save_and_close)
+        self.fonts = {
+            'Title': ("Times", 10, "bold"),
+            'Sub-Title': ("Courier", 8, "bold"),
+            'Numbers': ("FreeMono", 8, "bold"),
+            'Description': ("Sans", 10, "normal")}
+        self.colors = {
+            'Background': '#18121b',
+            'Text 1': 'white',
+            'Text 2': 'grey',
+            'Text 3': 'lime green'}
 
         self.card = card
-
-        self.font1 = ("Comic Sans MS", 20, "bold")
-        self.font2 = ("Comic Sans MS", 20, "bold")
 
         self.name_l = tk.Label(
             self, bg='#2C2331', fg='green', text='Name:', justify='left')
@@ -35,8 +42,8 @@ class CardEditor(tk.Toplevel):
             self, bg='#2C2331', fg='green', text='Type:', justify='left')
         self.type_l.place(x=380, y=0, width=90, height=15)
         self.type_val = [
-            'Melee Weapon', 'Ranged Weapon', 'Tool', 'Attire',
-            'Consumable', 'Book', 'Trinket']
+            'Mod', 'Weapon', 'Tool', 'Attire', 'Consumable', 'Book',
+            'Trinket', 'Phenotype', 'Companion', 'Vehicle']
         self.type_entry_i = ttk.Combobox(self, values=self.type_val)
         self.type_entry_i.place(x=380, y=18, width=150, height=25)
 
@@ -44,7 +51,7 @@ class CardEditor(tk.Toplevel):
             self, bg='#2C2331', fg='green', text='Placement:', justify='left')
         self.placement_l.place(x=380, y=50, width=90, height=15)
         self.placement_val = [
-            'Pack', 'At Hand', 'Head', 'Face', 'Neck', 'Wrists',
+            'Special', 'Pack', 'At Hand', 'Head', 'Face', 'Neck', 'Wrists',
             'Hands', 'Back', 'Torso', 'Waist', 'Legs', 'Feet', 'Finger']
         self.placement_cbox_i = ttk.Combobox(self, values=self.placement_val)
         self.placement_cbox_i.place(x=380, y=68, width=150, height=25)

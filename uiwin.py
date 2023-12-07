@@ -114,19 +114,21 @@ class MapTab(tk.Frame):
                  colors=default_ui_colors):
         super().__init__(master=master)
         self.config(bg=colors['MapTab - BG'])
-        self.location_label = tk.Label(self, justify=tk.LEFT)
-        self.location_label.config(bg=colors['MapTab - BG'])
-        self.location_label.config(bg=colors['MapTab - Text'])
+        self.location_label = tk.Label(
+            self, justify=tk.LEFT,
+            bg=colors['MapTab - BG'],
+            fg=colors['MapTab - Text'])
         self.location_label.place(x=25, y=5)
         self.minimap = MiniMap(self, colors)
         self.minimap.place(x=25, y=25)
-        self.xy_label = tk.Label(self, justify=tk.LEFT)
-        self.xy_label.config(bg=colors['MapTab - BG'])
-        self.xy_label.config(fg=colors['MapTab - Text'])
+        self.xy_label = tk.Label(
+            self, justify=tk.LEFT,
+            bg=colors['MapTab - BG'],
+            fg=colors['MapTab - Text'])
         self.xy_label.place(x=25, y=327)
-        self.texid_lbl = tk.Label(self, justify=tk.LEFT, text='Tile Texture:')
-        self.texid_lbl.config(bg='black')
-        self.texid_lbl.config(fg='white')
+        self.texid_lbl = tk.Label(
+            self, justify=tk.LEFT, text='Tile Texture:',
+            bg='black', fg='white')
         self.texid_lbl.place(x=20, y=350)
         self.texture_id_box = ttk.Combobox(self)
         self.texture_id_box['state'] = 'readonly'
@@ -158,13 +160,29 @@ class PropTab(tk.Frame):
                  colors=default_ui_colors):
         super().__init__(master=master)
         self.config(bg=colors['PropTab - BG'])
+        self.todo = tk.Label(
+            self, justify=tk.LEFT,
+            text="Props & Loadout" +
+            "\nSwap Loadout\nUse/Activate prop",
+            bg='black', fg='light blue',
+            font=("Times", 12, "bold"))
+        self.todo.place(x=20, y=20)
 
 
 class PartyTab(tk.Frame):
     def __init__(self, master=None,
                  colors=default_ui_colors):
+        """ Name, portrait and stats for the PCs.
+        Turn order & walking formation"""
         super().__init__(master=master)
         self.config(bg=colors['PartyTab - BG'])
+        self.todo = tk.Label(
+            self, justify=tk.LEFT,
+            text="Party: Name, portrait, Awareness, HP, EP, and Def" +
+            "\nParty Stash\nWalking Order",
+            bg='black', fg='light blue',
+            font=("Times", 12, "bold"))
+        self.todo.place(x=20, y=20)
 
 
 class ActionTab(tk.Frame):
@@ -172,6 +190,40 @@ class ActionTab(tk.Frame):
                  colors=default_ui_colors):
         super().__init__(master=master)
         self.config(bg=colors['ActionTab - BG'])
+        self.todo = tk.Label(
+            self, justify=tk.LEFT,
+            text="Available techniques and actions",
+            bg='black', fg='light blue',
+            font=("Times", 12, "bold"))
+        self.todo.place(x=20, y=20)
+
+
+class Compendium(tk.Frame):
+    def __init__(self, master=None):
+        super().__init__(master=master)
+        self.config(bg='black')
+        self.cast_btn = tk.Button(
+            self, bg='black', fg='green', width=10, text='Cast')
+        self.cast_btn.grid(column=0, row=0, sticky='we')
+        self.beastiary_btn = tk.Button(
+            self, bg='black', fg='green', width=10, text='Beastiary')
+        self.beastiary_btn.grid(column=1, row=0, sticky='we')
+        self.maps_btn = tk.Button(
+            self, bg='black', fg='green', width=10, text='Geography')
+        self.maps_btn.grid(column=2, row=0, sticky='we')
+        self.timeline_btn = tk.Button(
+            self, bg='black', fg='green', width=10, text='Timeline')
+        self.timeline_btn.grid(column=3, row=0, sticky='we')
+        self.lore_btn = tk.Button(
+            self, bg='black', fg='green', width=10, text='Lore')
+        self.lore_btn.grid(column=0, row=1, sticky='we')
+        self.gallery_btn = tk.Button(
+            self, bg='black', fg='green', width=10, text='Gallery')
+        self.gallery_btn.grid(column=1, row=1, sticky='we')
+        self.notes_btn = tk.Button(
+            self, bg='black', fg='green', width=10, text='Notes')
+        self.notes_btn.grid(column=2, row=1, sticky='we')
+        self.grid(sticky='we')
 
 
 class WorldTab(tk.Frame):
@@ -179,6 +231,40 @@ class WorldTab(tk.Frame):
                  colors=default_ui_colors):
         super().__init__(master=master)
         self.config(bg=colors['WorldTab - BG'])
+        self.campaign_arc_name_lbl = tk.Label(
+            self, justify=tk.LEFT,
+            text="[Campaign Name]: [Arc Name]",
+            bg='black', fg='light blue',
+            font=("Times", 15, "bold"))
+        self.campaign_arc_name_lbl.place(x=5, y=5)
+        self.gm_name_lbl = tk.Label(
+            self, justify=tk.LEFT,
+            text="GM: [GM Name]",
+            bg='black', fg='light blue',
+            font=("Times", 12, "bold"))
+        self.gm_name_lbl.place(x=5, y=27)
+        self.date_lbl = tk.Label(
+            self, justify=tk.LEFT,
+            text="5:00AM - Monday - 91st day of Spring - 2023AD",
+            bg='black', fg='light blue',
+            font=("Times", 10, "bold"))
+        self.date_lbl.place(x=5, y=74)
+        self.weather_lbl = tk.Label(
+            self, justify=tk.LEFT,
+            text="75°F - Partly Cloudy - Humidity: Low - Wind: 5mph N",
+            bg='black', fg='light blue',
+            font=("Times", 10, "bold"))
+        self.weather_lbl.place(x=5, y=94)
+        self.compendium = Compendium(self)
+        self.compendium.place(x=0, y=145, width=450, height=75)
+        self.campaign_stats_lbl = tk.Label(
+            self, justify=tk.LEFT,
+            text="Session: 1 - Hours Played: 0.00 - Combat Encounters: 0"
+                 "\n XP Gains: 0 - In-Game Time Played: 2years & 10days"
+                 "\n Technology Level: 2 - Fantasy Level: 1",
+            bg='black', fg='light blue',
+            font=("Times", 10, "bold"))
+        self.campaign_stats_lbl.place(x=5, y=245)
 
 
 class HelpTab(tk.Frame):
